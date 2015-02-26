@@ -17,22 +17,25 @@ body{
 }
 
 header{
-    height:200px;
+    height:20%;
     background-image:url(images/bibliotheque-municipale.jpg);
     background-repeat:no-repeat;
-
 }
 
-h1{
-    display:block;
+.logo figure{
+    display:inline-block;
+    margin:0px;
+}
+
+#titrepp h1{
     color:white;
-
+    background-color:rgba(0, 0, 0, 0.3); /*fond noir transparent sur lequel se détache le titre en blanc*/
+    margin-bottom:0px;
 }
+
 nav{
     margin:0px;
     background-color:black;
-
-
 }
 
 #menu{
@@ -61,7 +64,7 @@ nav{
     display:inherit;
 }
 
-li:hover {
+li:hover{
     background-color:green;
 }
 
