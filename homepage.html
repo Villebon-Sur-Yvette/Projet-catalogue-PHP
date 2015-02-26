@@ -4,6 +4,8 @@
     <!-- métadonnées -->
     <head>
         <meta charset="UTF-8" />
+        <!-- Icone du site-->
+        <link href="blason.png" type="image/png" rel="icon"/>
         <!-- <meta name="author" content="Anne-Cécile et Constance" /> -->
         <!-- <meta name="keywords" lang="fr" content="catalogue bibliothèque" /> -->
         <!-- <meta name="Description"
@@ -43,32 +45,46 @@
             </nav>
             
             <!-- Encart gauche avec la recherche -->
-            <aside>
-                <h3 id="recherche">Recherche</h3>
-                <h3 id="recherche">Recherche avancée</h3>
-            </aside>
+            <div class="encart_recherche">
+                <aside>
+                   <h3 id="recherche">Recherche</h3>
+                   <h3 id="recherche">Recherche avancée</h3>
+                </aside>
+            </div>
             
             
             <!-- soit un calendrier de la bibliothèque, soit les horaires d'ouverture -->
-            <aside class="calendrier"></aside>
-            <!-- contenu de la page active -->
-            <div class="contenupage">
-                <section class="slideshow"></section>
-                <section class="actualite"><h2>Actualité</h2><article>
+            <!--<div id="encart_calendrier"><aside class="calendrier">26 février 2015</aside></div>-->
+                                  
+            <div class="encart_actualite">
+                <section class="actualite">
+                    <h2>ACTUALITES</h2>
+                    <article class="actu">
                         <h3>Le 28 février 2015 : discussion manga avec dégustation de thé</h3>
                         <p>Venez discuter de vos mangas préférés en dégustant une délicieuse tasse
                             de thé sencha uji de chez Mariage Frères. </p>
-                        <h3>Le 31 mars 2015 :Jam session poésie et slam </h3>
+                    </article>
+                    <article class="actu">
+                        <h3>Le 31 mars 2015 : Jam session poésie et slam </h3>
                         <p>La bibliothèque de Villebon-sur-Yvette vous donne l'opportunité de monter
                             sur scène pour lire vos créations poétiques. Poètes en herbe et
                             slammeurs urbains seront à l'honneur ! Et n'oubliez pas "Il n'y a pas de
                             grands poètes sans grand public" ("to have great poets, there must be
                             great audiences." Walt Whitman), nous espérons donc vous voir nombreux !
-                        </p></article></section>
+                        </p>
+                    </article>
+                </section>
             </div>
+            
+            <!-- contenu de la page active -->
+            <div class="contenupage">
+                <section class="slideshow"></section>
+                <img src="images/biblio.JPG"/>
+            </div>
+            
             <!-- bandeau inf -->
             <footer>
-                <div><h6>Suivez-vous sur les réseaux sociaux !</h6></div>
+                <h6>Suivez-vous sur les réseaux sociaux !</h6>
             </footer>
         </div>
     </body>

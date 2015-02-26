@@ -18,7 +18,7 @@ body{
 
 header{
     height:200px;
-    background-image: url(bibliotheque-municipale.jpg);
+    background-image: url(images/bibliotheque-municipale.jpg);
     background-repeat:no-repeat;
 
 }
@@ -88,20 +88,14 @@ a:visited {
     color:white;
 }
 
-
-section 
-{
-    margin:10px;
-    padding: 10px;
-    border:1px solid black;
-}
-
-/*Encart recherche*/
-aside {
-    display: inline-block;
+/*Positionnement et aspect des éléments de la page*/
+/*Encart de gauche : recherche*/
+.encart_recherche {
+    float: left; 
     background-color: black;
-    float: left;
+    display: inline-block;
 }
+/*Aspect du texte*/
 #recherche {
     text-decoration: none;
     color: white;
@@ -109,15 +103,36 @@ aside {
     font-weight: normal;
     padding: 0px 10px;
 }
+/*Encart de droite : actualités*/
+.encart_actualite {
+   display: inline-block;
+   float: right;
+   width: 25%;
+}
+/*Ensemble du texte*/
+.actualite {
+    padding: 2%;
+}
+/*Une atualité*/
+.actu {
+    border-top: 3px solid #9e1515;
+    margin-bottom: 50px;
+}
 
 /*Contenu de la page*/
 .contenupage {
-    display
+    display: inline-block;
+    margin: 10%;
 }
 
+/*footer*/
 footer{
-    height:80px;
+    height: 50px;
     width:auto;
-    border:1px solid blue;
     clear: both;
+    background-color: black;
+}
+h6 {
+    text-decoration: none;
+    color: white;
 }
