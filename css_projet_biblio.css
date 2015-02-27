@@ -28,6 +28,8 @@ h1 {
     color:white;
  
 }
+
+/*Barre de navigation*/
 nav{
     margin:0px;    
     background-color:black;
@@ -41,16 +43,13 @@ nav{
     margin:0;
     height:40px;
     text-align:right; /* le texte  à droite */
-    
 }
+
 #menu li{
     display:inline;
     list-style:none;
     padding:10px;
     margin:10px;
-}
-
-
 }
 
 #menu a{
@@ -65,8 +64,7 @@ ul ul {
     display: none; /*permet de cacher les listes-enfants de listes*/
 }
 
-
-li:hover > ul.niveau2{
+li:hover > ul.niveau2 {
     display:block; /*permet d'afficher les listes de différentes niveau en survolant les items des listes des niveaux supérieurs*/
     background-color:red;
     position:fixed; /* pour fixer les puces de la liste principale lorsqu'on affiche les listes secondaires*/
@@ -75,12 +73,12 @@ li:hover > ul.niveau2{
 
 ul.niveau2 a{
     display:inline-block;
-   }
+}
+
 a:hover,
 a:visited {
     background-color:green;
     color:black;
-    
 }
 
 .niveau2 a{
