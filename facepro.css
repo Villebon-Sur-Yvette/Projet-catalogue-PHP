@@ -8,63 +8,93 @@ header{
 
 }
 
-/*Barre de navigation*/
+/*barre de navigation*/
 nav{
     margin:0px;    
-    background-color:black;
-   
-    
+    background-color:black;  
 }
-
-#menu{
-    width:900px;
-    padding:0;
-    margin:0;
-    height:40px;
-    text-align:right; /* le texte  à droite */
-    
+#menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
 }
-#menu li{
-    display:inline;
-    list-style:none;
-    padding:20px;
-
+#menu li {
+    display: inline-block;
+    position: relative;
+    border-radius: 0;
 }
-
-#menu a{
-    display:inline-block;
-    margin:10px 30px; /* marges supérieures et inférieures puis espace entre les liens (marges sur les côtés gauches et droits) */
+#menu ul li {
+    display: inherit;
+    border-radius: 0;
+    background-color: black;
+}
+#menu ul li:hover {
+    border-radius: 0;
+}
+#menu ul li:last-child {
+    border-radius: 0;
+}
+#menu a {
     text-decoration: none;
-    font-weight:normal;
-    color:white;
-
+    display: block;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+#menu ul a {
+    padding: 8px 0;
+}
+#menu ul {
+    position: absolute;
+    max-height: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    -moz-transition: .8s all .3s;
+    -wekbit-transition: .8s all .3s;
+    transition: .8s all .3s;    
+}
+#menu li:hover ul {
+    max-height: 15em;
+}
+#menu li:hover, #menu li li:hover {
+    background: #9e1515;
+}
+#menu li:hover li a {
+    color: white;
+    text-transform: inherit;
+}
+#menu li:hover a, #menu li li:hover a {
+    color: #white;
 }
 
-ul ul {
-    display: none; /*permet de cacher les listes-enfants de listes*/
+/*Contenu de la page*/
+/*Recherche et ajout de notices*/
+#actions {
+    list-style: none;
 }
 
-li:hover ul.niveau2 {
-    display:block;    /*permet d'afficher les listes de différentes niveau en survolant les items des listes des niveaux supérieurs*/
-    background-color:green;
-    position:fixed; /* pour fixer les puces de la liste principale lorsqu'on affiche les listes secondaires*/
-    overflow:visible;
-}
-
-ul.niveau2 a{
-    display:inline-block;
-   }
-a:hover,
-a:visited {
-    background-color:green;
-    color:black;
-    
-}
-
-.niveau2 a{
-    display:inline;
-    margin:10px 30px; /* espace entre les liens */
+/*aspect du texxte :"recherche" et "ajout" */
+#actions a {
     text-decoration: none;
-    font-weight:normal;
-    color:white;
+    color: white;
+    background-color: #9e1515;
+    padding: 20px;
+    border-radius: 2px;
+}
+#search_pro {
+    display: inline-block;
+}
+#ajout_pro {
+    display: inline-block;
+}
+
+/*Positionnement des éléments*/
+
+/*Menu de l'aide à droite*/
+.menu_aide {
+    display: inline-block;
+    float: right;
+    width: 25%;
 }
