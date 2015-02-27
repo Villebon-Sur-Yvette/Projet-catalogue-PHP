@@ -46,7 +46,13 @@ nav{
 #menu li{
     display:inline;
     list-style:none;
+<<<<<<< Updated upstream
     padding:20px;
+=======
+    padding:10px;
+    margin:10px;
+}
+>>>>>>> Stashed changes
 
 }
 
@@ -56,20 +62,27 @@ nav{
     text-decoration: none;
     font-weight:normal;
     color:white;
-
 }
 
 ul ul {
     display: none; /*permet de cacher les listes-enfants de listes*/
 }
 
+<<<<<<< Updated upstream
 li:hover ul.niveau2 {
     display:block;    /*permet d'afficher les listes de différentes niveau en survolant les items des listes des niveaux supérieurs*/
     background-color:green;
+=======
+
+li:hover > ul.niveau2{
+    display:block; /*permet d'afficher les listes de différentes niveau en survolant les items des listes des niveaux supérieurs*/
+    background-color:red;
+>>>>>>> Stashed changes
     position:fixed; /* pour fixer les puces de la liste principale lorsqu'on affiche les listes secondaires*/
     overflow:visible;
 }
 
+<<<<<<< Updated upstream
 ul.niveau2 a{
     display:inline-block;
    }
@@ -86,6 +99,12 @@ a:visited {
     text-decoration: none;
     font-weight:normal;
     color:white;
+=======
+li li {
+    position: relative;
+			display:inline-block;
+			list-style: none;
+>>>>>>> Stashed changes
 }
 
 /*Positionnement et aspect des éléments de la page*/
