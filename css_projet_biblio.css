@@ -32,12 +32,10 @@ h1 {
 /*barre de navigation*/
 nav{
     margin:0px;    
-    background-color:black;
-   
-    
+    background-color:black;  
 }
 
-#menu{
+#menu {
     width:900px;
     padding:0;
     margin:0;
@@ -46,14 +44,14 @@ nav{
 }
 
 #menu li{
-    display:inline;
+    display:inline-block;
     list-style:none;
     padding:10px;
     margin:10px;
 }
 
 #menu a{
-    display:inline-block;
+    display:block;
     margin:10px 30px; /* marges supérieures et inférieures puis espace entre les liens (marges sur les côtés gauches et droits) */
     text-decoration: none;
     font-weight:normal;
