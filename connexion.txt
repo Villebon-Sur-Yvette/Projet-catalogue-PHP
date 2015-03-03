@@ -1,0 +1,10 @@
+<?php
+
+$serveur="localhost";
+$utilisateur="root";
+$motdepasse="";
+$base="univers";
+
+$idcom=new mysqli($serveur,$utilisateur,$motdepasse,$base);
+
+?>
