@@ -1,23 +1,59 @@
 /*******************************CSS de la page aide_utilisateur*****************************/
 
+/*Aspect général*/
+/*Police*/
+body {
+	font-family: Lato, calibri, helvetica, sans-serif;
+}
+p {
+	color: #326363;
+}
+
 /*Sommaire*/
 #sommaire {
 	list-style: none;
+	text-decoration: none;
+	border: 1px solid #9e1515;
+	background: #326363;
+	position: fixed;
+}
+
+#sommaire li {
+	list-style: none;
+	color: white;
+}
+
+#sommaire a {
+	text-decoration: none;
+	color: white;
+}
+
+/*Aspect au passage de la souris*/
+#sommaire li:hover {
+	
 }
 
 /*Positionnement des éléments sur la page*/
 .menu_aide {
 	display: inline-block;
 	float: right;
-	width: 30%;
+	width: 25%;
+	margin-right: 2%;
 }
 /*Contenu de l'aide*/
 .help {
 	display: inline-block;
 	float: left;
-	width: 70%;
+	width: 65%;
 }
 
 /*Aspect général de l'aide*/
 /*Titre*/
+h3 {
+	border-top: 3px solid #9e1515;
+    margin-bottom: 50px;
+    width: 25%;
+}
+
+
 
