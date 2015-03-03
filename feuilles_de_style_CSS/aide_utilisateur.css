@@ -1,0 +1,23 @@
+/*******************************CSS de la page aide_utilisateur*****************************/
+
+/*Sommaire*/
+#sommaire {
+	list-style: none;
+}
+
+/*Positionnement des éléments sur la page*/
+.menu_aide {
+	display: inline-block;
+	float: right;
+	width: 30%;
+}
+/*Contenu de l'aide*/
+.help {
+	display: inline-block;
+	float: left;
+	width: 70%;
+}
+
+/*Aspect général de l'aide*/
+/*Titre*/
+
