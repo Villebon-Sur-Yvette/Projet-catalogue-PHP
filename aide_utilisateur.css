@@ -1,8 +1,18 @@
 /*******************************CSS de la page aide_utilisateur*****************************/
 
+
+body {
+	font-family: Lato, calibri, helvetica, sans-serif;
+}
 /*Sommaire*/
 #sommaire {
 	list-style: none;
+}
+#sommaire li {
+	list-style: none;
+}
+#sommaire a {
+	text-decoration: none;
 }
 
 /*Positionnement des éléments sur la page*/
@@ -15,9 +25,13 @@
 .help {
 	display: inline-block;
 	float: left;
-	width: 70%;
+	width: 60%;
 }
 
 /*Aspect général de l'aide*/
 /*Titre*/
-
+h3 {
+	border-top: 3px solid #9e1515;
+    margin-bottom: 50px;
+    width: 40%;
+}
