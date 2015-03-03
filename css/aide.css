@@ -14,8 +14,9 @@ p {
 	list-style: none;
 	text-decoration: none;
 	border: 1px solid #9e1515;
+	border-radius: 2%;
 	background: #326363;
-	position: fixed;
+	padding: 2%;
 }
 
 #sommaire li {
@@ -29,16 +30,16 @@ p {
 }
 
 /*Aspect au passage de la souris*/
-#sommaire li:hover {
-	color: #9e1515;
+#sommaire a:hover {
+	background: #9e1515;
 }
 
 /*Positionnement des éléments sur la page*/
 .menu_aide {
 	display: inline-block;
+	position: fixed;
 	float: right;
 	width: 25%;
-	margin-right: 2%;
 }
 /*Contenu de l'aide*/
 .help {
@@ -52,5 +53,10 @@ p {
 h3 {
 	border-top: 3px solid #9e1515;
     margin-bottom: 50px;
-    width: 25%;
+    width: 30%;
+}
+/*Retour en haut de la page*/
+#retourhautpage {
+	text-decoration: none;
+	background-image: url(../images/piledelivres.JPEG);
 }
