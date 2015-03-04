@@ -8,6 +8,11 @@ header{
 
 }
 
+/*Aspect général de la page*/
+body {
+    font-family: Lato, calibri, helvetica, sans-serif;
+}
+
 /*barre de navigation*/
 nav{
     margin:0px;    
@@ -90,7 +95,24 @@ nav{
     display: inline-block;
 }
 
-/*Positionnement des éléments*/
+/*Positionnement et aspect des éléments*/
+/*Encart de gauche : recherche*/
+.encart_recherche {
+    float: left; 
+    background-color: black;
+    display: inline-block;
+}
+/*Aspect du texte*/
+#recherche {
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+    padding: 0px 10px;
+}
+/*Position de la case de recherche...A voir avec la création de boutons en css*/
+#caserecherche {
+    margin: 5%;
+}
 
 /*Menu de l'aide à droite*/
 .menu_aide {
@@ -98,6 +120,10 @@ nav{
     float: right;
     width: 25%;
 }
-
-
-/*****************CSS de la page aide pro*************************/
+.menu_aide a {
+    text-decoration: none;
+}
+/*Contenu de la page-Positionnement*/
+.actions_pro {
+    display: inline-block;
+}
