@@ -76,24 +76,25 @@ nav{
 
 /*Contenu de la page*/
 /*Recherche et ajout de notices*/
-#actions {
-    list-style: none;
+.actions_pro {
+    display: inline-block;
+    margin: 0 5%;
 }
 
 /*aspect du texxte :"recherche" et "ajout" */
-#actions a {
+td {
+    width: 20%;
+    height: 20%;
+    background-color: black;
+}
+td a {
     text-decoration: none;
     color: white;
-    background-color: #9e1515;
-    padding: 20px;
-    border-radius: 2px;
 }
-#search_pro {
-    display: inline-block;
+td h2 {
+    margin-left: 5%;
 }
-#ajout_pro {
-    display: inline-block;
-}
+
 
 /*Positionnement et aspect des éléments*/
 /*Encart de gauche : recherche*/
@@ -123,6 +124,31 @@ nav{
 .menu_aide a {
     text-decoration: none;
 }
+/*Sommaire*/
+#sommaire {
+    list-style: none;
+    text-decoration: none;
+    border: 1px solid #9e1515;
+    border-radius: 2%;
+    background: #326363;
+    padding: 2%;
+}
+
+#sommaire li {
+    list-style: none;
+    color: white;
+}
+
+#sommaire a {
+    text-decoration: none;
+    color: white;
+}
+
+/*Aspect au passage de la souris*/
+#sommaire a:hover {
+    background: #9e1515;
+}
+
 /*Contenu de la page-Positionnement*/
 .actions_pro {
     display: inline-block;
