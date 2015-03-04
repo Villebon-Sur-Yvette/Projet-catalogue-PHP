@@ -11,10 +11,10 @@
 
 <body>
 <?php
-require 'connexion_test.txt';
+require 'connexion.txt';
 
 
-	$recherche_simple=trim($recherche_simple);
+$recherche_simple=trim($recherche_simple);
 
 
 $results=$idcom->query("SELECT * FROM auteur, titre, editeur WHERE auteur LIKE '$recherche_simple' OR titre LIKE '$recherche_simple' OR editeur LIKE '$recherche_simple'");
