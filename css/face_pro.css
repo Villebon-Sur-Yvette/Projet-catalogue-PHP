@@ -120,17 +120,19 @@ td h2 {
     display: inline-block;
     float: right;
     width: 25%;
+    background-color: #9e1515;
 }
 .menu_aide a {
     text-decoration: none;
+    padding: 5%;
+    color: white;
 }
 /*Sommaire*/
 #sommaire {
     list-style: none;
     text-decoration: none;
-    border: 1px solid #9e1515;
-    border-radius: 2%;
-    background: #326363;
+    border-top: 1px solid #326363;
+    background: #9e1515;
     padding: 2%;
 }
 
@@ -143,10 +145,10 @@ td h2 {
     text-decoration: none;
     color: white;
 }
-
 /*Aspect au passage de la souris*/
 #sommaire a:hover {
-    background: #9e1515;
+    background: white;
+    color: #326363;
 }
 
 /*Contenu de la page-Positionnement*/
