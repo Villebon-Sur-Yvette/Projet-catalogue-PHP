@@ -17,10 +17,11 @@ body{
 }
 
 header{
-    height: 280px;
+    height: 240px;
     background-image: url(../images/bibliotheque-municipale.jpg);
     background-repeat: no-repeat;
 }
+
 
 div.logo {
     padding: 10px;
@@ -31,7 +32,7 @@ div#titrepp {
     padding: 10px;
     display: inline-block;
     float: top;
-    background-color: rgba(255,0,0,0.4);
+    background-color: rgba(0,225,0,0.5)
 }
 
 h1 {
@@ -123,6 +124,18 @@ li li:hover ul li a {
     color: white;
 }
 
+/*css pour les info pratiques*/
+
+section.informationspratiques
+{
+    margin-left: 200px;
+    margin-right: 400px;
+    text-align: justify;
+}
+
+section.informationspratiques li {
+    background-color:transparent;
+}
 
 /*Positionnement et aspect des éléments de la page*/
 /*Encart de gauche : recherche*/
@@ -168,14 +181,18 @@ footer{
     clear: both;
     background-color: black;
 }
+
 h6 {
     text-decoration: none;
     color: white;
-    display: block;
+    display: inline-block;
     text-align: center; /* pour centrer le text */
-}
+    vertical-align: top;
+    margin-left:5%;
+}   
 
-h6 > a {
+h6 a {
     text-decoration: none;
+    color: white;
 }
 

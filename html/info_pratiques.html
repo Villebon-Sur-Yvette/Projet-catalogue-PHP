@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Informations pratiques</title>
+        <link href="../css/css_projet_biblio.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="conteneur">
+            <header>   
+                <div class="logo"><figure><img src="../images/blason.png" /></figure></div>
+                <div id="titrepp"><h1>Bibliothèque municipale</h1><h1>de
+                    Villebon-sur-Yvette</h1></div>   
+            </header>
+            <nav>         
+                <ul id="menu" class="niveau1">
+                    <li><a href="homepage.html">RETOUR PAGE D'ACCUEIL</a></li>
+                    <li><a href="">PRESENTATION</a>
+                        <ul class="niveau2">
+                            <li><a href="info_pratiques.html">Informations pratiques</a>
+                            </li>
+                            <li><a href="histoire.html">Histoire de la bibliothèque</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="aide_utilisateur.html">AIDE</a>
+                    </li>
+                    <li><a href="">CATALOGUE</a>
+                        <ul class="niveau2">
+                            <li><a href="">Recherche simple</a>
+                            </li>
+                            <li><a href="">Recherche avancée</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="page_pro.html">ACCES RESERVE</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Encart gauche avec la recherche -->
+            <div class="encart_recherche"> <!-- pourquoi mettre une class ici ? Il n'y aura pas plusieurs encart_recherche dans la même page ? -->
+                <aside>
+                    <h3 id="recherche">Recherche simple</h3>
+                    <!--formulaire recherche simple avec 2 boutons "envoyer" et "effacer"-->
+                    <div id="caserecherche">
+                        <form action="../interrogation_rech_simple.php" method="POST"> <!--il manque le fichier php bien sûr-->
+                            <input type ="text" name="recherche_simple"/>
+                            <br/>
+                            <input type ="submit" value="Chercher"/> 
+                            <input type ="reset" value="Effacer"/>
+                        </form> 
+                    </div>
+                    <h3 id="recherche">Recherche avancée</h3>
+                </aside>
+            </div>
+            
+            <section class="informationspratiques">
+                <article id="horaires">
+                    <h2>Horaires d'ouverture au public</h2>
+                    <ul>
+                        <li>mardi de 15 h à 19 h,</li>
+                        <li>mercredi de 10 h à 12 h et de 14 h à 18 h,</li>
+                        <li>jeudi de 15 h à 18 h,</li>
+                        <li>samedi de 10 h à 17h30.</li>
+                    </ul>
+                </article>
+                <article class="pret">
+                    <h2>Prêt de livres et périodiques</h2>
+                    <p> Au maximum 6 livres, 4 revues, 4 bandes dessinées, 2 textes lus et 2
+                        documents sonores jeunesse par personne pour une période de trois semaines.  </p>
+                    <ul>
+                        <li>Villebonnais : gratuit.</li>
+                        <li>Non Villebonnais : 28,40 €.</li>
+                    </ul>
+                </article>
+                <article class="pret">
+                    <h2>Prêt de DVD et de CD</h2>
+                    <p>Un abonnement annuel est nécessaire pour emprunter 10 CD et 4 DVD. Cet
+                        abonnement gratuit est réservé aux plus de 11 ans. Cependant, tout enfant de
+                        moins 11 ans muni de la carte d'un adulte et d'une autorisation écrite
+                        signée par l'un de ses parents peut emprunter. Le prêt est consenti pour une
+                        période de trois semaines non renouvelable.</p>
+                    <ul>
+                        <li>Villebonnais : gratuit.</li>
+                        <li>Non Villebonnais : gratuit.</li>
+                        <li>Titulaires de la carte Villebon Loisirs ou Villebon Services :
+                            gratuit.</li>
+                    </ul>
+                    <p>Lors du retour, merci de ne pas déposer les documents (DVD et CD) dans la
+                        boîte à livres. </p>
+                </article>
+                <article id="durantannee">
+                    <h2>Tout au long de l'année</h2>
+                    <p>Expositions et animations temporaires.</p>
+                    <p>Bibliographies thématiques et catalogues de nouveautés.</p>
+                    <p>Un samedi par mois, le matin :</p>
+                    <ul>
+                        <li>Racontines (Contes pour les tout-petits).</li>
+                    </ul>
+                    <p>Un mercredi par mois, le matin :</p>
+                    <ul>
+                        <li>Heure du conte (tout public).</li>
+                        <li>Comité de lecture pour les enfants de 8 à 12 ans.</li>
+                        <li>La lanterne magique (séance cinéma pour les 4 - 9 ans).</li>
+                    </ul>
+                    <p>Rendez-vous bimestriel :</p>
+                    <ul>
+                        <li>Kestuli : comité de lecture pour les 13-14 ans (mercredi).</li>
+                        <li>Thé ou café musical : présentation de nouveautés CD/DVD à l’Espace Image
+                            et Son (samedi).</li>
+                    </ul>
+                    <p>"La lanterne magique" (séance cinéma pour les 5-9 ans).</p>
+                    <p>Retrouvez les dates de tous nos prochains rendez-vous en rubrique
+                            <emph>Agenda</emph> </p>
+                </article>
+                <article id="internet">
+                    <h2>Consultation Internet</h2>
+                    <p>La Médiathèque propose 4 ordinateurs pour une consultation Internet
+                        gratuite.</p>
+                </article>
+            </section>
+            <footer>
+                <h6><a href="https://www.facebook.com/pages/Villebon-sur-Yvette-page-officielle/474620235907483">Suivez-nous sur les réseaux sociaux ! <figure><img src="../images/fbk.jpg" /></figure></a></h6>
+                <h6><a href="mailto:contact.mediatheque@villebon-sur-yvette.fr"> Contacter l'équipe de la bibliothèque <figure><img src="../images/mail.jpg"/></figure></a>94, rue des Maraîchers - 91140 Villebon-sur-Yvette - Tél. 01 69 31 17 77, Fax : 01 69 31 19 50 - Responsable : Catherine Foly</h6>
+                
+                <h6><a href="http://www.villebon-sur-yvette.fr/"> Contacter la Marie de Villeneuve-sur-Yvettes <figure><img src="../images/mairie.png"/></figure></a></h6>
+            </footer>
+        </div>
+    </body>
+</html>
