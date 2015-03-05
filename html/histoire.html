@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Histoire de la bibliothèque</title>
+        <link href="../css/css_projet_biblio.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="conteneur">
+            <header>
+                <div class="logo"><figure><img src="../images/blason.png" /></figure></div>
+                <div id="titrepp"><h1>Bibliothèque municipale</h1><h1>de
+                    Villebon-sur-Yvette</h1></div>
+            </header>
+            <nav>
+                <ul id="menu" class="niveau1">
+                    <li><a href="homepage.html">RETOUR PAGE D'ACCUEIL</a></li>
+                    <li><a href="">PRESENTATION</a>
+                        <ul class="niveau2">
+                            <li><a href="info_pratiques.html">Informations pratiques</a>
+                            </li>
+                            <li><a href="histoire.html">Histoire de la bibliothèque</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="aide_utilisateur.html">AIDE</a>
+                    </li>
+                    <li><a href="">CATALOGUE</a>
+                        <ul class="niveau2">
+                            <li><a href="">Recherche simple</a>
+                            </li>
+                            <li><a href="">Recherche avancée</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="page_pro.html">ACCES RESERVE</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Encart gauche avec la recherche -->
+            <div class="encart_recherche">
+                <!-- pourquoi mettre une class ici ? Il n'y aura pas plusieurs encart_recherche dans la même page ? -->
+                <aside>
+                    <h3 id="recherche">Recherche simple</h3>
+                    <!--formulaire recherche simple avec 2 boutons "envoyer" et "effacer"-->
+                    <div id="caserecherche">
+                        <form action="../interrogation_rech_simple.php" method="POST">
+                            <!--il manque le fichier php bien sûr-->
+                            <input type="text" name="recherche_simple" />
+                            <br />
+                            <input type="submit" value="Chercher" />
+                            <input type="reset" value="Effacer" />
+                        </form>
+                    </div>
+                    <h3 id="recherche">Recherche avancée</h3>
+                </aside>
+            </div>
+            <section class="informationspratiques">
+                <article id="histoire">
+                    <h2>Une bibliothèque digne des plus grandes</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquet
+                        risus nec aliquam iaculis. Cras fringilla hendrerit justo, in hendrerit ex
+                        fermentum in. Nunc tristique semper augue, sed porttitor diam aliquet quis.
+                        Sed faucibus est feugiat lectus commodo, nec accumsan turpis porttitor.
+                        Aliquam elementum nibh sed turpis ultrices, eu vehicula orci luctus.
+                        Maecenas ut convallis purus, malesuada aliquam arcu. Nunc pharetra leo at
+                        nulla lobortis dapibus. Quisque pretium tellus ut euismod condimentum.
+                        Phasellus eget auctor turpis, a tempor neque. Mauris pellentesque sem a urna
+                        commodo, at tristique augue tempus. Aenean auctor aliquet velit, eu
+                        consectetur erat laoreet nec. Curabitur nec bibendum lectus. Maecenas
+                        facilisis, ligula ac vulputate ultrices, odio diam dictum tortor, pulvinar
+                        ullamcorper lacus diam non orci. Aenean sagittis nisi ut enim vulputate, non
+                        mollis metus pharetra. In egestas ligula eget nisi dictum rhoncus. </p>
+                    <p>Quisque aliquam, nibh vitae semper dapibus, nulla sem blandit odio, a finibus
+                        diam metus vel sem. Aenean efficitur efficitur vulputate. Duis bibendum est
+                        sit amet tristique semper. Curabitur pretium felis lorem, ut tempor eros
+                        fermentum sed. Nunc auctor ac nibh a iaculis. Etiam convallis elit vel
+                        dictum tristique. In lectus magna, tincidunt eget diam nec, accumsan blandit
+                        metus. Fusce cursus congue magna ac hendrerit. </p>
+                    <p>Nullam vel orci a felis lacinia efficitur. Nam fermentum ornare pharetra.
+                        Suspendisse faucibus gravida elit interdum tristique. Etiam in pharetra
+                        lorem, in tempus lectus. Sed at nisl in mauris iaculis commodo dictum ac
+                        lacus. Morbi interdum felis nec est malesuada sagittis. Fusce vel sodales
+                        odio. </p>
+                </article>
+            </section>
+            <footer>
+                <h6><a
+                        href="https://www.facebook.com/pages/Villebon-sur-Yvette-page-officielle/474620235907483"
+                        >Suivez-nous sur les réseaux sociaux ! <figure><img src="../images/fbk.jpg"
+                             /></figure></a></h6>
+                <h6><a href="mailto:contact.mediatheque@villebon-sur-yvette.fr"> Contacter l'équipe
+                        de la bibliothèque <figure><img src="../images/mail.jpg" /></figure></a>94,
+                    rue des Maraîchers - 91140 Villebon-sur-Yvette - Tél. 01 69 31 17 77, Fax : 01
+                    69 31 19 50 - Responsable : Catherine Foly</h6>
+                <h6><a href="http://www.villebon-sur-yvette.fr/"> Contacter la Marie de
+                        Villeneuve-sur-Yvettes <figure><img src="../images/mairie.png"
+                         /></figure></a></h6>
+            </footer>
+        </div>
+    </body>
+</html>
