@@ -134,7 +134,7 @@ INSERT INTO `document` (`id_document`, `titre`, `soustitre`, `editeur`, `lieuedi
 (5, 'Phèdre', NULL, 'Flammarion', 'Paris', 2007, '978-2-08-120720-2', ' 1 vol. (222 p.) ; 18 cm ', NULL, NULL, 1, 1, 2),
 (6, 'Le Seigneur des anneaux', 'I-La Communauté de l''anneau', 'Pocket', 'Paris', 2005, '2-266-15411-7', '1 vol.(697 p.) : ill.cartes ; 18 x 11 cm ', 2, 2, 1, 1, 1),
 (8, 'Le Seigneur des anneaux', 'II-Les Deux Tours', 'Pocket', 'Paris', 2005, '2-266-15413-3', '569 p. : ill. ; 18 x 11 cm ', 2, 2, 1, 1, 1),
-(9, 'Le Seigneur des anneaux ', 'Le Retour du roi', 'Pocket', 'Paris', 2005, '2-266-12097-2', '1 vol. (569 p.) : cartes en n. et b. ; 18 cm ', 2, 2, 1, 1, 1),
+(9, 'Le Seigneur des anneaux ', 'III-Le Retour du roi', 'Pocket', 'Paris', 2005, '2-266-12097-2', '1 vol. (569 p.) : cartes en n. et b. ; 18 cm ', 2, 2, 1, 1, 1),
 (10, 'Le Petit Larousse illustré', 'en couleurs : 87000 articles, 5000 illustrations, 321 cartes, chronologie universelle', 'Larousse', 'Paris', 2010, '978-2-03-584088-2', '1 vol. (XLIV-1811 p.) : illustrations en couleur ; 24 cm ', NULL, NULL, 1, 4, 5),
 (11, 'Manifeste pour la philosophie', NULL, 'Ed. du Seuil', 'Paris', 1989, '2-02-010559-4', '91 p. ; 19 cm\r\n', NULL, NULL, 1, 1, 6),
 (12, 'Le nombre et la sirène', 'un déchiffrage du "Coup de dés" de Mallarmé', 'Fayard', 'Paris', 2011, '978-2-213-66591-7', '1 vol. (248 p.) : couv. ill. en coul. ; 22 cm', NULL, NULL, 1, 1, 6),
@@ -160,7 +160,7 @@ CREATE TABLE IF NOT EXISTS `genre` (
 INSERT INTO `genre` (`id_genre`, `intitule`) VALUES
 (1, 'Roman'),
 (2, 'Théâtre'),
-(3, 'Poèsie'),
+(3, 'Poésie'),
 (4, 'Monographie'),
 (5, 'Dictionnaire et encyclopédie'),
 (6, 'Essais');
@@ -184,11 +184,11 @@ CREATE TABLE IF NOT EXISTS `langue` (
 INSERT INTO `langue` (`id_langue`, `intitule`) VALUES
 (1, 'français'),
 (2, 'anglais'),
-(3, 'espagnole'),
+(3, 'espagnol'),
 (4, 'allemand'),
 (5, 'néérlandais'),
 (6, 'russe'),
-(7, 'japonnais'),
+(7, 'japonais'),
 (8, 'italien'),
 (9, 'latin'),
 (10, 'grec');
@@ -212,11 +212,11 @@ CREATE TABLE IF NOT EXISTS `langueoriginale` (
 INSERT INTO `langueoriginale` (`id_langueoriginale`, `intitule`) VALUES
 (1, 'français'),
 (2, 'anglais'),
-(3, 'espagnole'),
+(3, 'espagnol'),
 (4, 'allemand'),
 (5, 'néérlandais'),
 (6, 'russe'),
-(7, 'japonnais'),
+(7, 'japonais'),
 (8, 'italien'),
 (9, 'latin'),
 (10, 'grec');
@@ -244,7 +244,7 @@ INSERT INTO `theme` (`id_theme`, `intitule`) VALUES
 (4, 'voyage'),
 (5, 'Russie'),
 (6, 'Japon'),
-(7, 'Litterature fantasty'),
+(7, 'littérature fantasty'),
 (8, 'manga'),
 (9, 'biographie'),
 (10, 'histoire vraie'),
@@ -256,7 +256,7 @@ INSERT INTO `theme` (`id_theme`, `intitule`) VALUES
 (16, 'économie'),
 (17, 'religion'),
 (18, 'littérature'),
-(19, 'Art');
+(19, 'art');
 
 -- --------------------------------------------------------
 
