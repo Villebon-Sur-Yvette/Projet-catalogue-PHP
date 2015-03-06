@@ -1,86 +1,93 @@
 /************************************** CSS SITE WEB DE LA BIBLIOTHEQUE ***********************/
 
 body{
-    margin: 0;
-    text-align: center; /*centrer le texte*/
+    margin:0;
+    text-align:center; /*centrer le texte*/
 }
 
 
 
 .conteneur{
-    margin-left: auto;
-    margin-right: auto;
-    width: auto;
-    text-align: left; /* on rétablit l'alignement normal du texte */
+    margin-left:auto;
+    margin-right:auto;
+    width:auto;
+    text-align:left; /* on rétablit l'alignement normal du texte */
     font-family:Lato, calibri, helvetica, sans-serif;
 
 }
 
 header{
-    height: 240px;
-    background-image: url(../images/bibliotheque-municipale.jpg);
-    background-repeat: no-repeat;
+    height:240px;
+    background-image:url(../images/bibliotheque-municipale.jpg);
+    background-repeat:no-repeat;
 }
 
-
-div.logo {
-    padding: 10px;
-    float: left;
+header a{
+    text-decoration:none;
 }
 
-div#titrepp {
-    padding: 10px;
-    display: inline-block;
-    float: top;
-    background-color: rgba(0,225,0,0.5)
+header a:visited{
+    color:white;
 }
 
-h1 {
-    color: white;
-    max-width: 400px;
-    
+div.logo{
+    padding:10px;
+    float:left;
+}
+
+div#titrepp{
+    padding:10px;
+    display:inline-block;
+    float:top;
+    background-color:rgba(0, 225, 0, 0.5)
+}
+
+h1{
+    color:white;
+    max-width:400px;
+
 }
 
 /*barre de navigation*/
 nav{
-    margin: 0px;
-    background-color: black;
-    color: white;
+    margin:0px;
+    background-color:black;
+    color:white;
     /* position: fixed; discuter du positionnement fixe de la barre */
 }
 
-#menu {
-    width: auto;
-    padding: 0;
-    margin: 0;
-    margin-left: 200px;
-    max-height: auto;
-    text-align: left; /* le texte  à droite */
-    
+#menu{
+    width:auto;
+    padding:0;
+    margin:0;
+    margin-left:200px;
+    max-height:auto;
+    text-align:left; /* le texte  à droite */
+
 }
 
-#menu li {
-    display: inline-block;
-    list-style: none;
-    padding: 10px;
-    margin: 0px;
+#menu li{
+    display:inline-block;
+    list-style:none;
+    padding:10px;
+    margin:0px;
 }
 
-#menu li a {
-    display: block;
-     margin: 10px 30px; /* marges supérieures et inférieures puis espace entre les liens (marges sur les côtés gauches et droits) */
-    text-decoration: none;
-    font-weight: normal;
-    color: white;
+#menu li a{
+    display:block;
+    margin:10px 30px; /* marges supérieures et inférieures puis espace entre les liens (marges sur les côtés gauches et droits) */
+    text-decoration:none;
+    font-weight:normal;
+    color:white;
     background-color:transparent;
 }
 
-#menu ul li {
-    display: inherit; /*permet de restituer l'ordonnancement initial vertical des listes*/
+#menu ul li{
+    display:inherit; /*permet de restituer l'ordonnancement initial vertical des listes*/
 }
 
-ul ul {
-    display: none; /*permet de cacher les listes-enfants de listes*/
+ul ul{
+    display:none; /*permet de cacher les listes-enfants de listes*/
 }
 
 li:hover
@@ -90,14 +97,14 @@ li:hover
 
 li:hover ul
 {
-    display: block;    /*permet d'afficher les listes de différentes niveau en survolant les items des listes des niveaux supérieurs*/
-    background-color: green;
+    display:block; /*permet d'afficher les listes de différentes niveau en survolant les items des listes des niveaux supérieurs*/
+    background-color:green;
     /*position: absolute;  pour fixer les puces de la liste principale lorsqu'on affiche les listes secondaires*/
-    overflow: visible;
-    position: fixed; /*pour fixer la position de la liste quand on passe sur les liens*/
-    box-sizing: auto;
-    max-width: 200px;
-    padding-left: 0px; /* supprime le padding-left par défaut de l'élément ul*/
+    overflow:visible;
+    position:fixed; /*pour fixer la position de la liste quand on passe sur les liens*/
+    box-sizing:auto;
+    max-width:200px;
+    padding-left:0px; /* supprime le padding-left par défaut de l'élément ul*/
 
 }
 
@@ -105,7 +112,7 @@ li:hover ul
 li:hover ul li
 {
     background-color:black;
-    
+
 }
 
 li:hover ul li:hover
@@ -113,86 +120,93 @@ li:hover ul li:hover
     background-color:green;
 }
 
-a:visited {
-    color: white;
+a:visited{
+    color:white;
 }
 
-li li:hover ul li a {
-    display: inline-block;
-    text-decoration: none;
-    font-weight: normal;
-    color: white;
+li li:hover ul li a{
+    display:inline-block;
+    text-decoration:none;
+    font-weight:normal;
+    color:white;
 }
 
 /*css pour les info pratiques*/
 
 section.informationspratiques
 {
-    margin-left: 200px;
-    margin-right: 400px;
-    text-align: justify;
+    margin-left:200px;
+    margin-right:400px;
+    text-align:justify;
 }
 
-section.informationspratiques li {
+section.informationspratiques li{
     background-color:transparent;
 }
 
 /*Positionnement et aspect des éléments de la page*/
 /*Encart de gauche : recherche*/
-.encart_recherche {
-    float: left; 
-    background-color: black;
-    display: inline-block;
+.encart_recherche{
+    float:left;
+    background-color:black;
+    display:inline-block;
 }
 /*Aspect du texte*/
-#recherche {
-    text-decoration: none;
-    color: white;
-    font-family: Lato, calibri, helvetica, sans-serif;
-    font-weight: normal;
-    padding: 0px 10px;
+#recherche{
+    text-decoration:none;
+    color:white;
+    font-family:Lato, calibri, helvetica, sans-serif;
+    font-weight:normal;
+    padding:0px 10px;
 }
 /*Encart de droite : actualités*/
-.encart_actualite {
-   display: inline-block;
-   float: right;
-   width: 25%;
+.encart_actualite{
+    display:inline-block;
+    float:right;
+    width:25%;
 }
 /*Ensemble du texte*/
-.actualite {
-    padding: 2%;
+.actualite{
+    padding:2%;
 }
 /*Une atualité*/
-.actu {
-    border-top: 3px solid #9e1515;
-    margin-bottom: 50px;
+.actu{
+    border-top:3px solid #9e1515;
+    margin-bottom:50px;
 }
 
 /*Contenu de la page*/
-.contenupage {
-    display: inline-block;
-    margin: 10%;
+.contenupage{
+    display:inline-block;
+    margin:10%;
+}
+
+/* traitement du contenu des pages en général : titres etc. */
+
+#avancee{
+    margin-left:230px;
+    margin-top:10px;
+    margin-bottom:100px;
 }
 
 /*footer*/
 footer{
-    max-height: auto;
-    width: auto;
-    clear: both;
-    background-color: black;
+    max-height:auto;
+    width:auto;
+    clear:both;
+    background-color:black;
 }
 
-h6 {
-    text-decoration: none;
-    color: white;
-    display: inline-block;
-    text-align: center; /* pour centrer le text */
-    vertical-align: top;
+h6{
+    text-decoration:none;
+    color:white;
+    display:inline-block;
+    text-align:center; /* pour centrer le text */
+    vertical-align:top;
     margin-left:5%;
-}   
-
-h6 a {
-    text-decoration: none;
-    color: white;
 }
 
+h6 a{
+    text-decoration:none;
+    color:white;
+}
