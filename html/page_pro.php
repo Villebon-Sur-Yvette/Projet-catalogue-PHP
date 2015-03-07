@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
@@ -14,30 +14,11 @@
     </head>
     
     <body>
-        <header>
-            <div id="titrepp"><h1>Bibliothèque municipale de Villebon-sur-Yvette</h1></div>
-            <h2>Accès réservé</h2>
-        </header>
+        <!-- header pro -->
+                 <?php include("./invariants/header_pro.php") ?>
 
         <!-- menu : présentation, aide, catalogue, accès réservé -->
-            <nav>
-                <ul id="menu" class="niveau1">
-                    <li><a href="homepage.php">ACCUEIL</a></li>
-                    <li><a href="">PRESENTATION</a>
-                        <ul class="niveau2">
-                            <li><a href="">Informations pratiques</a></li>
-                            <li><a href="">Histoire</a></li>
-                            <li><a href="">...</a>
-                            </li>
-                        </ul></li>
-                    <li><a href="">CATALOGUE<ul class="niveau2">
-                            <li><a href="">Recherche simple</a>
-                            </li>
-                            <li><a href="">Recherche avancée</a></li>
-                        </ul>
-                    </a></li>
-                </ul>
-            </nav>
+               <?php include("./invariants/menu_pro.php") ?>
 
             <!--Aide et menu de l'aide-->
             <div class="menu_aide">
@@ -45,24 +26,24 @@
                 <!-- Sommaire de l'aide professionnelle -->
             
         <ol id="sommaire">
-            <li><a href="#interfacepro">L'interface professionnelle</a>
+            <li><a href="aide_pro.html#interfacepro">L'interface professionnelle</a>
                 <ul>
-                    <li><a href="#whyinterfacepro">Pourquoi une interface professionnelle?</a></li>
-                    <li><a href="#geninterfacepro">Généralités sur l'interface professionnelle</a></li>
+                    <li><a href="aide_pro.html#whyinterfacepro">Pourquoi une interface professionnelle?</a></li>
+                    <li><a href="aide_pro.html#geninterfacepro">Généralités sur l'interface professionnelle</a></li>
                 </ul>
             </li>
-            <li><a href="#googlepro">Le moteur de recherche avancé</a>
+            <li><a href="aide_pro.html#googlepro">Le moteur de recherche avancé</a>
                 <ul>
-                    <li><a href="#showgooglepro">Présentation du moteur de recherche</a></li>
-                    <li><a href="#diffgoogle">Quelles différences avec le moteur de recherche de l'interface publique?</a></li>
-                    <li><a href="#advicegoogle">Conseils pour l'utilisation du moteur de recherche</a></li>
+                    <li><a href="aide_pro.html#showgooglepro">Présentation du moteur de recherche</a></li>
+                    <li><a href="aide_pro.html#diffgoogle">Quelles différences avec le moteur de recherche de l'interface publique?</a></li>
+                    <li><a href="aide_pro.html#advicegoogle">Conseils pour l'utilisation du moteur de recherche</a></li>
                 </ul>
             </li>
-            <li><a href="#noticepro">Le formulaire de création et de modification des notices</a>
+            <li><a href="aide_pro.html#noticepro">Le formulaire de création et de modification des notices</a>
                 <ul>
-                    <li><a href="#noticeplus">Comment ajouter une notice ?</a></li>
-                    <li><a href="#noticechange">Comment modifier une notice ?</a></li>
-                    <li><a href="#noticemoins">Comment supprimer une notice ?</a></li>
+                    <li><a href="aide_pro.html#noticeplus">Comment ajouter une notice ?</a></li>
+                    <li><a href="aide_pro.html#noticechange">Comment modifier une notice ?</a></li>
+                    <li><a href="aide_pro.html#noticemoins">Comment supprimer une notice ?</a></li>
                 </ul>
             </li>
         </ol>
@@ -104,8 +85,11 @@
                             </td>
                         </tr>
                     </tbody>
-                </table>    
-            </div> 
+                </table>
 
+            <!-- footer -->
+            <?php include("./invariants/footer.php") ?>
+            </div> 
+ 
     </body>
 </html>

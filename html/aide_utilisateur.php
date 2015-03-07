@@ -12,184 +12,23 @@
     <meta name="description"/>
     <meta type="robots/keywords"/>
 </head>
+
 <body>
     <div class="conteneur">
-
-<<<<<<< HEAD:aide_utilisateur.html
-<<<<<<< HEAD
-	<!-- Je ne sais pas trop où mettre des div mais je veux bien les mettre en accord avec la personne qui gère la CSS de cette page. -->
-	<div class="menu_aide">
-		<h2>SOMMAIRE</h2>
-	<!-- Sommaire "Wikipédia" de l'aide à l'utilisateur -->
-	<ol id="sommaire">
-		<li><a href="#apropos">A propos du site</a>
-			<ul>
-				<li><a href="#sitebut">Un site dans quel but</a></li>
-				<li><a href="#proposesite">Que propose ce site</a></li>
-			</ul>
-		</li>
-		<li><a href="#infopra">Informations pratiques</a>
-		<li><a href="#google">Utilisation du moteur de recherche</a>
-			<ul>
-				<li><a href="#rechsimple">Le module de recherche simple</a></li>
-				<li><a href="#rechavancee">La recherche avancée</a></li>
-				<li><a href="#fructu">Conseils pour une recherche fructueuse</a></li>
-			</ul>
-		</li>
-		<li><a href="#notice">Comment bien utiliser une notice ?</a>
-			<ul>
-				<li><a href="#infoessens">Les informations essentielles</a></li>
-				<li><a href="#searchbook">Comment retrouver mon ouvrage à partir d'une notice?</a></li>
-				<li><a href="#avconseil">Conseils avancés pour les notices</a></li>
-			</ul>
-		</li>	
-		<li><a href="#accesreserve">Accès réservé</a>
-			<ul>
-				<li><a href="#concerned">Qui est concerné?</a></li>
-				<li><a href="#reserved">Pourquoi cette partie réservée?</a></li>
-			</ul>
-		</li>	
-	</ol>
-	</div>
-
-	<!-- Texte de l'aide à l'utilisateur -->
-	<div class="help">
-	<h2>CONSEILS A L'UTILISATEUR DE CE SITE</h2>
-		<p>
-			Cette rubrique a pour but d'aider l'utilisateur à exploiter au mieux toutes les ressources de ce site. Dans ce but, nous allons ici nous attarder sur l'ensemble des fonctionnalités du site et les expliquer en détail une à une. Si vous rencontrez un problème particulier vous pouvez cliquer sur le sommaire ci-dessus pour aller directement à la rubrique qui vous intéresse. 
-		</p>
-	<h3>A propos de ce site</h3>
-	<a id="apropos"></a>
-	<h5>Un site dans quel but?</h5>
-	<a id="sitebut"></a>
-		<p>
-		</p>
-	<br/>
-	<h5>Que propose ce site?</h5>
-	<a id="proposesite"></a>
-		<p>
-		</p>
-	<br/>
-	<h3>Informations pratiques</h3>
-	<a id="infopra"></a>
-		<p>
-		</p>
-	<br/>
-	<h3>Utilisation du moteur de recherche</h3>
-	<a id="google"></a>
-		<p>
-		</p>
-	<br/>
-	<h5>Le module de recherche simple</h5>
-	<a id="rechsimple"></a>
-		<p>
-		</p>
-	<br/>
-	<h5>La recherche avancée</h5>
-	<a id="rechavancee"></a>		
-		<p>
-		</p>
-	<br/>
-	<h5>Conseils pour des recherches fructueuses</h5>
-	<a id="fructu"></a>
-		<p>
-		</p>
-	<br/>
-	<h3>Comment bien utiliser une notice?</h3>
-	<a id="notice"></a>
-		<p>
-		</p>
-	<br/>
-	<h5>Les informations essentielles</h5>
-	<a id="infoessen"></a>
-		<p>
-		</p>
-	<br/>
-	<h5>Comment retrouver mon ouvrage à partir d'une notice?</h5>
-	<a id="searchbook"></a>
-		<p>
-		</p>
-	<br/>
-	<h5>Conseils avancés sur les notices</h5>
-	<a id="avconseil"></a>
-		<p>
-		</p>
-	<br/>
-	<h3>Accès réservé</h3>
-	<a id="accesreserve"></a>
-		<p>
-		</p>
-	<br/>
-	<h5>Qui est concerné?</h5>
-	<a id="concerned"></a>
-		<p>
-		</p>
-	<br/>
-	<h5>Pourquoi cette partie réservée?</h5>
-	<a id="reserved"></a>
-		<p>
-		</p>
-	<br/>
-	</div>
-
-	<!-- Il faudra peut-être ajouter à cette aide à l'utilisateur le fonctionnement du panier si celui-ci est mis en place. Il faudra faire de même si l'idée des tags et des propositions spontannées est aussi retenue. -->
-
-</body>
-<footer>
-	<!-- Ici vient se mettre le pied de page insitutionnel commun à toutes les pages du site. -->
-</footer>
-</html>
-=======
-    <!-- Je ne sais pas trop où mettre des div mais je veux bien les mettre en accord avec la personne qui gère la CSS de cette page. -->
-=======
 <!-- bandeau sup : logo, titre et image de la ville -->
 <header>
     <div class="logo"><figure><img src="../images/blason.png" /></figure></div>
     <div id="titrepp"><h1>Bibliothèque municipale</h1><h1>de Villebon-sur-Yvette</h1></div>
 </header>
-<!-- menu : présentation, aide, catalogue, accès réservé -->
-<nav>
-    <ul id="menu" class="niveau1">
-        <li><a href="">PRESENTATION</a>
-            <ul class="niveau2">
-                <li><a href="info_pratiques.html">Informations pratiques</a>
-                </li>
-                <li><a href="histoire.html">Histoire de la bibliothèque</a>
-                </li>
-            </ul>
-        </li>
-        
-        <li><a href="aide_utilisateur.html">AIDE</a>
-        </li>
-        <li><a href="">CATALOGUE</a>
-            <ul class="niveau2">
-                <li><a href="">Recherche simple</a>
-                </li>
-                <li><a href="">Recherche avancée</a></li>
-            </ul>
-        </li>
-        <li><a href="page_pro.html">ACCES RESERVE</a>
-        </li>
-    </ul>
-</nav>
-<!-- Encart gauche avec la recherche -->
-<div class="encart_recherche"> <!-- pourquoi mettre une class ici ? Il n'y aura pas plusieurs encart_recherche dans la même page ? -->
-    <aside>
-        <h3 id="recherche">Recherche simple</h3>
-        <!--formulaire recherche simple avec 2 boutons "envoyer" et "effacer"-->
-        <div id="caserecherche">
-            <form action="../interrogation_rech_simple.php" method="POST"> <!--il manque le fichier php bien sûr-->
-                <input type ="text" name="recherche_simple"/>
-                <br/>
-                <input type ="submit" value="Chercher"/>
-                <input type ="reset" value="Effacer"/>
-            </form>
-        </div>
-        <h3 id="recherche">Recherche avancée</h3>
-    </aside>
-</div>
->>>>>>> df5b381470d32db8a8feab95dc7f66ecc68cf700:html/aide_utilisateur.html
 
+
+<!-- menu : présentation, aide, catalogue, accès réservé -->
+ <?php include("./invariants/menu2.php") ?>
+ 
+<!-- Encart gauche avec la recherche -->
+ <?php include("./invariants/recherche.php") ?>
+ 
+ 
     <div class="menu_aide">
         <h2>Sommaire</h2>
         <!-- Sommaire "Wikipédia" de l'aide à l'utilisateur -->
@@ -416,10 +255,11 @@
 
         <!-- Il faudra peut-être ajouter à cette aide à l'utilisateur le fonctionnement du panier si celui-ci est mis en place. Il faudra faire de même si l'idée des tags et des propositions spontannées est aussi retenue. -->
 
-                                                                                                                                      <!-- footer -->
-                                                                                                                                      <?php include("./invariants/footer.php") ?>
-                                                                                                                                      </div>
-        </body>
+  <!-- footer -->
+ <?php include("./invariants/footer.php") ?>
+ 
+ </div>
+ </body>
     
 
     </html>
