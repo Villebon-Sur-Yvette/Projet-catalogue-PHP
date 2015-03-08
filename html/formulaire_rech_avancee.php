@@ -22,9 +22,9 @@
     <section id="avancee">
 	<h2>Recherche avancée</h2>
 	<!--différents encarts pour une recherche croisée-->
-	<form action=".php"  method="POST"> <!--il manque le fichier php bien sûr-->
+	<form action="../interrogation_rech_avancee.php"  method="POST"> 
 	<!--liste déroulante 1 -->
-		<select name="select_1">
+		<select name="select_choix_1">
 			<option value="titre" selected>Titre</option>
 			<option value="auteur">Auteur</option>
 			<option value="theme">Thème</option>
@@ -33,16 +33,19 @@
 			<option value="type">Type</option>
 			<option value="cote">Cote</option>
 		</select>
+		
+		<!--champ de recherche 1-->
 		<input type="text" name="recherche_1"/>
+		
 		<!--liste déroulante et/ou-->
-		<select name="select_et_ou">
-			<option>Et</option>
-			<option>Ou</option>
+		<select name="select_operateur_1">
+			<option value="and">Et</option>
+			<option value="or">Ou</option>
 		</select>
 		</br>
 		
 		<!--liste déroulante 2 -->
-		<select name="select_2">
+		<select name="select_choix_2">
 			<option value="titre">Titre</option>
 			<option value="auteur" selected>Auteur</option>
 			<option value="theme">Thème</option>
@@ -51,16 +54,20 @@
 			<option value="type">Type</option>
 			<option value="cote">Cote</option>
 		</select>
-		<input type="text" name="recherche_1"/>
+		
+		<!--champ de recherche 2-->
+		<input type="text" name="recherche_2"/>
+		
+		
 		<!--liste déroulante et/ou-->
-		<select name="select_et_ou">
-			<option>Et</option>
-			<option>Ou</option>
+		<select name="select_operateur_2">
+			<option value="and">Et</option>
+			<option value="or">Ou</option>
 		</select>
 		</br>
 		
 		<!--liste déroulante 3 -->
-		<select name="select_3">
+		<select name="select_choix_3">
 			<option value="titre">Titre</option>
 			<option value="auteur">Auteur</option>
 			<option value="theme" selected>Thème</option>
@@ -69,12 +76,9 @@
 			<option value="type">Type</option>
 			<option value="cote">Cote</option>
 		</select>
-		<input type="text" name="recherche_1"/>
-		<!--liste déroulante et/ou-->
-		<select name="select_et_ou">
-			<option>Et</option>
-			<option>Ou</option>
-		</select>
+		
+		<!--champ de recherche 3-->
+		<input type="text" name="recherche_3"/>
 		</br>
 		
 		<input type ="submit" value="Chercher"/> 
