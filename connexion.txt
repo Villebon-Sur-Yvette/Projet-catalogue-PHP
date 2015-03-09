@@ -3,7 +3,7 @@
 $serveur="localhost";
 $utilisateur="root";
 $motdepasse="";
-$base="univers";
+$base="hippolyte";
 
 $idcom=new mysqli($serveur,$utilisateur,$motdepasse,$base);
 

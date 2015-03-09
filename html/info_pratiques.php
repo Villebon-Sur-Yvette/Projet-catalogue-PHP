@@ -7,53 +7,16 @@
     </head>
     <body>
         <div class="conteneur">
-            <header>   
-                <div class="logo"><figure><img src="../images/blason.png" /></figure></div>
-                <div id="titrepp"><h1>Bibliothèque municipale</h1><h1>de
-                    Villebon-sur-Yvette</h1></div>   
-            </header>
-            <nav>         
-                <ul id="menu" class="niveau1">
-                    <li><a href="homepage.html">RETOUR PAGE D'ACCUEIL</a></li>
-                    <li><a href="">PRESENTATION</a>
-                        <ul class="niveau2">
-                            <li><a href="info_pratiques.html">Informations pratiques</a>
-                            </li>
-                            <li><a href="histoire.html">Histoire de la bibliothèque</a>
-                            </li>
-                        </ul>
-                    </li>
 
-                    <li><a href="aide_utilisateur.html">AIDE</a>
-                    </li>
-                    <li><a href="">CATALOGUE</a>
-                        <ul class="niveau2">
-                            <li><a href="">Recherche simple</a>
-                            </li>
-                            <li><a href="">Recherche avancée</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="page_pro.html">ACCES RESERVE</a>
-                    </li>
-                </ul>
-            </nav>
-            <!-- Encart gauche avec la recherche -->
-            <div class="encart_recherche"> <!-- pourquoi mettre une class ici ? Il n'y aura pas plusieurs encart_recherche dans la même page ? -->
-                <aside>
-                    <h3 id="recherche">Recherche simple</h3>
-                    <!--formulaire recherche simple avec 2 boutons "envoyer" et "effacer"-->
-                    <div id="caserecherche">
-                        <form action="../interrogation_rech_simple.php" method="POST"> <!--il manque le fichier php bien sûr-->
-                            <input type ="text" name="recherche_simple"/>
-                            <br/>
-                            <input type ="submit" value="Chercher"/> 
-                            <input type ="reset" value="Effacer"/>
-                        </form> 
-                    </div>
-                    <h3 id="recherche">Recherche avancée</h3>
-                </aside>
-            </div>
-            
+        <!-- header -->
+        <?php include("./invariants/header.php") ?>
+
+        <!-- menu : présentation, aide, catalogue, accès réservé -->
+        <?php include("./invariants/menu2.php") ?>
+
+        <!-- Encart gauche avec la recherche -->
+        <?php include("./invariants/recherche.php") ?>
+
             <section class="informationspratiques">
                 <article id="horaires">
                     <h2>Horaires d'ouverture au public</h2>
@@ -119,12 +82,9 @@
                         gratuite.</p>
                 </article>
             </section>
-            <footer>
-                <h6><a href="https://www.facebook.com/pages/Villebon-sur-Yvette-page-officielle/474620235907483">Suivez-nous sur les réseaux sociaux ! <figure><img src="../images/fbk.jpg" /></figure></a></h6>
-                <h6><a href="mailto:contact.mediatheque@villebon-sur-yvette.fr"> Contacter l'équipe de la bibliothèque <figure><img src="../images/mail.jpg"/></figure></a>94, rue des Maraîchers - 91140 Villebon-sur-Yvette - Tél. 01 69 31 17 77, Fax : 01 69 31 19 50 - Responsable : Catherine Foly</h6>
-                
-                <h6><a href="http://www.villebon-sur-yvette.fr/"> Contacter la Marie de Villeneuve-sur-Yvettes <figure><img src="../images/mairie.png"/></figure></a></h6>
-            </footer>
+
+            <!-- footer -->
+            <?php include("./invariants/footer.php") ?>
         </div>
     </body>
 </html>

@@ -13,31 +13,43 @@
 <?php
 require 'connexion.txt';
 
+//récupération d'une variable
+$recherche_simple=$_POST["recherche_simple"];
 
+//suppression des blancs
 $recherche_simple=trim($recherche_simple);
 
+$idcom->query("SET NAMES UTF8");
 
-$results=$idcom->query("SELECT * FROM document WHERE auteur LIKE '$recherche_simple' OR titre LIKE '$recherche_simple' OR editeur LIKE '$recherche_simple'");
+//$results=$idcom->query("SELECT * FROM document WHERE auteur LIKE '$recherche_simple' OR titre LIKE '$recherche_simple' OR editeur LIKE '$recherche_simple'");
+$results=$idcom->query("SELECT * FROM document WHERE titre LIKE '$recherche_simple' OR editeur LIKE '$recherche_simple'");
 
 
 
 //Traitement du cas de zéro réponse
   
-		if ($results->num_rows==0) 
+		if ($results->num_rows==0)
 			{ 
 				echo "Aucune réponse"; 
 			} 
 		else 
-			{ 
-			$rows=$results->fetch_array(MYSQLI_ASSOC);
+			{
+
+			while ( $rows=$results->fetch_array(MYSQLI_ASSOC) ) {
+				//pour l'instant la recherche par auteur ne marche pas parce qu'il y a un problème avec la base (pas de champs auteur ou id_auteur dans la table document)
+				//echo $rows['auteur'];
+				//echo "<br/>";
+				//echo " - ";
+				echo $rows['titre'];
+				echo " - ";
+				echo $rows['editeur'];
+				echo("<br/>");
+				
+			}
+			
 			}
 
-			echo $rows['auteur'];
-			echo "<br/>";
-			echo $rows['titre'];
-			echo "<br/>";
-			echo $rows ['editeur'];
-			echo("<br/>");
+
 
 $idcom->close();
 ?>
