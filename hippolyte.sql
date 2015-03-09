@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Lun 09 Mars 2015 à 15:21
+-- Généré le :  Lun 09 Mars 2015 à 18:22
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `auteur` (
   `nom` varchar(45) NOT NULL,
   `prenom` varchar(45) NOT NULL,
   PRIMARY KEY (`id_auteur`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=13 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=18 ;
 
 --
 -- Contenu de la table `auteur`
@@ -49,7 +49,12 @@ INSERT INTO `auteur` (`id_auteur`, `nom`, `prenom`) VALUES
 (9, 'Pagnol', 'Marcel'),
 (10, 'Ségur (Comtesse de)', 'Sophie'),
 (11, 'Brialy', 'Jean-Claude'),
-(12, 'Malick', 'Terrence');
+(12, 'Malick', 'Terrence'),
+(13, 'Fellowes', 'Julian'),
+(14, 'Pollack', 'Sydney '),
+(15, 'Camus', 'Albert'),
+(16, 'Mirror', 'Kkrist'),
+(17, 'Hearn', 'Lian');
 
 -- --------------------------------------------------------
 
@@ -90,7 +95,19 @@ INSERT INTO `auteur_document` (`id_auteur`, `id_document`) VALUES
 (10, 21),
 (10, 22),
 (11, 25),
-(12, 28);
+(12, 28),
+(13, 30),
+(13, 31),
+(14, 32),
+(15, 33),
+(16, 34),
+(16, 35),
+(16, 36),
+(17, 38),
+(17, 37),
+(17, 39),
+(17, 40),
+(17, 41);
 
 -- --------------------------------------------------------
 
@@ -144,14 +161,14 @@ CREATE TABLE IF NOT EXISTS `document` (
   KEY `fk_document_langue1_idx` (`id_langue`),
   KEY `fk_document_type1_idx` (`id_type`),
   KEY `fk_document_genre1_idx` (`id_genre`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=30 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=42 ;
 
 --
 -- Contenu de la table `document`
 --
 
 INSERT INTO `document` (`id_document`, `titre`, `soustitre`, `id_auteur`, `editeur`, `lieuedition`, `dateedition`, `isbn`, `description`, `Cote`, `id_langueoriginale`, `id_traducteur`, `id_langue`, `id_type`, `id_genre`) VALUES
-(3, 'test', '', 0, 'Flammarion', 'Paris', 1999, '123456789', '987654321', '', 1, 1, 1, 1, 1),
+(3, 'test', '', 0, 'Flammarion', 'Paris', 1999, '123456789', '987654321', '', NULL, NULL, 1, 1, 1),
 (4, 'test1', NULL, 0, 'Flammarion', 'Paris', 2000, '123456789', '987654321', '', NULL, NULL, 1, 1, 1),
 (5, 'Phèdre', NULL, 0, 'Flammarion', 'Paris', 2007, '978-2-08-120720-2', ' 1 vol. (222 p.) ; 18 cm ', '842.4 RAC', NULL, NULL, 1, 1, 2),
 (6, 'Le Seigneur des anneaux', 'I-La Communauté de l''anneau', 0, 'Pocket', 'Paris', 2005, '2-266-15411-7', '1 vol.(697 p.) : ill.cartes ; 18 x 11 cm ', '823.914 TOL', 2, 2, 1, 1, 1),
@@ -171,7 +188,19 @@ INSERT INTO `document` (`id_document`, `titre`, `soustitre`, `id_auteur`, `edite
 (22, 'Les Malheurs de Sophie', NULL, 0, 'Hachette Jeunesse', 'Paris', 2010, '978-2-01-322543-4', '1 vol. (253 p.) : ill. en n. et b. ; 18 cm', '843.7 SEG', NULL, NULL, 1, 2, 1),
 (25, 'Les Malheurs de Sophie', 'd''après la Comtesse de Ségur', 0, 'Koba film', ' ', 2011, 's. o. ', '1 DVD toutes zones (1 h 30 mn) : 16/9 compatible 4/3, coul. , PAL son. ', 'DVD BRI', NULL, NULL, 1, 2, 10),
 (28, 'The Tree of life', NULL, 0, 'Europacorp', ' ', 2011, '', '1 DVD zone 2 ( 2h 13 mn ) : 16/9 compatible 4/3, coul. , PAL son. ', 'DVD TER', NULL, NULL, 1, 1, 9),
-(29, 'Le Hobbite', 'Un aller et un retour', 3, 'C. Bourgeois', 'Paris', 2012, '978-2-267-02389-', '1 vol. (462 p.) : ill. en noir et en coul. ; 24 cm', '823.912', 2, 3, 1, 1, 1);
+(29, 'Le Hobbit', 'Un aller et un retour', 3, 'C. Bourgeois', 'Paris', 2012, '978-2-267-02389-', '1 vol. (462 p.) : ill. en noir et en coul. ; 24 cm', '823.912 TOL', 2, 3, 1, 1, 1),
+(30, 'Passé imparfait', NULL, 0, 'Soulatine', 'Paris', 2014, '978-2-35584-245-0', '1 vol. (647 p.) ; 20 cm', '823.92 FEL', 2, 4, 1, 1, 1),
+(31, 'Past Imperfect', NULL, 0, 'Saint Martin''s press', 'London', 2009, '9781429929172', '1 vol. (647 p.) ; 20 cm', '823.92 FEL', NULL, NULL, 2, 2, 1),
+(32, 'Out of Africa', NULL, 0, 'Columbia Tristar home video', 'Boulogne-Billancourt', 2001, '', '1 DVD zone 2 (2 h 34 mn) : couleur PAL sonore', 'DVD POL', NULL, NULL, 1, 1, 9),
+(33, 'L''Etranger', NULL, 0, 'Gallimard', 'Paris', 2012, '978-2-7548-0768-5', '1 vol. (138 p.) : ill. en n. et b. ; 34 cm', '741.5  CAM', NULL, NULL, 1, 1, 1),
+(34, 'Moto: visions graphiques', NULL, 0, 'E. Proust', 'Paris', 2011, '978-2-84810-273-3', '1 vol. (120 p.) : ill. en noir et en coul., couv. ill. ; 29 cm', '388.347 MIR', NULL, NULL, 7, 1, 4),
+(35, 'Gitans : le pèlerinage des Saintes-Maries-de-la-Mer', NULL, 0, 'EP', 'Paris', 2009, '978-2-84810-233-7', '1 vol. (35-[43] p.) : ill., couv. ill. ; 32 cm', '305.8914 MIR', NULL, NULL, 1, 1, 7),
+(36, 'Tsiganes', '1940-1945, le camp de concentration de Montreuil-Bellay', 0, 'EP', 'Paris', 2008, '978-2-84810-184-2', '1 vol. (96 p.) : ill., couv. ill. ; 32 cm\r\n', '305.8914 MIR ', NULL, NULL, 1, 1, 7),
+(37, 'Le clan des Otori I', 'Le silence du rossignol ', 0, 'Gallimard', 'Paris', 2003, '2-07-030258', '1 vol. (371 p.) : carte en n. et b. ; 18 cm ', '823.914 HEA', 2, 5, 1, 1, 1),
+(38, 'Le Clan des Otori II', 'Les Neiges de l''exil', 0, 'Gallimard', 'Paris', 2004, '2-07-030031-5', '1 vol. (384 p.) : cartes en n. et b. ; 18 cm', '823.914 HEA', 2, 5, 1, 1, 1),
+(39, 'Le Clan des Otori III', 'La Clarté de la lune', 0, 'Gallimard', 'Paris', 2004, '2-07-053805-2', '1 vol. (381 p.) ; 24 cm ', '823.914 HEA', 2, 5, 1, 1, 1),
+(40, 'Le Clan d''Otori IV', 'Le Vol des Otoris', 0, 'Gallimard', 'Paris', 2008, '978-2-07-034340-9', '1 vol. (748 p.) ; 18 cm ', '823.914 HEA', 2, 5, 1, 1, 1),
+(41, 'Le Clan des Otori V', 'Le Fil du destin', 0, 'Gallimard', 'Paris', 2009, '978-2-07-035989-9', '1 vol. (693 p.) : carte en n. et b. ; 18 cm', '823.914 HEA', 2, 5, 1, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -267,7 +296,7 @@ CREATE TABLE IF NOT EXISTS `theme` (
   `id_theme` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `intitule` varchar(45) NOT NULL,
   PRIMARY KEY (`id_theme`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=24 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=29 ;
 
 --
 -- Contenu de la table `theme`
@@ -296,7 +325,12 @@ INSERT INTO `theme` (`id_theme`, `intitule`) VALUES
 (20, 'Amérique'),
 (21, 'humour'),
 (22, 'enfance'),
-(23, 'Provence');
+(23, 'Provence'),
+(24, 'Afrique'),
+(25, 'policier'),
+(26, 'mécanique'),
+(27, 'gitans'),
+(28, 'guerre');
 
 -- --------------------------------------------------------
 
@@ -344,7 +378,29 @@ INSERT INTO `theme_document` (`id_theme`, `id_document`) VALUES
 (22, 22),
 (22, 25),
 (11, 28),
-(7, 29);
+(7, 29),
+(3, 30),
+(3, 31),
+(24, 32),
+(4, 32),
+(18, 33),
+(26, 34),
+(26, 14),
+(27, 35),
+(19, 35),
+(4, 35),
+(28, 36),
+(27, 36),
+(6, 37),
+(6, 38),
+(12, 37),
+(12, 38),
+(6, 39),
+(12, 39),
+(6, 40),
+(12, 40),
+(6, 41),
+(12, 41);
 
 -- --------------------------------------------------------
 
@@ -357,7 +413,7 @@ CREATE TABLE IF NOT EXISTS `traducteur` (
   `nom` varchar(45) NOT NULL,
   `prenom` varchar(45) NOT NULL,
   PRIMARY KEY (`id_traducteur`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
 
 --
 -- Contenu de la table `traducteur`
@@ -366,7 +422,9 @@ CREATE TABLE IF NOT EXISTS `traducteur` (
 INSERT INTO `traducteur` (`id_traducteur`, `nom`, `prenom`) VALUES
 (1, 'test', 'test'),
 (2, 'Ledoux', 'Francis'),
-(3, 'Lauzon', 'Daniel');
+(3, 'Lauzon', 'Daniel'),
+(4, 'Szlamowicz', 'Jean'),
+(5, 'Giraudon', 'Philippe');
 
 -- --------------------------------------------------------
 
