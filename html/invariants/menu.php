@@ -19,7 +19,7 @@
 <li><a href="formulaire_rech_avancee.php">Recherche avancée</a></li>
 </ul>
 </li>
-<li><a href="page_pro.php">ACCES RESERVE</a>
+<li><a href="../acces_reserve/formulaire_authentification.php">ACCES RESERVE</a>
 </li>
 </ul>
 </nav>
