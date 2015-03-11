@@ -27,8 +27,9 @@ div.logo {
 div#titrepp {
     padding: 10px;
     display: inline-block;
-    float: top;
+    float: left; /* pour mettre le titre à gauche  */
     background-color: rgba(0,225,0,0.5)
+    
 }
 
 h1 {
@@ -142,7 +143,7 @@ li li:hover ul li a {
 }
 
 
-/*Sommaire*/
+/***** Sommaire de l'aide*****/
 #sommaire {
 	list-style: none;
 	text-decoration: none;
@@ -153,6 +154,7 @@ li li:hover ul li a {
 }
 
 #sommaire li {
+
 	list-style: none;
 	color: white;
 }
@@ -163,7 +165,7 @@ li li:hover ul li a {
 }
 
 /*Aspect au passage de la souris*/
-#sommaire a:hover {
+#sommaire > a:hover {
 	background: #9e1515;
 }
 
@@ -178,13 +180,15 @@ li li:hover ul li a {
 .help {
 	display: inline-block;
 	float: left;
-	width: 65%;
+    text-align: justify; /*justifie le texte */
+    margin-left: 20px;
+    width: 60%;
 }
 
 /*Aspect général de l'aide*/
 /*Titre*/
 h3 {
-	border-top: 3px solid #9e1515;
+	/*border-top: 3px solid #9e1515;*/
     margin-bottom: 50px;
     width: 30%;
 }
