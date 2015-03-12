@@ -12,6 +12,14 @@
 </li>
 
 <li><a href="aide_utilisateur.php">AIDE</a>
+<ul class="niveau2">
+<li><a href="#apropos">A propos du site</a></li>
+<li><a href="#infopra">Informations pratiques</a></li>
+<li><a href="#google">Utilisation du moteur de recherche</a><li>
+<li><a href="#notice">Comment bien utiliser une notice ?</a></li>
+<li><a href="#accesreserve">Accès réservé</a></li>
+<li><a href="#accueilgo">Retour en haut de la page</a></li>
+</ul>
 </li>
 <li><a href="">CATALOGUE</a>
 <ul class="niveau2">
