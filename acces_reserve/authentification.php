@@ -20,21 +20,25 @@
 				echo "Tous les champs ne sont pas remplis";
 			}
 			else {
-				//contrôle de la longueur du password
-				if (strlen($pw_usager)<6) {
-					echo "Mot de passe trop court";
-			}
-			else {
+				
 				//cryptage du password 
-				$pw_usager= crypt($pw_usager, "blup");
+				$pw_usager= crypt($pw_usager, "lam");
 
 				//Envoi de la requête SQL
-				$idcom->query("INSERT INTO usagers (email,pw) VALUES ('$email_usager', '$pw_usager')");
-			}
+				$results=$idcom->query("SELECT * FROM utilisateur where mail='$email_usager' and motdepasse='$pw_usager' LIMIT=1");
+
+				if ($results->num_rows==1) 
+				{
+					echo "<a href='../html/page_pro.php'/>";  
+				}
+				else {
+					echo "Vous n'avez pas le droit d'accéder à cette partie du site";
+				}
 			}
 
 			//Deconnexion
 			$idcom->close ();
 		?>
+		
 	</body>
 </html>
