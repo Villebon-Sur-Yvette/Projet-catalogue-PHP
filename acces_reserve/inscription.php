@@ -5,7 +5,7 @@
 	</head>
 	<body>
 		<?php
-			require 'connexion.txt';
+			require '../connexion.txt';
 
 			//Les données reçues du formulaire (formulaire_inscription) sont placés dans une variable
 			$email_usager=$_POST['email_usager'];

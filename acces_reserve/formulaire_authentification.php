@@ -9,7 +9,7 @@
 		Adresse mail : 
 			<input type='email' name='email_usager'/>
 		</br>
-		Mot de passe (6 caractères minimum) : 
+		Mot de passe : 
 			<input type='password' name='pw_usager'/>
 			<input type='submit' value='S&#39;identifier'/>
 		</br>
