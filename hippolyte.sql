@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Jeu 12 Mars 2015 à 17:42
+-- Généré le :  Ven 13 Mars 2015 à 14:57
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -213,15 +213,15 @@ CREATE TABLE IF NOT EXISTS `document` (
 INSERT INTO `document` (`id_document`, `titre`, `soustitre`, `id_auteur`, `editeur`, `lieuedition`, `dateedition`, `isbn`, `description`, `Cote`, `id_langueoriginale`, `id_traducteur`, `id_langue`, `id_type`, `id_support`, `id_genre`) VALUES
 (3, 'test', '', NULL, 'Flammarion', 'Paris', 1999, '123456789', '987654321', '', NULL, NULL, NULL, NULL, NULL, NULL),
 (4, 'test1', NULL, NULL, 'Flammarion', 'Paris', 2000, '123456789', '987654321', '', NULL, NULL, NULL, NULL, NULL, NULL),
-(5, 'Phèdre', NULL, 0, 'Flammarion', 'Paris', 2007, '978-2-08-120720-2', ' 1 vol. (222 p.) ; 18 cm ', '842.4 RAC', NULL, NULL, 1, 1, NULL, 2),
-(6, 'Le Seigneur des anneaux', 'I-La Communauté de l''anneau', 0, 'Pocket', 'Paris', 2005, '2-266-15411-7', '1 vol.(697 p.) : ill.cartes ; 18 x 11 cm ', '823.914 TOL', 2, 2, 1, 1, NULL, 1),
-(8, 'Le Seigneur des anneaux', 'II-Les Deux Tours', 0, 'Pocket', 'Paris', 2005, '2-266-15413-3', '569 p. : ill. ; 18 x 11 cm ', '823.914 TOL', 2, 2, 1, 1, NULL, 1),
-(9, 'Le Seigneur des anneaux ', 'III-Le Retour du roi', 0, 'Pocket', 'Paris', 2005, '2-266-12097-2', '1 vol. (569 p.) : cartes en n. et b. ; 18 cm ', '823.914 TOL', 2, 2, 1, 1, NULL, 1),
-(10, 'Le Petit Larousse illustré', 'en couleurs : 87000 articles, 5000 illustrations, 321 cartes, chronologie universelle', 0, 'Larousse', 'Paris', 2010, '978-2-03-584088-2', '1 vol. (XLIV-1811 p.) : illustrations en couleur ; 24 cm ', '034', NULL, NULL, 1, 4, NULL, 5),
-(11, 'Manifeste pour la philosophie', NULL, 0, 'Ed. du Seuil', 'Paris', 1989, '2-02-010559-4', '91 p. ; 19 cm\r\n', '101 BAD', NULL, NULL, 1, 1, NULL, 6),
-(12, 'Le Nombre et la sirène', 'un déchiffrage du "Coup de dés" de Mallarmé', 0, 'Fayard', 'Paris', 2011, '978-2-213-66591-7', '1 vol. (248 p.) : couv. ill. en coul. ; 22 cm', '841 BAD ', NULL, NULL, 1, 1, NULL, 6),
-(13, 'Après la finitude', 'essai sur la nécessité de la contingence', 0, 'Ed. du Seuil', 'Paris', 2005, '2-02-084742-6', '1 vol. (177 p.) ; 21 cm\r\n', '111 MEI', NULL, NULL, 1, 1, NULL, 6),
-(14, 'Fra Angelico, dissemblance et figuration', NULL, 0, 'Flammarion', 'Paris', 1990, '2-08-012614-8', '263 p. : ill. en noir et en coul. ; 29 cm', '709.03 DID', NULL, NULL, 1, 1, NULL, 6),
+(5, 'Phèdre', NULL, 0, 'Flammarion', 'Paris', 2007, '978-2-08-120720-2', ' 1 vol. (222 p.) ; 18 cm ', '842.4 RAC', NULL, NULL, 1, 1, 1, 2),
+(6, 'Le Seigneur des anneaux', 'I-La Communauté de l''anneau', 0, 'Pocket', 'Paris', 2005, '2-266-15411-7', '1 vol.(697 p.) : ill.cartes ; 18 x 11 cm ', '823.914 TOL', 2, 2, 1, 1, 1, 1),
+(8, 'Le Seigneur des anneaux', 'II-Les Deux Tours', 0, 'Pocket', 'Paris', 2005, '2-266-15413-3', '569 p. : ill. ; 18 x 11 cm ', '823.914 TOL', 2, 2, 1, 1, 1, 1),
+(9, 'Le Seigneur des anneaux ', 'III-Le Retour du roi', 0, 'Pocket', 'Paris', 2005, '2-266-12097-2', '1 vol. (569 p.) : cartes en n. et b. ; 18 cm ', '823.914 TOL', 2, 2, 1, 1, 1, 1),
+(10, 'Le Petit Larousse illustré', 'en couleurs : 87000 articles, 5000 illustrations, 321 cartes, chronologie universelle', 0, 'Larousse', 'Paris', 2010, '978-2-03-584088-2', '1 vol. (XLIV-1811 p.) : illustrations en couleur ; 24 cm ', '034', NULL, NULL, 1, 4, 1, 5),
+(11, 'Manifeste pour la philosophie', NULL, 0, 'Ed. du Seuil', 'Paris', 1989, '2-02-010559-4', '91 p. ; 19 cm\r\n', '101 BAD', NULL, NULL, 1, 1, 1, 6),
+(12, 'Le Nombre et la sirène', 'un déchiffrage du "Coup de dés" de Mallarmé', 0, 'Fayard', 'Paris', 2011, '978-2-213-66591-7', '1 vol. (248 p.) : couv. ill. en coul. ; 22 cm', '841 BAD ', NULL, NULL, 1, 1, 1, 6),
+(13, 'Après la finitude', 'essai sur la nécessité de la contingence', 0, 'Ed. du Seuil', 'Paris', 2005, '2-02-084742-6', '1 vol. (177 p.) ; 21 cm\r\n', '111 MEI', NULL, NULL, 1, 1, 1, 6),
+(14, 'Fra Angelico, dissemblance et figuration', NULL, 0, 'Flammarion', 'Paris', 1990, '2-08-012614-8', '263 p. : ill. en noir et en coul. ; 29 cm', '709.03 DID', NULL, NULL, 1, 1, 1, 6),
 (16, 'Les Tuniques bleus', 'Les Bleus en cavale', 0, 'Dupuis', 'Paris', 1998, '2-8001-2649-3', '46 p. : ill. en coul., couv. ill. en coul. ; 30 cm', '741.5 LAM', NULL, NULL, 1, 2, 4, NULL),
 (17, 'Les Tuniques bleus', 'Des bleus et du blues', 0, 'Dupuis', 'Marcinelle', 2000, '2-8001-2944-1', '46 p. : ill. en coul. ; 30 cm ', '741.5 LAM', NULL, NULL, 1, 2, 4, NULL),
 (18, 'La Gloire de mon père', NULL, 0, 'Ed. du Fallois', 'Paris', 2004, '2-87706-507-3', '219 p. ; 18 cm', '843.914 PAG', NULL, NULL, 1, 1, NULL, 8),
@@ -274,7 +274,7 @@ CREATE TABLE IF NOT EXISTS `genre` (
   `id_genre` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `intitule` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id_genre`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
 
 --
 -- Contenu de la table `genre`
