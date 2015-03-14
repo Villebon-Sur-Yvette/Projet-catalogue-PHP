@@ -15,6 +15,7 @@
 	<!-- Comme pour l'aide utilisateur je laisse la personne qui fait la CSS mettre les <div> là où il a envie de les mettre -->
 
 	<!-- Sommaire de l'aide professionnelle -->
+	<a id="#accueilgo"></a>
 	<div class="menu_aide">
 		<h2>Sommaire</h2>
 		<ol id="sommaire">
@@ -43,63 +44,73 @@
 
 	<!-- Texte de l'aide professionnelle -->
 	<div class="help">
-		<a id="#accueilgo"></a>
 		<h2>Aide à l'utilisation de l'interface professionnelle</h2>
 		<p>
 		</p>
 		<br/>
-		<h3>L'interface professionnelle</h3>
 		<a id="interfacepro"></a>
+		<br/>
+		<h3>L'interface professionnelle</h3>
 		<p>
 		</p>
+		<br/>
+		<a id="whyinterfacepro"></a>
 		<br/>
 		<h5>Pourquoi une interface professionnelle ?</h5>
-		<a id="whyinterfacepro"></a>
 		<p>
 		</p>
+		<br/>
+		<a id="geninterfacepro"></a>
 		<br/>
 		<h5>Généralités sur l'interface professionnelle</h5>
-		<a id="geninterfacepro"></a>
 		<p>
 		</p>
+		<br/>
+		<a id="googlepro"></a>
 		<br/>
 		<h3>Le moteur de recherche avancé</h3>
-		<a id="googlepro"></a>
 		<p>
 		</p>
+		<br/>
+		<a id="showgooglepro"></a>
 		<br/>
 		<h5>Présentation du moteur de recherche</h5>
-		<a id="showgooglepro"></a>
 		<p>
 		</p>
+		<br/>
+		<a id="diffgoogle"></a>
 		<br/>
 		<h5>Quelles différences avec le moteur de recherche de l'interface publique?</h5>
-		<a id="diffgoogle"></a>
 		<p>
 		</p>
+		<br/>
+		<a id="advicegoogle"></a>
 		<br/>
 		<h5>Conseils pour l'utilisation du moteur de recherche</h5>
-		<a id="advicegoogle"></a>
 		<p>
 		</p>
+		<br/>
+		<a id="noticepro"></a>
 		<br/>
 		<h3>Le formulaire de création et de modification des notices</h3>
-		<a id="noticepro"></a>
 		<p>
 		</p>
+		<br/>
+		<a id="noticeplus"></a>
 		<br/>
 		<h5>Comment ajouter une notice ?</h5>
-		<a id="noticeplus"></a>
 		<p>
 		</p>
+		<br/>
+		<a id="noticechange"></a>
 		<br/>
 		<h5>Comment modifier une notice ?</h5>
-		<a id="noticechange"></a>
 		<p>
 		</p>
 		<br/>
-		<h5>Comment supprimer une notice ?</h5>
 		<a id="noticemoins"></a>
+		<br/>
+		<h5>Comment supprimer une notice ?</h5>
 		<p>
 		</p>
 		<br/>

@@ -28,7 +28,7 @@
 <!-- Encart gauche avec la recherche -->
  <?php include("./invariants/recherche.php") ?>
  
- 
+    <a id="accueilgo"></a>
     <div class="menu_aide">
         <h2>Sommaire</h2>
         <!-- Sommaire "Wikipédia" de l'aide à l'utilisateur -->
@@ -65,17 +65,18 @@
         </div>
 
         <!-- Texte de l'aide à l'utilisateur -->
-        <a id="accueilgo"></a>
         <div class="help">
             <!-- Peut-on remettre le titre comme il était et faire du small-caps dans la CSS ? -->
             <h2>Conseils à l'utilisateur de ce site</h2>
             <p>
                 Cette rubrique a pour but d'aider l'utilisateur à exploiter au mieux toutes les ressources de ce site. Dans ce but, nous allons ici nous attarder sur l'ensemble des fonctionnalités du site et les expliquer en détail une à une. Si vous rencontrez un problème particulier vous pouvez cliquer sur le sommaire ci-dessus pour aller directement à la rubrique qui vous intéresse. 
             </p>
-            <h3>A propos de ce site</h3>
             <a id="apropos"></a>
-            <h5>Un site dans quel but?</h5>
+            <br/>
+            <h3>A propos de ce site</h3>
             <a id="sitebut"></a>
+            <br/>
+            <h5>Un site dans quel but?</h5>
             <p>
                 Ce site a pour but de rendre plus accessible la bibliothèque municipale de Villebon-sur-Yvette. Il permet à chaque utilisateur de consulter le catalogue de la bibliothèque (plus de 1500 références actuellement), d'effectuer des recherches précises dans l'ensemble du catalogue et d'obtenir les renseignements pratiques pour accèder à la bibliothèque. 
             </p>
@@ -84,8 +85,9 @@
                 Bonne lecture!
             </p>
             <br/>
-            <h5>Que propose ce site?</h5>
             <a id="proposesite"></a>
+            <br/>
+            <h5>Que propose ce site?</h5>
             <p>
                 Ce site propose plusieurs services à nos utilisateurs :
                 <ul>
@@ -101,8 +103,9 @@
                 Ce site se veut le plus simple et le plus pratique possible. Il doit permettre aux utlisateurs d'utiliser le catalogue de la bibliothèque au mieux. Nous souhaitons que l'ensemble des ouvrages vous soit accessible et vous permette de découvrir de nouvelles choses. 
             </p>
             <br/>
-            <h3>Informations pratiques</h3>
             <a id="infopra"></a>
+            <br/>
+            <h3>Informations pratiques</h3>
             <p>
                 L'ensemble des informations pratiques concernant la biliothèque de Villebon-sur-Yvette se trouve sur la page d'accueil du site de la bibliothèque. Elles sont facilement accessibles grâce à leur présence sur le bord droit de la page.
             </p>
@@ -127,14 +130,16 @@
                 Sont postés comme actualités de la bibliothèque, les différentes réunions de lecture et autres activités culturelles (conférences, atelier de lecture et d'écriture, atelier de découverte musicale), un point mensuel sur les nouvelles acquisitions et les informations urgentes comme par exemple une fermeture exceptionnelle de la bibliothèque. Seront aussi publiées les informations importantes concernant la ville de Villebon-sur-Yvete. 
             </p>
             <br/>
-            <h3>Utilisation du moteur de recherche</h3>
             <a id="google"></a>
+            <br/>
+            <h3>Utilisation du moteur de recherche</h3>
             <p>
                 Ce site offre de nombreux moyens de recherche dans le catalogue de la bilbiothèque de Villebon-sur-Yvette. Notre objectif est que chaque utilisateur puisse rechercher simplement et trouver l'ouvrage qu'il cherche. Nous allons détailler comment fonctionne chacun de ces outils de recherche. 
             </p>
             <br/>
-            <h5>Le module de recherche simple</h5>
             <a id="rechsimple"></a>
+            <br/>
+            <h5>Le module de recherche simple</h5>
 
             <!-- Ceci peut être modifié selon comment le moteur de recherche sera établi dans le site en cours de création -->
 
@@ -149,8 +154,9 @@
                 Pour conclure, le module de recherche est un moyen simple et facile de trouver un ouvrage quand on connaît le titre ou le nom de l'auteur. Dans les autres cas, il est préférable que l'utilisateur passe par la recherche avancée pour avoir de meilleurs résultats et passer à côté de l'ouvrage qu'il convoite. 
             </p>
             <br/>
-            <h5>La recherche avancée</h5>
-            <a id="rechavancee"></a>    
+            <a id="rechavancee"></a>
+            <br/>
+            <h5>La recherche avancée</h5>    
 
             <!-- Ceci peut être modifié selon comment le moteur de recherche sera établi dans le site en cours de création -->
 
@@ -163,8 +169,9 @@
                 Sur la droite de chacune des barres de recherches, il peut choisir un ensemble vide, un "et" et un "ou" pour préciser si tous les critères de recherche doivent être présents ou non. Par défaut, ce menu déroulant laisse un ensemble vide qui a pour valeur un "ou" non inclusif. 
             </p>
             <br/>
-            <h5>Conseils pour des recherches fructueuses</h5>
             <a id="fructu"></a>
+            <br/>
+            <h5>Conseils pour des recherches fructueuses</h5>
             <p>
                 Le moteur de recherche est conçu de telle sorte que les résultats ne sont pas sensible à la casse (c'est-à-dire que les résultats ne sont pas modifiés que l'on mette ou pas des majuscules.) et que les espaces vides soit correctement interprétés. Dans le cas où une lettre manquerait ou serait fausse (par erreur de frappe par exemple), le moteur serait quand même capable de retourner des résultats approximatifs. 
             </p>
@@ -182,14 +189,16 @@
                 Pour conclure sur les différents moyens de recherche qu'offre le site, l'utilisateur peut et doit naviguer entre les deux selon le contexte de sa recherche. La recherche simple bien que peu maniable permet un résultat rapide et efficace tout en manquant de souplesse. La recherche avancée permet d'obtenir les résultats les plus pertinents et précis possible tout en permettant aussi d'étendre ceux-ci en cas de besoin. Dans tout les cas, le catalogue est ainsi le plus accesible possible pour tous les utilisateurs de la bibliothèque et de son site. 
             </p>
             <br/>
-            <h3>Comment bien utiliser une notice?</h3>
             <a id="notice"></a>
+            <br/>
+            <h3>Comment bien utiliser une notice?</h3>
             <p>
                 Après une recherche dans les différents outils de recherche du site de la bibliothèque, l'utilisateur a accès aux notices des ouvrages qui correspondent à sa recherche. Nous allons maintenant vous expliquez tout ce que les notices peuvent vous apprendre. 
             </p>
             <br/>
-            <h5>Les informations essentielles</h5>
             <a id="infoessen"></a>
+            <br/>
+            <h5>Les informations essentielles</h5>
             <p>
 
                 <!-- A modifier ceci n'est décrit que sur la base du projet initial des notices. -->
@@ -208,8 +217,9 @@
                 Ces informations permettent à l'utilisateur de trouver ce livre en bibliothèque mais aussi de pouvoir l'inscrire dans une bibliographie ou prendre ces caractéristiques dans un but académique. 
             </p>
             <br/>
-            <h5>Comment retrouver mon ouvrage à partir d'une notice?</h5>
             <a id="searchbook"></a>
+            <br/>
+            <h5>Comment retrouver mon ouvrage à partir d'une notice?</h5>
             <p>
                 Grâce à la notice, l'utilisateur du site peut retrouver l'ouvrage qu'il désire. Il y a plusieurs moyens pour cela.
             </p>
@@ -220,8 +230,9 @@
                 Le thème et le genre littéraire peuvent aussi permettre de retrouver un livre qui sera rangée en fonction de ces deux critères. Tout cela se fait par le même principe que la côte de l'ouvrage. 
             </p>
             <br/>
-            <h5>Conseils avancés sur les notices</h5>
             <a id="avconseil"></a>
+            <br/>
+            <h5>Conseils avancés sur les notices</h5>
             <p>
                 Les notices peuvent aussi révéler d'autres informations. Par exemple, le thème et le genre d'un ouvrage peut permettre de trouver d'autres ouvrages sur le même sujet ou un sujet proche susceptible d'intéresser l'utilisateur concerné.
 
@@ -229,27 +240,30 @@
 
             </p>
             <br/>
-            <h3>Accès réservé</h3>
             <a id="accesreserve"></a>
+            <br/>
+            <h3>Accès réservé</h3>
             <p>
                 Comme vous aves pu le remarquer, nous avons parlé de l'ensemble des fonctionnalités présentes sur le site. Pourtant, il reste une partie du site qui ne vous a pas été présenté. Cette partie si mystérieuse est l'accès réservé qui est situé dans la barre de menu présente en haut de toutes les pages du site. Bien que comme l'indique son énoncé, cette partie ne concerne pas la plupart des utilisateurs qui consulte le site de la bibliothèque de Villebon-sur-Yvette. 
             </p>
             <br/>
-            <h5>Qui est concerné?</h5>
             <a id="concerned"></a>
+            <br/>
+            <h5>Qui est concerné?</h5>
             <p>
                 Cette partie concerne avant toute chose, le personnel de la bibliothèque de Villebon-sur-Yvette. Elle leur permet de fournir et remplir le catalogue de la bibliothèque, de faire des modifications dans celui-ci. Elle leur permet aussi d'effectuer certaines recherches pour les lecteurs demandant de l'aide en bibliothèque ou d'autres renseignements (comme où se situe un livre dans la bibliothèque par exemple)
             </p>
             <br/>
-            <h5>Pourquoi cette partie réservée?</h5>
             <a id="reserved"></a>
+            <br/>
+            <h5>Pourquoi cette partie réservée?</h5>
             <p>
                 Bien que les utilisateurs puissent faire remonter leurs remarques au personnel de la bibliothèque, il appartient à la bibliohtèque de préserver son catalogue de tout acte malveillant. De plus, l'entretien et l'etoffement du catalogue fait partie des missions du personnel de la bibliothèque qui utilise les outils de cette partie réservée au mieux pour aider les utilisateurs de la bibliothèque. Il s'agit d'outils professionnels dont l'usage ne serait pas profitable au grand public. C'est pour cela que cette partie du site est filtré par une authentification numérique afin d'en préserver la sécurité. 
             </p>
             <br/>
 
             <!-- Bouton retour en haut de la page. Je ne sais pas si tu veux que le bouton soit compris dans la div. -->
-            <a id="retourhautpage" href="#accueilgo">Retour en haut de la page</a>
+            <div id="boutonaccueil"><a id="retourhautpage" href="#accueilgo">Retour en haut de la page</a></div>
 
         </div>
 
