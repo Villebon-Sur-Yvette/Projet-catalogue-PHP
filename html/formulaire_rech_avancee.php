@@ -16,8 +16,7 @@
 <!-- menu : présentation, aide, catalogue, accès réservé -->
 <?php include("./invariants/menu2.php") ?>
 
-<!-- Encart gauche avec la recherche -->
-<?php include("./invariants/recherche.php") ?>
+<!-- Encart gauche avec la recherche : supprimé, mise en place d'un lien vers recherche simple -->
 
     <section id="avancee">
 	<h2>Recherche avancée</h2>
@@ -66,6 +65,7 @@
 		</select>
 		</br>
 		
+		
 		<!--liste déroulante 3 -->
 		<select name="select_choix_3">
 			<option value="titre">Titre</option>
@@ -76,14 +76,17 @@
 			<option value="type">Type</option>
 			<option value="cote">Cote</option>
 		</select>
+
 		
 		<!--champ de recherche 3-->
 		<input type="text" name="recherche_3"/>
 		</br>
+	    </br>
 		
 		<input type ="submit" value="Chercher"/> 
 		<input type ="reset"/>
 	</form>
+	<h4> >> Lien vers la recherche simple</h2> <!-- liens à faire -->
   </section>
 
 <!-- footer -->

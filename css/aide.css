@@ -28,7 +28,7 @@ div#titrepp {
     padding: 10px;
     display: inline-block;
     float: left; /* pour mettre le titre à gauche  */
-    background-color: rgba(0,225,0,0.5)
+    background-color: rgba(0,102,102,0.5)
     
 }
 
@@ -82,13 +82,13 @@ ul ul {
 
 li:hover
 {
-    background-color:green;
+    background-color:rgb(0,102,102);
 }
 
 li:hover ul
 {
     display: block;    /*permet d'afficher les listes de différentes niveau en survolant les items des listes des niveaux supérieurs*/
-    background-color: green;
+    background-color: rgb(0,102,102);
     /*position: absolute;  pour fixer les puces de la liste principale lorsqu'on affiche les listes secondaires*/
     overflow: visible;
     position: fixed; /*pour fixer la position de la liste quand on passe sur les liens*/
@@ -107,7 +107,7 @@ li:hover ul li
 
 li:hover ul li:hover
 {
-    background-color:green;
+    background-color:rgb(0,102,102);
 }
 
 a:visited {

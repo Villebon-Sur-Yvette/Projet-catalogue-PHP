@@ -14,7 +14,7 @@
 </li>
 <li><a href="">CATALOGUE</a>
 <ul class="niveau2">
-<li><a href="">Recherche simple</a>
+<li><a href="recherche_easy.php">Recherche simple</a>
 </li>
 <li><a href="formulaire_rech_avancee.php">Recherche avancée</a></li>
 </ul>
