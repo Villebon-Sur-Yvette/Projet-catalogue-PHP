@@ -11,7 +11,9 @@
         <!-- <meta name="Description"
             content="Site internet de la bibliothèque municipale de " /> -->
         <title>Bibliothèque municipale de Villebon-sur-Yvette</title>
-        <link href="../css/css_projet_biblio.css" rel="stylesheet" />
+        <link href="../css/invariants.css" rel="stylesheet" />
+        <link href="../css/css_homepage.css" rel="stylesheet" />
+        
     </head>
 
     <body>

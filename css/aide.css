@@ -1,132 +1,6 @@
 /*******************************CSS de la page aide_utilisateur*****************************/
 
-/*Aspect général*/
-/*Police*/
-body{
-    margin: 0;
-    text-align: center; /*centrer le texte*/
-    font-family: Lato, calibri, helvetica, sans-serif;
-}
 
-p {
-	color: #326363;
-}
-
-header{
-    height: 240px;
-    background-image: url(../images/bibliotheque-municipale.jpg);
-    background-repeat: no-repeat;
-}
-
-
-div.logo {
-    padding: 10px;
-    float: left;
-}
-
-div#titrepp {
-    padding: 10px;
-    display: inline-block;
-    float: left; /* pour mettre le titre à gauche  */
-    background-color: rgba(0,102,102,0.5)
-    
-}
-
-h1 {
-    color: white;
-    max-width: 400px;
-    
-}
-
-/*barre de navigation*/
-nav{
-    margin: 0px;
-    background-color: black;
-    color: white;
-    /* position: fixed; discuter du positionnement fixe de la barre */
-}
-
-#menu {
-    width: auto;
-    padding: 0;
-    margin: 0;
-    margin-left: 200px;
-    max-height: auto;
-    text-align: left; /* le texte  à droite */
-    
-}
-
-#menu li {
-    display: inline-block;
-    list-style: none;
-    padding: 10px;
-    margin: 0px;
-}
-
-#menu li a {
-    display: block;
-    margin: 10px 30px; /* marges supérieures et inférieures puis espace entre les liens (marges sur les côtés gauches et droits) */
-    text-decoration: none;
-    font-weight: normal;
-    color: white;
-    background-color:transparent;
-}
-
-#menu ul li {
-    display: inherit; /*permet de restituer l'ordonnancement initial vertical des listes*/
-}
-
-ul ul {
-    display: none; /*permet de cacher les listes-enfants de listes*/
-}
-
-li:hover
-{
-    background-color:rgb(0,102,102);
-}
-
-li:hover ul
-{
-    display: block;    /*permet d'afficher les listes de différentes niveau en survolant les items des listes des niveaux supérieurs*/
-    background-color: rgb(0,102,102);
-    /*position: absolute;  pour fixer les puces de la liste principale lorsqu'on affiche les listes secondaires*/
-    overflow: visible;
-    position: fixed; /*pour fixer la position de la liste quand on passe sur les liens*/
-    box-sizing: auto;
-    max-width: 200px;
-    padding-left: 0px; /* supprime le padding-left par défaut de l'élément ul*/
-    
-}
-
-
-li:hover ul li
-{
-    background-color:black;
-    
-}
-
-li:hover ul li:hover
-{
-    background-color:rgb(0,102,102);
-}
-
-a:visited {
-    color: white;
-}
-
-li li:hover ul li a {
-    display: inline-block;
-    text-decoration: none;
-    font-weight: normal;
-    color: white;
-}
-
-/*Encart de gauche : recherche*/
-.encart_recherche {
-    float: left;
-    background-color: black;
-    display: inline-block;
-}
 /*Aspect du texte*/
 #recherche {
     text-decoration: none;
@@ -134,12 +8,6 @@ li li:hover ul li a {
     font-family: Lato, calibri, helvetica, sans-serif;
     font-weight: normal;
     padding: 0px 10px;
-}
-/*Encart de droite : actualités*/
-.encart_actualite {
-    display: inline-block;
-    float: right;
-    width: 25%;
 }
 
 
@@ -202,24 +70,3 @@ h3 {
 	background-image: url(../images/piledelivres.JPEG);
 }
 
-/*footer*/
-footer{
-    max-height: auto;
-    width: auto;
-    clear: both;
-    background-color: black;
-}
-
-h6 {
-    text-decoration: none;
-    color: white;
-    display: inline-block;
-    text-align: center; /* pour centrer le text */
-    vertical-align: top;
-    margin-left:5%;
-}
-
-h6 a {
-    text-decoration: none;
-    color: white;
-}

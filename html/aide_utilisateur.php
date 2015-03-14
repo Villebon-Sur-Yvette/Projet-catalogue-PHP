@@ -1,16 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Aide à l'utilisateur</title>
-
-    <!-- Je laisse nos géniaux graphistes le bon soin (et le bon goût) de mettre un style élégant à tout cela -->
-    <link rel="stylesheet" type="text/css" href="../css/aide.css">
-
-    <meta http-equiv="Content-type" content="text/html, charset= utf-8"/>
-
-    <!-- Pour ce qui est des métadonnées il faut voir en commun ce que l'on veut mettre. -->
-    <meta name="description"/>
-    <meta type="robots/keywords"/>
+        <meta charset="UTF-8" />
+        <title>Informations pratiques</title>
+        <link href="../css/aide.css" rel="stylesheet" />
+        <link href="../css/invariants.css" rel="stylesheet" />
 </head>
 
 <body>

@@ -1,0 +1,10 @@
+section.informationspratiques
+{
+    margin-left:200px;
+    margin-right:400px;
+    text-align:justify;
+}
+
+section.informationspratiques li{
+    background-color:transparent;
+}

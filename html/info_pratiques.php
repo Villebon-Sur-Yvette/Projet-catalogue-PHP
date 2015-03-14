@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <title>Informations pratiques</title>
-        <link href="../css/css_projet_biblio.css" rel="stylesheet" />
+        <link href="../css/invariants.css" rel="stylesheet" />
+        <link href="../css/css_info_pratiques.css" rel="stylesheet" />
     </head>
     <body>
         <div class="conteneur">
@@ -19,6 +20,7 @@
 
             <section class="informationspratiques">
                 <article id="horaires">
+                    <h2>INFORMATIONS PRATIQUES</h2>
                     <h2>Horaires d'ouverture au public</h2>
                     <ul>
                         <li>mardi de 15 h à 19 h,</li>

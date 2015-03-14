@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <title>Histoire de la bibliothèque</title>
-        <link href="../css/css_projet_biblio.css" rel="stylesheet" />
+        <link href="../css/invariants.css" rel="stylesheet" />
+        <link href="../css/css_histoire.css" rel="stylesheet" />
     </head>
     <body>
         <div class="conteneur">
