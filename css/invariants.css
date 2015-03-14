@@ -1,3 +1,4 @@
+/******************************************************ENTETE*****************************************************/
 header{
     height: 240px;
     background-image: url(../images/bibliotheque-municipale.jpg);
@@ -22,7 +23,7 @@ h1 {
     
 }
 
-/*barre de navigation*/
+/******************************************************BARRE NAVIGATION*****************************************************/
 nav{
     margin: 0px;
     background-color: black;
@@ -103,7 +104,7 @@ li li:hover ul li a {
     color: white;
 }
 
-/*Encart de gauche : recherche*/
+/******************************************************ENCART GAUCHE : RECHERCHE SIMPLE*****************************************************/
 .encart_recherche {
     float: left;
     background-color: black;
@@ -117,7 +118,7 @@ li li:hover ul li a {
     font-weight: normal;
     padding: 0px 10px;
 }
-/*Encart de droite : actualités*/
+/******************************************************ENCART DROITE : ACTUALITES *****************************************************/
 .encart_actualite {
     display: inline-block;
     float: right;
