@@ -11,7 +11,7 @@
 
 <body>
 <?php
-require 'connexion.txt';
+require 'connexion.php';
 
 //récupération d'une variable
 $recherche_simple=$_POST["recherche_simple"];

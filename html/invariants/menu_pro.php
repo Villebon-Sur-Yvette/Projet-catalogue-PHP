@@ -1,7 +1,7 @@
 <!-- menu pro -->
 <nav>
 <ul id="menu" class="niveau1">
-<li><a href="homepage.php">ACCUEIL</a></li>
+<li><a href="index.php">ACCUEIL</a></li>
 <li><a href="">PRESENTATION</a>
 <ul class="niveau2">
 <li><a href="">Informations pratiques</a></li>

@@ -11,7 +11,7 @@
 
 <body>
 <?php
-require 'connexion.txt';
+require 'connexion.php';
 
 // Constante
 $nbre_recherche = 3;
