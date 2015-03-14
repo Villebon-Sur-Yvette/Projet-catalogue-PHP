@@ -19,24 +19,24 @@
 	<div class="menu_aide">
 		<h2>Sommaire</h2>
 		<ol id="sommaire">
-			<li><a href="aide_pro.html#interfacepro">L'interface professionnelle</a>
+			<li><a href="#interfacepro">L'interface professionnelle</a>
 				<ul>
-					<li><a href="aide_pro.html#whyinterfacepro">Pourquoi une interface professionnelle?</a></li>
-					<li><a href="aide_pro.html#geninterfacepro">Généralités sur l'interface professionnelle</a></li>
+					<li><a href="#whyinterfacepro">Pourquoi une interface professionnelle?</a></li>
+					<li><a href="#geninterfacepro">Généralités sur l'interface professionnelle</a></li>
 				</ul>
 			</li>
-			<li><a href="aide_pro.html#googlepro">Le moteur de recherche avancé</a>
+			<li><a href="#googlepro">Le moteur de recherche avancé</a>
 				<ul>
-					<li><a href="aide_pro.html#showgooglepro">Présentation du moteur de recherche</a></li>
-					<li><a href="aide_pro.html#diffgoogle">Quelles différences avec le moteur de recherche de l'interface publique?</a></li>
-					<li><a href="aide_pro.html#advicegoogle">Conseils pour l'utilisation du moteur de recherche</a></li>
+					<li><a href="#showgooglepro">Présentation du moteur de recherche</a></li>
+					<li><a href="#diffgoogle">Quelles différences avec le moteur de recherche de l'interface publique?</a></li>
+					<li><a href="#advicegoogle">Conseils pour l'utilisation du moteur de recherche</a></li>
 				</ul>
 			</li>
 			<li><a href="#noticepro">Le formulaire de création et de modification des notices</a>
 				<ul>
-					<li><a href="aide_pro#noticeplus">Comment ajouter une notice ?</a></li>
-					<li><a href="aide_pro#noticechange">Comment modifier une notice ?</a></li>
-					<li><a href="aide_pro#noticemoins">Comment supprimer une notice ?</a></li>
+					<li><a href="#noticeplus">Comment ajouter une notice ?</a></li>
+					<li><a href="#noticechange">Comment modifier une notice ?</a></li>
+					<li><a href="#noticemoins">Comment supprimer une notice ?</a></li>
 				</ul>
 			</li>
 		</ol>
@@ -45,25 +45,46 @@
 	<!-- Texte de l'aide professionnelle -->
 	<div class="help">
 		<h2>Aide à l'utilisation de l'interface professionnelle</h2>
-		<p>
-		</p>
 		<br/>
 		<a id="interfacepro"></a>
 		<br/>
 		<h3>L'interface professionnelle</h3>
 		<p>
+			Bienvenue dans l'aide dédiée aux utilisateurs de l'interface professionnelle. Cette aide est faite pour permettre
+			au personnel de la bibliothèque de Villebon-sur-Yvette d'utiliser au mieux l'interface qui leur est réservée. Nous
+			espérons que cette pourra répondre à toutes vos questions. 
 		</p>
 		<br/>
 		<a id="whyinterfacepro"></a>
 		<br/>
 		<h5>Pourquoi une interface professionnelle ?</h5>
 		<p>
+			Cette interface professionnelle est dédiée au personnel de la bibliothèque de Villebon-sur-Yvette afin de leur 
+			fournir les outils informatiques nécessaires à la gestion du catalogue de la bibliothèque et l'assistance aux utilisateurs de
+			la bibliothèque. Cette interface est reliée au site de la bibliothèque afin de rendre le passage d'une interface
+			professionnelle à l'interface des utilisateurs le plus simple possible tout en restant proche de l'expérience que
+			peut avoir l'utilisateur.
+			Cette interface permet donc la gestion au quotidien du catalogue par le personnel de la bibliothèque et d'aider de 
+			la façon la plus efficace possible l'utilisateur de la bibliothèque. 
 		</p>
 		<br/>
 		<a id="geninterfacepro"></a>
 		<br/>
 		<h5>Généralités sur l'interface professionnelle</h5>
 		<p>
+			Cette interface comporte plusieurs outils pour aider les personnels de la bibliothèque dans leur travail quotidien:
+			<ul>
+				<li>
+					Un moteur de recherche qui comporte des critères de recherche plus professionnels que ceux présents dans le
+					moteur de recherche de l'interface publique.
+				</li>
+				<li>
+					Un ensemble de formulaires à remplir pour ajouter, modifier et supprimer des notices dans le catalogue de la bibliotèque.
+				</li>
+				<li>
+					Une aide pour utiliser ces outils.
+				</li>
+			</ul>
 		</p>
 		<br/>
 		<a id="googlepro"></a>
