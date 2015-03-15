@@ -17,7 +17,7 @@ body{
 
 /******************************************************ENTETE*****************************************************/
 header{
-    height: 240px;
+    height: auto;
     background-image: url(../images/bibliotheque-municipale.jpg);
     background-repeat: no-repeat;
 }
@@ -30,12 +30,12 @@ header a:visited{
     color:white; /*pour supprimer le style par défaut du lien utilisé en titre pp */
 }
 
-div.logo {
+header div.logo {
     padding: 10px;
     float: left;
 }
 
-div#titrepp {
+header div#titrepp {
     padding: 10px;
     display: inline-block;
     float: top;
@@ -60,7 +60,7 @@ nav{
     width: auto;
     padding: 0;
     margin: 0;
-    margin-left: 200px;
+    margin-left: 15%;
     max-height: auto;
     text-align: left; /* positionne le texte */
     
@@ -69,12 +69,12 @@ nav{
 #menu li {
     display: inline-block;
     list-style: none;
-    padding: 10px;
+    padding: 0px; /* supprimer les 10 px de padding permet de rétablir l'alignement du menu*/
     margin: 0px;
 }
 
 #menu li a {
-    display: block;
+    display: inline-block;
     margin: 10px 30px; /* marges supérieures et inférieures puis espace entre les liens (marges sur les côtés gauches et droits) */
     text-decoration: none;
     font-weight: normal;
@@ -82,7 +82,7 @@ nav{
     background-color:transparent;
 }
 
-#menu ul li {
+#menu li ul li {
     display: inherit; /*permet de restituer l'ordonnancement initial vertical des listes*/
 }
 
@@ -100,10 +100,10 @@ li:hover > ul
     display: block;    /*permet d'afficher les listes de différentes niveau en survolant les items des listes des niveaux supérieurs*/
     background-color: rgb(0,102,102);
     /*position: absolute;  pour fixer les puces de la liste principale lorsqu'on affiche les listes secondaires*/
-    overflow: visible;
+    overflow: scroll;
     position: fixed; /*pour fixer la position de la liste quand on passe sur les liens*/
-    box-sizing: auto;
-    max-width: 200px;
+    max-height: 200px;
+    max-width: auto;
     padding-left: 0px; /* supprime le padding-left par défaut de l'élément ul*/
 }
 
@@ -134,7 +134,10 @@ li li:hover ul li a {
     float: left;
     background-color: black;
     display: inline-block;
+    text-align: center;
+    width: 200px;
 }
+
 /*Aspect du texte*/
 #recherche {
     text-decoration: none;
@@ -147,7 +150,7 @@ li li:hover ul li a {
 .encart_actualite {
     display: inline-block;
     float: right;
-    width: 25%;
+    width: 40%;
 }
 /*Ensemble du texte*/
 .actualite{
@@ -162,19 +165,22 @@ li li:hover ul li a {
 /******************************************************FOOTER *****************************************************/
 
 footer{
-    max-height:auto;
+    height:auto;
     width:auto;
     clear:both;
     background-color:black;
 }
 
+footer > div {
+    text-align:center;
+}
 h6{
     text-decoration:none;
     color:white;
     display:inline-block;
     text-align:center; /* pour centrer le text */
     vertical-align:top;
-    margin-left:5%;
+    margin:2%;
 }
 
 h6 a{
