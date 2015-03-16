@@ -91,51 +91,145 @@
 		<br/>
 		<h3>Le moteur de recherche avancé</h3>
 		<p>
+			L'interface professionnelle comporte elle aussi un moteur de recherche destiné plus précisement au personnel de la bibliothèque
+			de Villebon-sur-Yvette. Nous allons maintenant détailler l'ensemble des caractèristiques de ce moteur de recherche et 
+			toutes ses possibilités.
 		</p>
 		<br/>
 		<a id="showgooglepro"></a>
 		<br/>
 		<h5>Présentation du moteur de recherche</h5>
 		<p>
+			Ce moteur de recherche est avant tout destiné à une utilisation professionnelle par le personnel de la bibliothèque.
+			Ce moteur de recherche est l'outil de recherche le plus efficace présent sur l'ensemble du site de la bibliothèque et 
+			permet d'affiner les recherches le plus précisément possible. Ceci est fait pour optimiser au maximum le temps que consacre
+			le personnel à la recherche d'ouvrages et peut permettre de répondra à des demandes très précises de la part de certains
+			utilisateurs.
 		</p>
 		<br/>
 		<a id="diffgoogle"></a>
 		<br/>
 		<h5>Quelles différences avec le moteur de recherche de l'interface publique?</h5>
 		<p>
+			On peut s'interroger sur l'idée d'un autre moteur de recherche dans l'interface professionnelle alors qu'il en existe
+			déjà un dans la partie publique du site de la bibliothèque. Plusieurs arguments justifient l'existence de ces deux
+			outils de recherches.
+		</p>
+		<p>
+			Les principales différences que comportent ce moteur de recherche par rapport à celui présent dans la partie publique
+			du site de la bibliothèque se situent en grande partie dans la présence de nouveaux critères de recherche dans ce moteur
+			de recherche. En effet, ce moteur de recherche comporte des nouveaux critères de recherche pour la plupart issus du monde
+			professionnel de la bilbiothèque.
+			<ul>
+				<li>
+					Le code ISBN qui permet de localiser un ouvrage à partir des bases de données professionelles ou dans le cadre 
+					de recherches pour nouvelles acquisitions
+				</li>
+				<li>
+					La côte de l'ouvrage qui permet de retrouver rapidement un ouvrage présent dans la bibliothèque de Villebon-sur-Yvette
+				</li>
+				<li>
+					Le code DEWEY qui colle à la caractérisation des ouvrages par la Bibliothèque nationale de France et qui permet de rechercher
+					par thèmes, auteurs, etc... selon un mode plus performant et professionnel.
+				</li>
+			</ul>
+		</p>
+		<p>
+			L'ensemble de ces critères permet des recherches plus rapides et plus efficaces en manipulant des données issus du domaine
+			professionnel des bibliothèques. Nous pensons que ces critères ne sont pas pertinents dans l'interface publique car peu des
+			utilisateurs de la bibliothèque savent manipuler suffisamment bien ces données pour rendre les recherches plus efficaces.
+			De plus, pour la plupart des utilisateurs, les caractéristiques de recherches déjà présentes dans le moteur de recherche de 
+			l'interface publique permettent à la quasi-totalité des utilisateurs d'effectuer leurs recherches de façon correcte et simple.
 		</p>
 		<br/>
 		<a id="advicegoogle"></a>
 		<br/>
 		<h5>Conseils pour l'utilisation du moteur de recherche</h5>
 		<p>
+			Nous nous permettons de donner quelques conseils pour améliorer encore l'efficacité de vos différentes recherches.
+			<ol>
+				<li>
+					Multiplier les critères de recherche permet de restreindre au maximum le nombre de résultats retournés.
+				</li>
+				<li>
+					Croiser les critères de recherche internes de la bibliothèque et les critères de recherche externes permet
+					de confirmer l'existence d'un ouvrage recherché dans la bibliothèque.
+				</li>
+				<li>
+					Les côtes des ouvrages peuvent être défaillantes, les codes ISBN et DEWEY sont alors bien plus efficaces.
+				</li>
+				<li>
+					Les recherches par thèmes peuvent aussi permettre d'aiguiller et aider les utilisateurs dans leurs recherches et
+					leurs travaux. Cela peut permettre un meilleur conseil de l'utilisateur de la bibliothèque.
+				</li>
+			</ol>
 		</p>
 		<br/>
 		<a id="noticepro"></a>
 		<br/>
 		<h3>Le formulaire de création et de modification des notices</h3>
 		<p>
+			Le formulaire de création, modification et suppression des notices de catalogue est le dernier outil présent dans l'interface
+			professionnel du site de la bibliothèque. Cet outil est fait pour permettre de gérer au quotidien le catalogie de la
+			bibliothèque (acquisition de nouveaux ouvrages, signalement des ouvrages, modification d'erreurs dans les notices, 
+			suppression des notices des ouvrages perdus, ...).
+		</p>
+		<p>
+			Cet outil se compose d'un ensemble de trois formulaires complémentaires qui permettent chacun une action dans la base de 
+			données qui constitue le catalogue de la bibliothèque. Il y a donc un formulaire pour créer des notices, un pour modifier 
+			les notices présentes dans le catalogue et un autre pour supprimer les notices du catalogue.
+		</p>
+		<p>
+			Il est à préciser que l'accès aux différents formulaires est limitée selon les droits de l'utilisateur. En effet, seul
+			le super-utilisateur peut supprimer ou modifier les notices déjà existantes dans le catalogue. L'ensemble des utilisateurs
+			ayant accès à l'interface professionnelle peut par contre créer des notices dans la catalogue de la bibliothèque. 
 		</p>
 		<br/>
 		<a id="noticeplus"></a>
 		<br/>
 		<h5>Comment ajouter une notice ?</h5>
 		<p>
+			Pour cela, il faut accéder au formulaire de création de notices présent dans l'interface professionnelle du site de
+			la bibliothèque.
+			Il faut ensuite remplir le formulaire puis cliquer sur le bouton "Créer" à la fin du formulaire pour intégrer les
+			données remplies dans le catalogue de la biblitohèque (dans la base de données en fait).
+			Certains champs sont obligatoires, il est donc normal que si tous les champs ne sont pas remplis (tout du moins
+			les champs obligatoires) que la création ne se fasse pas.
+			Les champs obligatoires sont marqués par un astérisque.
 		</p>
 		<br/>
 		<a id="noticechange"></a>
 		<br/>
 		<h5>Comment modifier une notice ?</h5>
 		<p>
+			Pour modifier une notice, il faut accéder au formulaire de modification des notices présent dans l'interface
+			professionnelle du site de la bibliothèque.
+			Nous rappelons que ce formulaire n'est accessible qu'à un petit nombre d'utilisateurs de l'interface professionnelle
+			(à savoir le super-utilisateur et quelques ayants-droits).
+		</p>
+		<p>
+			Il faut ensuite remplir les champs à modifier dans la notice puis cliquer sur le bouton "Modifier" à la fin du
+			formulaire. Les données sont ensuite modifiées dans la base de données du catalogue de la bibliothèque.
 		</p>
 		<br/>
 		<a id="noticemoins"></a>
 		<br/>
 		<h5>Comment supprimer une notice ?</h5>
 		<p>
+			Pour supprimer une notice, il faut accéder au formulaire de suppression des notices présent dans l'interface
+			professionnelle du site de la bibliothèque.
+			Nous rappellons que ce formulaire n'est accessible qu'au super-utilisateur ce qui limite ainsi les erreurs et les
+			fausses manipulations. On maximise ainsi la sécurité de la base de données.
+		</p>
+		<p>
+			Il faut ensuite remplir les champs pour sélectionner la notice à détruire puis cliquer sur le bouton "Supprimer"
+			à la fin du formulaire. Les données sont ensuite supprimées dans la base de données du catalogue de la bibliothèque.
 		</p>
 		<br/>
-	
+		<br/>
+		<p>
+			Nous espérons que tous ces conseils vous ont été utiles.
+		</p>
 	<!-- Bouton retour en haut de la page. Je ne sais pas si tu veux que le bouton soit compris dans la div. -->
             <a id="retourhautpage" href="#accueilgo">Retour en haut de la page</a>
 </div>
