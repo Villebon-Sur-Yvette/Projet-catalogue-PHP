@@ -15,7 +15,6 @@
 	<!-- Comme pour l'aide utilisateur je laisse la personne qui fait la CSS mettre les <div> là où il a envie de les mettre -->
 
 	<!-- Sommaire de l'aide professionnelle -->
-	<a id="#accueilgo"></a>
 	<div class="menu_aide">
 		<h2>Sommaire</h2>
 		<ol id="sommaire">
@@ -43,6 +42,7 @@
 	</div>
 
 	<!-- Texte de l'aide professionnelle -->
+	<a id="accueilgo"></a>
 	<div class="help">
 		<h2>Aide à l'utilisation de l'interface professionnelle</h2>
 		<br/>
@@ -231,7 +231,8 @@
 			Nous espérons que tous ces conseils vous ont été utiles.
 		</p>
 	<!-- Bouton retour en haut de la page. Je ne sais pas si tu veux que le bouton soit compris dans la div. -->
-            <a id="retourhautpage" href="#accueilgo">Retour en haut de la page</a>
+            <div id="boutonaccueil"><a href="#accueilgo">Retour en haut de la page</a></div>
+            <br/>
 </div>
 </body>
 <footer>

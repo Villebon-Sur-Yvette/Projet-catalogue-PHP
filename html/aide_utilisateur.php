@@ -22,7 +22,6 @@
 <!-- Encart gauche avec la recherche -->
  <?php include("./invariants/recherche.php") ?>
  
-    <a id="accueilgo"></a>
     <div class="menu_aide">
         <h2>Sommaire</h2>
         <!-- Sommaire "Wikipédia" de l'aide à l'utilisateur -->
@@ -59,6 +58,7 @@
         </div>
 
         <!-- Texte de l'aide à l'utilisateur -->
+        <a id="accueilgo"></a>
         <div class="help">
             <!-- Peut-on remettre le titre comme il était et faire du small-caps dans la CSS ? -->
             <h2>Conseils à l'utilisateur de ce site</h2>
@@ -257,8 +257,8 @@
             <br/>
 
             <!-- Bouton retour en haut de la page. Je ne sais pas si tu veux que le bouton soit compris dans la div. -->
-            <div id="boutonaccueil"><a id="retourhautpage" href="#accueilgo">Retour en haut de la page</a></div>
-
+            <div id="boutonaccueil"><a href="#accueilgo">Retour en haut de la page</a></div>
+            <br/>
         </div>
 
         <!-- Il faudra peut-être ajouter à cette aide à l'utilisateur le fonctionnement du panier si celui-ci est mis en place. Il faudra faire de même si l'idée des tags et des propositions spontannées est aussi retenue. -->
