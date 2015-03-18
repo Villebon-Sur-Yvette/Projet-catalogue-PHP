@@ -13,6 +13,12 @@
         <title>Bibliothèque municipale de Villebon-sur-Yvette</title>
         <link href="../css/invariants.css" rel="stylesheet" />
         <link href="../css/css_homepage.css" rel="stylesheet" />
+
+        <!-- Javascript et CSS nécessaires pour le maintien du slideshow -->
+
+        <script type="text/javascript" src="../Javascript/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="../Javascript/coin-slider.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../css/coin-slider-styles.css" />
         
     </head>
 
@@ -54,15 +60,45 @@
             </div>
 
             <!-- contenu de la page active -->
-            <div class="contenupage">
-                <section class="slideshow"></section>
-                <img src="../images/biblio.JPG" />
+            <div id="contenu">
+                <div id="slideshow">
+                    <div id="coin-slider">
+                        <img src="../images/villebon.jpg" alt="Villebon-sur-Yvette"/>
+                            <span>
+                                Bienvenue dans la commune de Villebon-sur-Yvette!
+                            </span>
+                        <img src="../images/bm_villebon.jpg" alt="BM Villebon-sur-Yvette"/>
+                            <span>
+                                L'ensemble du personnel de la bibliothèque de Villebon-sur-Yvette vous souhaite un bon accueil!
+                            </span>
+                        <img src="../images/monde_bibliotheque.png" alt="Le monde des bibliothèques"/>
+                            <span>
+                                Venez à apprendre plus sur l'histoire de notre bibliothèque!
+                            </span>
+                        <img src="../images/livre_poesie.jpg" alt="Soirée Poésie"/>
+                            <span>
+                                Le 31 mars 2015 : Jam session poésie et slam à la bibliothèque!
+                            </span>
+                        <img src="../images/manga.jpg" alt="Soirée manga"/>
+                            <span>
+                                Le 28 février 2015 : Discussion manga. 
+                            </span>
+                    </div>
+                </div>
             </div>
-
+            
             <!-- footer -->
             <?php include("./invariants/footer.php") ?>
             
 
         </div>
+
+            <!-- Script nécessaire au slideshow -->
+
+            <script type="text/javascript">
+                $(document).ready(function(){
+                $('#coin-slider').coinslider({ width: 700, height: 400, delay: 4000, navigation: true, links: false, hoverPause: false });
+                });
+        </script>
     </body>
 </html>
