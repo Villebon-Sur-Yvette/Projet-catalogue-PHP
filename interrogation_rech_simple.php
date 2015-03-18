@@ -22,34 +22,59 @@ $recherche_simple=trim($recherche_simple);
 $idcom->query("SET NAMES UTF8");
 
 //$results=$idcom->query("SELECT * FROM document WHERE auteur LIKE '$recherche_simple' OR titre LIKE '$recherche_simple' OR editeur LIKE '$recherche_simple'");
-$results=$idcom->query("SELECT * FROM document WHERE titre LIKE '$recherche_simple' OR editeur LIKE '$recherche_simple'");
+$results=$idcom->query("SELECT  auteur.nom, 
+								auteur.prenom, 
+								document.titre, 
+								document.soustitre, 
+								document.editeur, 
+								document.dateedition, 
+								support.intitule as support, 
+								type.intitule as type, 
+								theme.intitule as theme  
 
+						FROM hippolyte.document
+						left join auteur_document on auteur_document.id_document=document.id_document
+						left join auteur on auteur.id_auteur=auteur_document.id_auteur
+						left join type on document.id_type=type.id_type
+						left join support on document.id_support=support.id_support 
+						left join theme_document on theme_document.id_document=document.id_document
+						left join theme on theme.id_theme=theme_document.id_theme
+						WHERE titre LIKE '%$recherche_simple%' 
+						OR document.soustitre LIKE '%$recherche_simple%' 
+						OR auteur.nom LIKE '%$recherche_simple%'
+						OR theme.intitule LIKE '%$recherche_simple%'");
 
 
 //Traitement du cas de zéro réponse
   
 		if ($results->num_rows==0)
-			{ 
+		{
 				echo "Aucune réponse"; 
-			} 
-		else 
+		}
+		else
 			{
-
-			while ( $rows=$results->fetch_array(MYSQLI_ASSOC) ) {
-				//pour l'instant la recherche par auteur ne marche pas parce qu'il y a un problème avec la base (pas de champs auteur ou id_auteur dans la table document)
-				//echo $rows['auteur'];
-				//echo "<br/>";
-				//echo " - ";
+			 while($rows=$results->fetch_array(MYSQLI_ASSOC)) 
+			{
 				echo $rows['titre'];
-				echo " - ";
-				echo $rows['editeur'];
+				echo $rows['soustitre'];
 				echo("<br/>");
+				echo $rows['nom'];
+				echo " ";
+				echo $rows['prenom'];
+				echo "<br/>";
+				echo $rows['editeur'];
+				echo " - ";
+				echo $rows['dateedition'];
+				echo "<br/>";
+				echo "<br/>";
+				
+				
 				
 			}
 			
+			
 			}
-
-
+  
 
 $idcom->close();
 ?>
