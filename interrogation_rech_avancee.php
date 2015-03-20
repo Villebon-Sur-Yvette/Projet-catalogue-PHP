@@ -51,15 +51,15 @@ $taille_recherche_ordonnee = count($recherche_ordonnee);
 // Génération de la requête sql quand au moins un champ recherche est rempli
 if ($taille_recherche_ordonnee!=0){
 
-	$sql_select_avancee = "SELECT auteur.nom, 
-								auteur.prenom, 
+	$sql_select_avancee = "SELECT document.id_document,
+								group_concat(distinct concat(auteur.nom, auteur.prenom) ) as auteur,  
 								document.titre, 
 								document.soustitre, 
 								document.editeur, 
 								document.dateedition, 
 								support.intitule as support, 
 								type.intitule as type, 
-								theme.intitule as theme
+								group_concat(distinct theme.intitule) as theme
 								
 								FROM hippolyte.document  
 								left join auteur_document on auteur_document.id_document=document.id_document
@@ -140,9 +140,7 @@ if ($taille_recherche_ordonnee!=0){
 					echo " ";
 					echo $rows['soustitre'];
 					echo("<br/>");
-					echo $rows['nom'];
-					echo " ";
-					echo $rows['prenom'];
+					echo $rows['auteur'];
 					echo "<br/>";
 					echo $rows['editeur'];
 					echo " - ";
@@ -152,6 +150,12 @@ if ($taille_recherche_ordonnee!=0){
 					echo " - ";
 					echo $rows['type'];
 					echo "<br/>";
+					echo "<br/>";
+					//bouton d'envoi vers fiches-notices
+					echo "<form action='notice_simple.php' method='POST'>";
+					echo "<input type='hidden' name='id' value='$rows[id_document]'>";
+					echo "<input type='submit' value='en savoir +'/>";
+					echo "</form>";
 					echo "<br/>";
 					
 				}
