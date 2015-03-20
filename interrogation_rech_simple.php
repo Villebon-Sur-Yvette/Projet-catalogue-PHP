@@ -42,6 +42,7 @@ $results=$idcom->query("SELECT  auteur.nom,
 						WHERE titre LIKE '%$recherche_simple%' 
 						OR document.soustitre LIKE '%$recherche_simple%' 
 						OR auteur.nom LIKE '%$recherche_simple%'
+						OR auteur.prenom LIKE '%$recherche_simple%'
 						OR theme.intitule LIKE '%$recherche_simple%'");
 
 
@@ -65,6 +66,10 @@ $results=$idcom->query("SELECT  auteur.nom,
 				echo $rows['editeur'];
 				echo " - ";
 				echo $rows['dateedition'];
+				echo "<br/>";
+				echo $rows['support'];
+				echo " - ";
+				echo $rows['type'];
 				echo "<br/>";
 				echo "<br/>";
 				
