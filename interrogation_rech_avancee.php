@@ -112,7 +112,7 @@ if ($taille_recherche_ordonnee!=0){
 				break;
 		}
 		
-		$sql_select_avancee .= 	" ".$recherche_ordonnee[$k]['choix']." LIKE ".$recherche_ordonnee[$k]['recherche'];
+		$sql_select_avancee .= 	" ".$recherche_ordonnee[$k]['choix']." LIKE ".$recherche_ordonnee[$k]['recherche']."group by document.id_document";
 		if ($k!=$taille_recherche_ordonnee){
 			$sql_select_avancee .= " ".$recherche_ordonnee[$k]['operateur'];
 		}
