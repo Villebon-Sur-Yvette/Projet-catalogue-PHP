@@ -19,14 +19,21 @@ $recherche_simple=$_POST["recherche_simple"];
 //suppression des blancs
 $recherche_simple=trim($recherche_simple);
 
+//prise en compte des caractères spéciaux
 $idcom->query("SET NAMES UTF8");
 
-//$results=$idcom->query("SELECT * FROM document WHERE auteur LIKE '$recherche_simple' OR titre LIKE '$recherche_simple' OR editeur LIKE '$recherche_simple'");
-$results=$idcom->query("SELECT  group_concat(distinct concat(auteur.nom, auteur.prenom) ) as auteur, 
+//envoie de la requête SQL
+$results=$idcom->query("SELECT  document.id_document,
+								group_concat(distinct concat(auteur.nom, auteur.prenom) ) as auteur, 
 								document.titre, 
 								document.soustitre, 
 								document.editeur, 
 								document.dateedition, 
+								document.lieuedition,
+								document.isbn,
+								document.Cote,
+								langue.intitule as langue,
+								group_concat(distinct concat(traducteur.nom, traducteur.prenom) ) as traducteur,
 								support.intitule as support, 
 								type.intitule as type, 
 								group_concat(distinct theme.intitule) as theme
@@ -38,12 +45,21 @@ $results=$idcom->query("SELECT  group_concat(distinct concat(auteur.nom, auteur.
 						left join support on document.id_support=support.id_support 
 						left join theme_document on theme_document.id_document=document.id_document
 						left join theme on theme.id_theme=theme_document.id_theme
+						left join traducteur on document.id_traducteur=traducteur.id_traducteur
+						left join langue on document.id_langue=langue.id_langue
 
 						WHERE titre LIKE '%$recherche_simple%' 
 						OR document.soustitre LIKE '%$recherche_simple%' 
 						OR auteur.nom LIKE '%$recherche_simple%'
 						OR auteur.prenom LIKE '%$recherche_simple%'
 						OR theme.intitule LIKE '%$recherche_simple%'
+						OR traducteur.nom LIKE '%$recherche_simple%'
+						OR traducteur.prenom LIKE '%$recherche_simple%'
+						OR document.lieuedition LIKE '%$recherche_simple%'
+						OR document.isbn LIKE '%$recherche_simple%'
+						OR document.Cote LIKE '%$recherche_simple%'
+						OR type.intitule LIKE '%$recherche_simple%'
+						OR langue.intitule LIKE '%$recherche_simple%'
 						group by document.id_document");
 
 
@@ -72,6 +88,7 @@ $results=$idcom->query("SELECT  group_concat(distinct concat(auteur.nom, auteur.
 				echo $rows['type'];
 				echo "<br/>";
 				echo "<br/>";
+				//bouton d'envoie vers fiches-notices
 				echo "<form action='notice_simple.php' method='POST'>";
 				echo "<input type='hidden' name='id' value='$rows[id_document]'>";
 				echo "<input type='submit' value='en savoir +'/>";
