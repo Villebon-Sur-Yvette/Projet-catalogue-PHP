@@ -22,28 +22,21 @@ $recherche_simple=trim($recherche_simple);
 $idcom->query("SET NAMES UTF8");
 
 //$results=$idcom->query("SELECT * FROM document WHERE auteur LIKE '$recherche_simple' OR titre LIKE '$recherche_simple' OR editeur LIKE '$recherche_simple'");
-$results=$idcom->query("SELECT  auteur.nom, 
-								auteur.prenom, 
-								document.titre, 
-								document.soustitre, 
-								document.editeur, 
-								document.dateedition, 
-								support.intitule as support, 
-								type.intitule as type, 
-								theme.intitule as theme  
-
-						FROM hippolyte.document
-						left join auteur_document on auteur_document.id_document=document.id_document
-						left join auteur on auteur.id_auteur=auteur_document.id_auteur
-						left join type on document.id_type=type.id_type
-						left join support on document.id_support=support.id_support 
-						left join theme_document on theme_document.id_document=document.id_document
-						left join theme on theme.id_theme=theme_document.id_theme
-						WHERE titre LIKE '%$recherche_simple%' 
-						OR document.soustitre LIKE '%$recherche_simple%' 
-						OR auteur.nom LIKE '%$recherche_simple%'
-						OR auteur.prenom LIKE '%$recherche_simple%'
-						OR theme.intitule LIKE '%$recherche_simple%'");
+$results=$idcom->query("SELECT  SELECT document.id_document, group_concat(distinct concat(auteur.nom,", ", auteur.prenom) separator "; " ) as auteur , titre, soustitre, concat(lieuedition, ":", editeur, ", ", dateedition) as edition, isbn, description, cote, langue.intitule as langue , langueoriginale.intitule as langueoriginale,concat(traducteur.nom, traducteur.prenom) as traducteur, support.intitule as support, type.intitule as type, genre.intitule as genre, group_concat(distinct theme.intitule separator "; ") as theme
+from `document`
+left join auteur_document on auteur_document.id_document=document.id_document
+left join auteur on auteur.id_auteur=auteur_document.id_auteur
+left join langue on langue.id_langue=document.id_langue
+left join langueoriginale on langueoriginale.id_langueoriginale=document.id_langueoriginale
+left join traducteur on traducteur.id_traducteur=document.id_traducteur
+left join support on support.id_support=document.id_support
+left join type on type.id_type=document.id_type
+left join genre on genre.id_genre=document.id_genre
+left join theme_document on theme_document.id_document=document.id_document
+left join theme on theme.id_theme=theme_document.id_theme
+where titre like "%$recherche_simple%"
+group by document.id_document
+");
 
 
 //Traitement du cas de zéro réponse
