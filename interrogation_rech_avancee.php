@@ -51,39 +51,65 @@ $taille_recherche_ordonnee = count($recherche_ordonnee);
 // Génération de la requête sql quand au moins un champ recherche est rempli
 if ($taille_recherche_ordonnee!=0){
 
-	$sql_select_avancee = "SELECT * FROM document WHERE";
+	$sql_select_avancee = "SELECT auteur.nom, 
+								auteur.prenom, 
+								document.titre, 
+								document.soustitre, 
+								document.editeur, 
+								document.dateedition, 
+								support.intitule as support, 
+								type.intitule as type, 
+								theme.intitule as theme
+								
+								FROM hippolyte.document  
+								left join auteur_document on auteur_document.id_document=document.id_document
+								left join auteur on auteur.id_auteur=auteur_document.id_auteur 
+								left join theme_document on theme_document.id_document=document.id_document
+								left join theme on theme.id_theme=theme_document.id_theme
+								left join support on document.id_support=support.id_support 		
+								left join type on document.id_type=type.id_type
+								left join genre on document.id_genre=genre.id_genre
+								WHERE";
 	for ($k = 1; $k <= $taille_recherche_ordonnee; $k++) {
 		
 		// On prépare les sous-appels au table de lien si nécessaire
 		switch ($recherche_ordonnee[$k]['choix']) {
-			case "genre":
-				$recherche_ordonnee[$k]['recherche'] = "(SELECT id_genre FROM genre WHERE intitule='".$recherche_ordonnee[$k]['recherche']."')";
-				$recherche_ordonnee[$k]['choix'] = "id_genre";
-				break;
-			case "editeur":
-				$recherche_ordonnee[$k]['recherche'] = "'".$recherche_ordonnee[$k]['recherche']."'"; 
-				$recherche_ordonnee[$k]['choix'] = "editeur";
-				break;
 			case "titre":
-				$recherche_ordonnee[$k]['recherche'] = "'".$recherche_ordonnee[$k]['recherche']."'"; 
+				$recherche_ordonnee[$k]['recherche'] = "'%".$recherche_ordonnee[$k]['recherche']."%'"; 
 				$recherche_ordonnee[$k]['choix'] = "titre";
 				break;
+			case "soustitre":
+				$recherche_ordonnee[$k]['recherche'] = "'%".$recherche_ordonnee[$k]['recherche']."%'"; 
+				$recherche_ordonnee[$k]['choix'] = "soustitre";
+				break;
 			case "auteur":
-				$recherche_ordonnee[$k]['recherche'] = "'".$recherche_ordonnee[$k]['recherche']."'"; 
-				$recherche_ordonnee[$k]['choix'] = "auteur";
+				$recherche_ordonnee[$k]['recherche'] = "'%".$recherche_ordonnee[$k]['recherche']."%'"; 
+				$recherche_ordonnee[$k]['choix'] = "auteur.nom";
 				break;	
-			case "theme":
-				$recherche_ordonnee[$k]['recherche'] = "'".$recherche_ordonnee[$k]['recherche']."'"; 
-				$recherche_ordonnee[$k]['choix'] = "theme";
+			case "editeur":
+				$recherche_ordonnee[$k]['recherche'] = "'%".$recherche_ordonnee[$k]['recherche']."%'"; 
+				$recherche_ordonnee[$k]['choix'] = "editeur";
 				break;
 			case "type":
-				$recherche_ordonnee[$k]['recherche'] = "(SELECT id_type FROM type WHERE intitule='".$recherche_ordonnee[$k]['recherche']."')";
-				$recherche_ordonnee[$k]['choix'] = "id_type";
+				$recherche_ordonnee[$k]['recherche'] = "'%".$recherche_ordonnee[$k]['recherche']."%'";
+				$recherche_ordonnee[$k]['choix'] = "type.intitule";
+				break;
+			case "genre":
+				$recherche_ordonnee[$k]['recherche'] = "'%".$recherche_ordonnee[$k]['recherche']."%'";
+				$recherche_ordonnee[$k]['choix'] = "genre.intitule";
+				break;
+			case "theme":
+				$recherche_ordonnee[$k]['recherche'] = "'%".$recherche_ordonnee[$k]['recherche']."%'"; 
+				$recherche_ordonnee[$k]['choix'] = "theme.intitule";
 				break;
 			case "cote":
-				$recherche_ordonnee[$k]['recherche'] = "'".$recherche_ordonnee[$k]['recherche']."'"; 
+				$recherche_ordonnee[$k]['recherche'] = "'%".$recherche_ordonnee[$k]['recherche']."%'"; 
 				$recherche_ordonnee[$k]['choix'] = "cote";
-				break;				
+				break;		
+			case "support":
+				$recherche_ordonnee[$k]['recherche'] = "'%".$recherche_ordonnee[$k]['recherche']."%'"; 
+				$recherche_ordonnee[$k]['choix'] = "support.intitule";
+				break;
 		}
 		
 		$sql_select_avancee .= 	" ".$recherche_ordonnee[$k]['choix']." LIKE ".$recherche_ordonnee[$k]['recherche'];
@@ -110,14 +136,23 @@ if ($taille_recherche_ordonnee!=0){
 				{
 
 				while ( $rows=$results->fetch_array(MYSQLI_ASSOC) ) {
-					//pour l'instant la recherche par auteur ne marche pas parce qu'il y a un problème avec la base (pas de champs auteur ou id_auteur dans la table document)
-					//echo $rows['auteur'];
-					//echo "<br/>";
-					//echo " - ";
 					echo $rows['titre'];
-					echo " - ";
-					echo $rows['editeur'];
+					echo " ";
+					echo $rows['soustitre'];
 					echo("<br/>");
+					echo $rows['nom'];
+					echo " ";
+					echo $rows['prenom'];
+					echo "<br/>";
+					echo $rows['editeur'];
+					echo " - ";
+					echo $rows['dateedition'];
+					echo "<br/>";
+					echo $rows['support'];
+					echo " - ";
+					echo $rows['type'];
+					echo "<br/>";
+					echo "<br/>";
 					
 				}
 				

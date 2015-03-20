@@ -27,11 +27,13 @@
 	<!--liste déroulante 1 -->
 		<select name="select_choix_1">
 			<option value="titre" selected>Titre</option>
+			<option value="soustitre">Sous-titre</option>
 			<option value="auteur">Auteur</option>
 			<option value="theme">Thème</option>
 			<option value="editeur">Editeur</option>
 			<option value="genre">Genre</option>
 			<option value="type">Type</option>
+			<option value="support">Support</option>
 			<option value="cote">Cote</option>
 		</select>
 		
@@ -48,11 +50,13 @@
 		<!--liste déroulante 2 -->
 		<select name="select_choix_2">
 			<option value="titre">Titre</option>
+			<option value="soustitre">Sous-titre</option>
 			<option value="auteur" selected>Auteur</option>
 			<option value="theme">Thème</option>
 			<option value="editeur">Editeur</option>
 			<option value="genre">Genre</option>
 			<option value="type">Type</option>
+			<option value="support">Support</option>
 			<option value="cote">Cote</option>
 		</select>
 		
@@ -71,11 +75,13 @@
 		<!--liste déroulante 3 -->
 		<select name="select_choix_3">
 			<option value="titre">Titre</option>
+			<option value="soustitre">Sous-titre</option>
 			<option value="auteur">Auteur</option>
 			<option value="theme" selected>Thème</option>
 			<option value="editeur">Editeur</option>
 			<option value="genre">Genre</option>
 			<option value="type">Type</option>
+			<option value="support">Support</option>
 			<option value="cote">Cote</option>
 		</select>
 

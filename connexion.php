@@ -6,7 +6,7 @@
 
 	$serveur="localhost";
 	$utilisateur="root";
-	$motdepasse="root";
+	$motdepasse="";
 	$base="hippolyte";
 
 	$idcom=new mysqli($serveur,$utilisateur,$motdepasse,$base);

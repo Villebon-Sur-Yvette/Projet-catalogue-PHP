@@ -57,6 +57,7 @@ $results=$idcom->query("SELECT  auteur.nom,
 			 while($rows=$results->fetch_array(MYSQLI_ASSOC)) 
 			{
 				echo $rows['titre'];
+				echo " ";
 				echo $rows['soustitre'];
 				echo("<br/>");
 				echo $rows['nom'];
