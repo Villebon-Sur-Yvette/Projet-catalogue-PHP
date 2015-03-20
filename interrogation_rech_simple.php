@@ -22,7 +22,7 @@ $recherche_simple=trim($recherche_simple);
 //prise en compte des caractères spéciaux
 $idcom->query("SET NAMES UTF8");
 
-//envoie de la requête SQL
+//envoi de la requête SQL
 $results=$idcom->query("SELECT  document.id_document,
 								group_concat(distinct concat(auteur.nom, auteur.prenom) ) as auteur, 
 								document.titre, 
@@ -88,7 +88,7 @@ $results=$idcom->query("SELECT  document.id_document,
 				echo $rows['type'];
 				echo "<br/>";
 				echo "<br/>";
-				//bouton d'envoie vers fiches-notices
+				//bouton d'envoi vers fiches-notices
 				echo "<form action='notice_simple.php' method='POST'>";
 				echo "<input type='hidden' name='id' value='$rows[id_document]'>";
 				echo "<input type='submit' value='en savoir +'/>";
