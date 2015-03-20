@@ -22,16 +22,15 @@ $recherche_simple=trim($recherche_simple);
 $idcom->query("SET NAMES UTF8");
 
 //$results=$idcom->query("SELECT * FROM document WHERE auteur LIKE '$recherche_simple' OR titre LIKE '$recherche_simple' OR editeur LIKE '$recherche_simple'");
-$results=$idcom->query("SELECT  auteur.nom, 
-								auteur.prenom, 
+$results=$idcom->query("SELECT  group_concat(distinct concat(auteur.nom, auteur.prenom) ) as auteur, 
 								document.titre, 
 								document.soustitre, 
 								document.editeur, 
 								document.dateedition, 
 								support.intitule as support, 
 								type.intitule as type, 
-								theme.intitule as theme  
-
+								group_concat(distinct theme.intitule) as theme
+								
 						FROM hippolyte.document
 						left join auteur_document on auteur_document.id_document=document.id_document
 						left join auteur on auteur.id_auteur=auteur_document.id_auteur
@@ -39,11 +38,13 @@ $results=$idcom->query("SELECT  auteur.nom,
 						left join support on document.id_support=support.id_support 
 						left join theme_document on theme_document.id_document=document.id_document
 						left join theme on theme.id_theme=theme_document.id_theme
+
 						WHERE titre LIKE '%$recherche_simple%' 
 						OR document.soustitre LIKE '%$recherche_simple%' 
 						OR auteur.nom LIKE '%$recherche_simple%'
 						OR auteur.prenom LIKE '%$recherche_simple%'
-						OR theme.intitule LIKE '%$recherche_simple%'");
+						OR theme.intitule LIKE '%$recherche_simple%'
+						group by document.id_document");
 
 
 //Traitement du cas de zéro réponse
@@ -60,9 +61,7 @@ $results=$idcom->query("SELECT  auteur.nom,
 				echo " ";
 				echo $rows['soustitre'];
 				echo("<br/>");
-				echo $rows['nom'];
-				echo " ";
-				echo $rows['prenom'];
+				echo $rows['auteur'];
 				echo "<br/>";
 				echo $rows['editeur'];
 				echo " - ";
@@ -73,8 +72,11 @@ $results=$idcom->query("SELECT  auteur.nom,
 				echo $rows['type'];
 				echo "<br/>";
 				echo "<br/>";
-				
-				
+				echo "<form action='notice_simple.php' method='POST'>";
+				echo "<input type='hidden' name='id' value='$rows[id_document]'>";
+				echo "<input type='submit' value='en savoir +'/>";
+				echo "</form>";
+				echo "<br/>";
 				
 			}
 			
