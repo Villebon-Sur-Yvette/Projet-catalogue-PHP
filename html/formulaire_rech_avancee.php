@@ -94,7 +94,7 @@
 		<input type ="submit" value="Chercher"/> 
 		<input type ="reset"/>
 	</form>
-	<h4> >> Lien vers la recherche simple</h2> <!-- liens à faire -->
+	<h4><a href="recherche_easy.php">Faire une recherche simple</a></h2> <!-- liens à faire -->
   </section>
 
 <!-- footer -->
