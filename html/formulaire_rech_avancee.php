@@ -19,9 +19,13 @@
 <?php include("./invariants/menu2.php") ?>
 
 <!-- Encart gauche avec la recherche : supprimé, mise en place d'un lien vers recherche simple -->
-
+  <aside>
+  	<figure><img src="../images/tour_livres.jpg"/>
+  	</figure>
+  </aside>
     <section id="avancee">
 	<h2>Recherche avancée</h2>
+
 	<!--différents encarts pour une recherche croisée-->
 	<form action="../interrogation_rech_avancee.php"  method="POST"> 
 	<!--liste déroulante 1 -->
@@ -94,9 +98,10 @@
 		<input type ="submit" value="Chercher"/> 
 		<input type ="reset"/>
 	</form>
-	<h4><a href="recherche_easy.php">Faire une recherche simple</a></h2> <!-- liens à faire -->
+	<h4><a href="recherche_easy.php">Faire une recherche simple</a></h4> 
+  
   </section>
-
+  
 <!-- footer -->
 <?php include("./invariants/footer.php") ?>
     </div>
