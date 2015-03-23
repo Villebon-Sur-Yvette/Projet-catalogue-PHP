@@ -11,16 +11,16 @@
     <div class="conteneur">
 <!-- bandeau sup : logo, titre et image de la ville -->
 <header>
-    <div class="logo"><figure><img src="../images/blason.png" /></figure></div>
+    <div class="logo"><figure><img src="../css/images_css/blason.png" /></figure></div>
     <div id="titrepp"><h1>Bibliothèque municipale</h1><h1>de Villebon-sur-Yvette</h1></div>
 </header>
 
 
 <!-- menu : présentation, aide, catalogue, accès réservé -->
- <?php include("./invariants/menu2.php") ?>
+ <?php include("../invariants/menu2.php") ?>
  
 <!-- Encart gauche avec la recherche -->
- <?php include("./invariants/recherche.php") ?>
+ <?php include("../invariants/recherche.php") ?>
  
     <div class="menu_aide">
         <h2>Sommaire</h2>
@@ -264,7 +264,7 @@
         <!-- Il faudra peut-être ajouter à cette aide à l'utilisateur le fonctionnement du panier si celui-ci est mis en place. Il faudra faire de même si l'idée des tags et des propositions spontannées est aussi retenue. -->
 
   <!-- footer -->
- <?php include("./invariants/footer.php") ?>
+ <?php include("../invariants/footer.php") ?>
  
  </div>
  </body>

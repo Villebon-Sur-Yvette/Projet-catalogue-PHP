@@ -5,7 +5,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>Formulaire recherche avancée</title>
 		<meta name="author" content="Marie Guyot"/>
-        <link href="../css/css_formulaire_recherche_avancee.css" rel="stylesheet" />
+        <link href="../css/formulaire_recherche_avancee.css" rel="stylesheet" />
         <link href="../css/invariants.css" rel="stylesheet" />
 
 	</head>
@@ -13,21 +13,21 @@
         <!-- div qui contient l'ensemble du site web -->
         <div class="conteneur">
 <!-- header -->
-<?php include("./invariants/header.php") ?>
+<?php include("../invariants/header.php") ?>
 
 <!-- menu : présentation, aide, catalogue, accès réservé -->
-<?php include("./invariants/menu2.php") ?>
+<?php include("../invariants/menu2.php") ?>
 
 <!-- Encart gauche avec la recherche : supprimé, mise en place d'un lien vers recherche simple -->
   <aside>
-  	<figure><img src="../images/tour_livres.jpg"/>
+  	<figure><img src="../css/images_css/tour_livres.jpg"/>
   	</figure>
   </aside>
     <section id="avancee">
 	<h2>Recherche avancée</h2>
 
 	<!--différents encarts pour une recherche croisée-->
-	<form action="../interrogation_rech_avancee.php"  method="POST"> 
+	<form action="interrogation_rech_avancee.php"  method="POST"> 
 	<!--liste déroulante 1 -->
 		<select name="select_choix_1">
 			<option value="titre" selected>Titre</option>
@@ -98,12 +98,12 @@
 		<input type ="submit" value="Chercher"/> 
 		<input type ="reset"/>
 	</form>
-	<h4><a href="recherche_easy.php">Faire une recherche simple</a></h4> 
+	<h4><a href="recherche_simple.php">Faire une recherche simple</a></h4> 
   
   </section>
   
 <!-- footer -->
-<?php include("./invariants/footer.php") ?>
+<?php include("../invariants/footer.php") ?>
     </div>
 	</body>
 </html>

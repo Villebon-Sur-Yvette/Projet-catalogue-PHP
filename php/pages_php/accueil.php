@@ -5,19 +5,19 @@
     <head>
         <meta charset="UTF-8" />
         <!-- Icone du site-->
-        <link href="../images/blason.png" type="image/png" rel="icon" />
+        <link href="../css/images_css/blason.png" type="image/png" rel="icon" />
         <!-- <meta name="author" content="Anne-Cécile et Constance" /> -->
         <!-- <meta name="keywords" lang="fr" content="catalogue bibliothèque" /> -->
         <!-- <meta name="Description"
             content="Site internet de la bibliothèque municipale de " /> -->
         <title>Bibliothèque municipale de Villebon-sur-Yvette</title>
         <link href="../css/invariants.css" rel="stylesheet" />
-        <link href="../css/css_homepage.css" rel="stylesheet" />
+        <link href="../css/homepage.css" rel="stylesheet" />
 
         <!-- Javascript et CSS nécessaires pour le maintien du slideshow -->
 
-        <script type="text/javascript" src="../Javascript/jquery-1.11.2.min.js"></script>
-        <script type="text/javascript" src="../Javascript/coin-slider.min.js"></script>
+        <script type="text/javascript" src="../javascript/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="../javascript/coin-slider.min.js"></script>
         <link rel="stylesheet" type="text/css" href="../css/coin-slider-styles.css" />
         
     </head>
@@ -27,14 +27,14 @@
         <div class="conteneur">
 
             <!-- header -->
-            <?php include("./invariants/header.php") ?>
+            <?php include("../invariants/header.php") ?>
                           
             <!-- menu : présentation, aide, catalogue, accès réservé -->
-            <?php include("./invariants/menu.php") ?>
+            <?php include("../invariants/menu.php") ?>
 
 
             <!-- Encart gauche avec la recherche -->
-            <?php include("./invariants/recherche.php") ?>
+            <?php include("../invariants/recherche.php") ?>
 
             <!-- soit un calendrier de la bibliothèque, soit les horaires d'ouverture -->
             <!--<div id="encart_calendrier"><aside class="calendrier">26 février 2015</aside></div>-->
@@ -63,23 +63,23 @@
             <div id="contenu">
                 <div id="slideshow">
                     <div id="coin-slider">
-                        <img src="../images/villebon.jpg" alt="Villebon-sur-Yvette"/>
+                        <img src="../css/images_css/villebon.jpg" alt="Villebon-sur-Yvette"/>
                             <span>
                                 Bienvenue dans la commune de Villebon-sur-Yvette!
                             </span>
-                        <img src="../images/bm_villebon.jpg" alt="BM Villebon-sur-Yvette"/>
+                        <img src="../css/images_css/bm_villebon.jpg" alt="BM Villebon-sur-Yvette"/>
                             <span>
                                 L'ensemble du personnel de la bibliothèque de Villebon-sur-Yvette vous souhaite un bon accueil!
                             </span>
-                        <img src="../images/monde_bibliotheque.png" alt="Le monde des bibliothèques"/>
+                        <img src="../css/images_css/monde_bibliotheque.png" alt="Le monde des bibliothèques"/>
                             <span>
                                 Venez à apprendre plus sur l'histoire de notre bibliothèque!
                             </span>
-                        <img src="../images/livre_poesie.jpg" alt="Soirée Poésie"/>
+                        <img src="../css/images_css/livre_poesie.jpg" alt="Soirée Poésie"/>
                             <span>
                                 Le 31 mars 2015 : Jam session poésie et slam à la bibliothèque!
                             </span>
-                        <img src="../images/manga.jpg" alt="Soirée manga"/>
+                        <img src="../css/images_css/manga.jpg" alt="Soirée manga"/>
                             <span>
                                 Le 28 février 2015 : Discussion manga. 
                             </span>
@@ -88,7 +88,7 @@
             </div>
             
             <!-- footer -->
-            <?php include("./invariants/footer.php") ?>
+            <?php include("../invariants/footer.php") ?>
             
 
         </div>

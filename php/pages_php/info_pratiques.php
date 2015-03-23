@@ -4,19 +4,19 @@
         <meta charset="UTF-8" />
         <title>Informations pratiques</title>
         <link href="../css/invariants.css" rel="stylesheet" />
-        <link href="../css/css_info_pratiques.css" rel="stylesheet" />
+        <link href="../css/info_pratiques.css" rel="stylesheet" />
     </head>
     <body>
         <div class="conteneur">
 
         <!-- header -->
-        <?php include("./invariants/header.php") ?>
+        <?php include("../invariants/header.php") ?>
 
         <!-- menu : présentation, aide, catalogue, accès réservé -->
-        <?php include("./invariants/menu2.php") ?>
+        <?php include("../invariants/menu2.php") ?>
 
         <!-- Encart gauche avec la recherche -->
-        <?php include("./invariants/recherche.php") ?>
+        <?php include("../invariants/recherche.php") ?>
 
             <section class="informationspratiques">
                 <article id="horaires">
@@ -86,7 +86,7 @@
             </section>
 
             <!-- footer -->
-            <?php include("./invariants/footer.php") ?>
+            <?php include("../invariants/footer.php") ?>
         </div>
     </body>
 </html>

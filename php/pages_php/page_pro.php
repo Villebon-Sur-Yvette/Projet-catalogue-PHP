@@ -7,20 +7,20 @@ session_start();
         <title> Bibliothèque municipale de Villebon-sur-Yvette </title>
         <meta charset="UTF-8" />
         <!-- Icone du site-->
-        <link href="blason.png" type="image/png" rel="icon"/>
+        <link href="../css/images_css/blason.png" type="image/png" rel="icon"/>
         <!-- <meta name="author" content="Anne-Cécile et Constance" /> -->
         <!-- <meta name="keywords" lang="fr" content="catalogue bibliothèque" /> -->
         <!-- <meta name="Description"
             content="Site internet de la bibliothèque municipale de " /> -->
-        <link href="../css/face_pro.css" rel="stylesheet" />
+        <link href="../css/style_pro.css" rel="stylesheet" />
     </head>
     
     <body>
         <!-- header pro -->
-                 <?php include("./invariants/header_pro.php") ?>
+                 <?php include("../invariants/header_pro.php") ?>
 
         <!-- menu : présentation, aide, catalogue, accès réservé -->
-               <?php include("./invariants/menu_pro.php") ?>
+               <?php include("../invariants/menu_pro.php") ?>
 
             <!--Aide et menu de l'aide-->
             <div class="menu_aide">
@@ -58,7 +58,7 @@ session_start();
                     <h3 id="recherche">Recherche simple</h3>
                     <!--formulaire recherche simple avec 2 boutons "envoyer" et "effacer"-->
                         <div id="recherche">
-                            <form action="../interrogation_rech_simple.php" method="POST"> <!--il manque le fichier php bien sûr-->
+                            <form action="../recherche_php/interrogation_rech_simple.php" method="POST"> <!--il manque le fichier php bien sûr-->
                                 <input type ="text" name="recherche_simple"/>
                                 <br/>
                                 <input type ="submit" value="Chercher"/> 
@@ -76,12 +76,12 @@ session_start();
                             <td>
                                 <a href="">
                                    <h2 id="rechercher">Rechercher</h2>
-                                   <img src="../images/recherche.jpg">                           
+                                   <img src="../css/images_css/recherche.jpg">                           
                                 </a>                                
                             </td>
                             <td>
                                 <a href="">
-                                    <img src="../images/notice.jpg"/>
+                                    <img src="../css/images_css/notice.jpg"/>
                                     <h2 id="ajouter">Ajouter une notice</h2>
                                 </a>
                             </td>
@@ -90,7 +90,7 @@ session_start();
                 </table>
 
             <!-- footer -->
-            <?php include("./invariants/footer.php") ?>
+            <?php include("../invariants/footer.php") ?>
             </div> 
  
     </body>
