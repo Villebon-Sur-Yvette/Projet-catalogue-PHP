@@ -157,6 +157,12 @@ if ($taille_recherche_ordonnee!=0){
 					echo "<input type='submit' value='en savoir +'/>";
 					echo "</form>";
 					echo "<br/>";
+					//bouton envoie notice idbd
+					echo "<form action='notice_isbd.php' method='POST'>";
+					echo "<input type='hidden' name='id' value='$rows[id_document]'>";
+					echo "<input type='submit' value='notice ISBD'/>";
+					echo "</form>";
+					echo "<br/>";
 					
 				}
 				
