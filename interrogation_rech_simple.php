@@ -91,7 +91,13 @@ $results=$idcom->query("SELECT  document.id_document,
 				//bouton d'envoi vers fiches-notices
 				echo "<form action='notice_simple.php' method='POST'>";
 				echo "<input type='hidden' name='id' value='$rows[id_document]'>";
-				echo "<input type='submit' value='en savoir +'/>";
+				echo "<input type='submit' value='notice simple'/>";
+				echo "</form>";
+				echo "<br/>";
+				//bouton envoie notice idbd
+				echo "<form action='notice_isbd.php' method='POST'>";
+				echo "<input type='hidden' name='id' value='$rows[id_document]'>";
+				echo "<input type='submit' value='notice ISBD'/>";
 				echo "</form>";
 				echo "<br/>";
 				
