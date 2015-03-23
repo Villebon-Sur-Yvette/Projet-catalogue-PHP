@@ -25,14 +25,14 @@
 				$pw_usager= crypt($pw_usager, "lam");
 
 				//Envoi de la requête SQL
-				$results=$idcom->query("SELECT * FROM utilisateur where mail='$email_usager' and motdepasse='$pw_usager' LIMIT=1");
+				$results=$idcom->query("SELECT * FROM utilisateur WHERE mail LIKE '$email_usager' AND motdepasse LIKE '$pw_usager' LIMIT=1");
 
-				if ($results->num_rows==1) 
+				if ($results->num_rows==0) 
 				{
-					echo "<a href='../html/page_pro.php'/>";  
+					echo "<a href='../pages_php/page_pro.php'/>";  
 				}
 				else {
-					echo "Vous n'avez pas le droit d'accéder à cette partie du site";
+					echo "Vous n'avez pas le droit d'accéder à cette partie du site.";
 				}
 			}
 

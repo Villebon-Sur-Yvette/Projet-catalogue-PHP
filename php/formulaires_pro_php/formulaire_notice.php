@@ -5,6 +5,7 @@
 	</head>
 	<body>
 		<form action='notice.php' method="POST"/>
+		<fieldset>
 			Auteur
 		</br>
 			Nom : 
@@ -34,6 +35,8 @@
 			Cote : 
 			<input type="text" name='cote'/>
 		</br>
+		</fieldset>
+		<fieldset>
 		Langue
 		</br>
 			Langue : 
@@ -71,6 +74,8 @@
 			Prénom : 
 				<input type='text' name='prenomtraducteur'/>
 		</br>
+		</fieldset>
+		<fieldset>
 			Thème 
 			<input type='checkbox' name='philo'/> <label for='philo'>Philosophie</label>
 			<input type='checkbox' name='histoire'/> <label for='histoire'>Histoire</label>
@@ -102,6 +107,8 @@
 			<input type='radio' name='rayon' value='adulte'/> <label for='usuel'>Rayon adulte</label>
 			<input type='radio' name='rayon' value='usuel'/> <label for='usuel'>Usuel</label>
 		</br>
+		</fieldset>
+		<br/>
 			<input type='submit' value='Créer'/>
 		</form>	
 	</body>
