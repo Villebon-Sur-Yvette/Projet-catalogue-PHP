@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <title>Informations pratiques</title>
-        <link href="../css/invariants.css" rel="stylesheet" />
-        <link href="../css/info_pratiques.css" rel="stylesheet" />
+        <link href="../../css/invariants.css" rel="stylesheet" />
+        <link href="../../css/info_pratiques.css" rel="stylesheet" />
     </head>
     <body>
         <div class="conteneur">

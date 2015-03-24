@@ -5,8 +5,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>Formulaire recherche avancée</title>
 		<meta name="author" content="Marie Guyot"/>
-        <link href="../css/formulaire_recherche_avancee.css" rel="stylesheet" />
-        <link href="../css/invariants.css" rel="stylesheet" />
+        <link href="../../css/formulaire_recherche_avancee.css" rel="stylesheet" />
+        <link href="../../css/invariants.css" rel="stylesheet" />
 
 	</head>
 	<body>
@@ -20,7 +20,7 @@
 
 <!-- Encart gauche avec la recherche : supprimé, mise en place d'un lien vers recherche simple -->
   <aside>
-  	<figure><img src="../css/images_css/tour_livres.jpg"/>
+  	<figure><img src="../../css/images_css/tour_livres.jpg"/>
   	</figure>
   </aside>
     <section id="avancee">

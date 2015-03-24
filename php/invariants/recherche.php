@@ -4,13 +4,13 @@
 <h4 id="recherche">Recherche simple</h4>
 <!--formulaire recherche simple avec 2 boutons "envoyer" et "effacer"-->
 <div id="caserecherche">
-<form action="../interrogation_rech_simple.php" method="POST"> <!--il manque le fichier php bien sûr-->
+<form action="../recherche_php/interrogation_rech_simple.php" method="POST"> <!--il manque le fichier php bien sûr-->
 <input type ="text" name="recherche_simple"/>
 <br/>
 <input type ="submit" value="Chercher"/>
 <input type ="reset" value="Effacer"/>
 </form>
 </div>
-<h4 id="recherche"><a href="./formulaire_rech_avancee.php"> Recherche avancée<a></h4>
+<h4 id="recherche"><a href="../recherche_php/formulaire_rech_avancee.php"> Recherche avancée<a></h4>
 </aside>
 </div>

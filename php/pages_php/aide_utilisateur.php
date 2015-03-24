@@ -3,15 +3,15 @@
 <head>
         <meta charset="UTF-8" />
         <title>Informations pratiques</title>
-        <link href="../css/aide.css" rel="stylesheet" />
-        <link href="../css/invariants.css" rel="stylesheet" />
+        <link href="../../css/aide.css" rel="stylesheet" />
+        <link href="../../css/invariants.css" rel="stylesheet" />
 </head>
 
 <body>
     <div class="conteneur">
 <!-- bandeau sup : logo, titre et image de la ville -->
 <header>
-    <div class="logo"><figure><img src="../css/images_css/blason.png" /></figure></div>
+    <div class="logo"><figure><img src="../../css/images_css/blason.png" /></figure></div>
     <div id="titrepp"><h1>Bibliothèque municipale</h1><h1>de Villebon-sur-Yvette</h1></div>
 </header>
 

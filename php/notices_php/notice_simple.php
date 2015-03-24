@@ -5,7 +5,7 @@
 
 <body>
 <?php
-require '../connexion.php';
+require '../../connexion.php';
 
 //prise en compte des caractères spéciaux
 $idcom->query("SET NAMES UTF8");
@@ -107,7 +107,7 @@ $rows=$results->fetch_array(MYSQLI_ASSOC);
 
 				
 				echo "<br/>";
-				echo ('<img src="../base_de_données/imagescouvertures/'.$rows['lienimage'].'"  />'); 
+				echo ('<img src="../../base_de_données/imagescouvertures/'.$rows['lienimage'].'"  />'); 
 				echo "<br/>";
 				
 				echo "<br/>";

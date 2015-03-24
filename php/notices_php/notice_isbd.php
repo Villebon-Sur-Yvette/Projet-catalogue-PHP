@@ -5,7 +5,7 @@
 
 <body>
 <?php
-require '../connexion.php';
+require '../../connexion.php';
 
 //prise en compte des caractères spéciaux
 $idcom->query("SET NAMES UTF8");
@@ -46,7 +46,7 @@ $rows=$results->fetch_array(MYSQLI_ASSOC);
 				echo "<br/>";
 				echo "<h2>Notice ISBD </h2>";
 				/* ne marche pas encore
-				echo "<form action='interrogation_rech_simple.php' method='POST'>";
+				echo "<form action='../recherche_php/interrogation_rech_simple.php' method='POST'>";
 				echo "<input type='hidden' name='id' value='$rows[id_document]'>";
 				echo "<input type='submit' value='retour aux résultats'/>";
 				echo "</form>"; */
@@ -90,7 +90,7 @@ $rows=$results->fetch_array(MYSQLI_ASSOC);
 				echo ".<br/>";
 				
 				echo "<br/>";
-				echo ('<img src="../base_de_données/imagescouvertures/'.$rows['lienimage'].'"  />'); 
+				echo ('<img src="../../base_de_données/imagescouvertures/'.$rows['lienimage'].'"  />'); 
 				echo "<br/>";
 				
 				echo "<br/>";

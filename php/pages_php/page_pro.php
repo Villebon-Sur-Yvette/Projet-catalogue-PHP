@@ -7,12 +7,12 @@ session_start();
         <title> Bibliothèque municipale de Villebon-sur-Yvette </title>
         <meta charset="UTF-8" />
         <!-- Icone du site-->
-        <link href="../css/images_css/blason.png" type="image/png" rel="icon"/>
+        <link href="../../css/images_css/blason.png" type="image/png" rel="icon"/>
         <!-- <meta name="author" content="Anne-Cécile et Constance" /> -->
         <!-- <meta name="keywords" lang="fr" content="catalogue bibliothèque" /> -->
         <!-- <meta name="Description"
             content="Site internet de la bibliothèque municipale de " /> -->
-        <link href="../css/style_pro.css" rel="stylesheet" />
+        <link href="../../css/style_pro.css" rel="stylesheet" />
     </head>
     
     <body>
@@ -76,12 +76,12 @@ session_start();
                             <td>
                                 <a href="">
                                    <h2 id="rechercher">Rechercher</h2>
-                                   <img src="../css/images_css/recherche.jpg">                           
+                                   <img src="../../css/images_css/recherche.jpg">                           
                                 </a>                                
                             </td>
                             <td>
                                 <a href="">
-                                    <img src="../css/images_css/notice.jpg"/>
+                                    <img src="../../css/images_css/notice.jpg"/>
                                     <h2 id="ajouter">Ajouter une notice</h2>
                                 </a>
                             </td>

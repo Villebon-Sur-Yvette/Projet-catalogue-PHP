@@ -104,7 +104,7 @@
 	</br>
 			Type :
 			<input type='radio' name='rayon' value='enfant'/> <label for='enfant'>Rayon enfant</label>
-			<input type='radio' name='rayon' value='adulte'/> <label for='usuel'>Rayon adulte</label>
+			<input type='radio' name='rayon' value='adulte'/> <label for='adulte'>Rayon adulte</label>
 			<input type='radio' name='rayon' value='usuel'/> <label for='usuel'>Usuel</label>
 		</br>
 		</fieldset>
