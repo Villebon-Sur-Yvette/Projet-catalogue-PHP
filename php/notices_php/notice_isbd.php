@@ -7,6 +7,9 @@
 <?php
 require '../../connexion.php';
 
+//bouton retour en arrière
+echo "<input type='button' value='Retour aux résulats' onclick='history.go(-1)'  />";
+
 //prise en compte des caractères spéciaux
 $idcom->query("SET NAMES UTF8");
 
@@ -44,13 +47,7 @@ $results=$idcom->query("SELECT document.id_document,
 $rows=$results->fetch_array(MYSQLI_ASSOC);
 
 				echo "<br/>";
-				echo "<h2>Notice ISBD </h2>";
-				/* ne marche pas encore
-				echo "<form action='../recherche_php/interrogation_rech_simple.php' method='POST'>";
-				echo "<input type='hidden' name='id' value='$rows[id_document]'>";
-				echo "<input type='submit' value='retour aux résultats'/>";
-				echo "</form>"; */
-				
+				echo "<h2>Notice ISBD </h2>";				
 				echo "<br/>";
 				
 				echo $rows['titre'];
@@ -65,8 +62,7 @@ $rows=$results->fetch_array(MYSQLI_ASSOC);
 				
 				echo "/ par ";
 				echo $rows['auteur'];
-				//attention, que faire qd il y a trois auteurs ??? machin et machin et machin => c'est moche; 
-				
+				 
 				if ($rows['langueoriginale']) {
 					echo "; traduit de la langue ";
 					echo $rows['langueoriginale'];
@@ -90,7 +86,7 @@ $rows=$results->fetch_array(MYSQLI_ASSOC);
 				echo ".<br/>";
 				
 				echo "<br/>";
-				echo ('<img src="../../base_de_données/imagescouvertures/'.$rows['lienimage'].'"  />'); 
+				echo ('<img src="../../base_de_données/images_couvertures/'.$rows['lienimage'].'"  />'); 
 				echo "<br/>";
 				
 				echo "<br/>";
@@ -103,4 +99,4 @@ $rows=$results->fetch_array(MYSQLI_ASSOC);
 $idcom->close();
 ?>
 </body>
-</html>
+</html

@@ -24,7 +24,7 @@ $idcom->query("SET NAMES UTF8");
 
 //envoi de la requête SQL
 $results=$idcom->query("SELECT  document.id_document,
-								group_concat(distinct concat(auteur.nom, auteur.prenom) ) as auteur, 
+								group_concat(distinct concat(auteur.nom, ', ', auteur.prenom) separator ' et ' ) as auteur, 
 								document.titre, 
 								document.soustitre, 
 								document.editeur, 
@@ -33,10 +33,11 @@ $results=$idcom->query("SELECT  document.id_document,
 								document.isbn,
 								document.Cote,
 								langue.intitule as langue,
-								group_concat(distinct concat(traducteur.nom, traducteur.prenom) ) as traducteur,
+								group_concat(distinct concat(traducteur.nom, ', ', traducteur.prenom) separator '; ' ) as traducteur,
 								support.intitule as support, 
 								type.intitule as type, 
-								group_concat(distinct theme.intitule) as theme
+								group_concat(distinct theme.intitule) as theme,
+								document.lienimage
 								
 						FROM hippolyte.document
 						left join auteur_document on auteur_document.id_document=document.id_document
@@ -73,12 +74,17 @@ $results=$idcom->query("SELECT  document.id_document,
 			{
 			 while($rows=$results->fetch_array(MYSQLI_ASSOC)) 
 			{
+				echo ('<img src="../../base_de_données/images_couvertures/'.$rows['lienimage'].'" width="100"  />');
+				echo "<br/>";
 				echo $rows['titre'];
 				echo " ";
 				echo $rows['soustitre'];
 				echo("<br/>");
+				
+				if ($rows['auteur']) {
 				echo $rows['auteur'];
-				echo "<br/>";
+				echo ";<br/>";
+				}
 				echo $rows['editeur'];
 				echo " - ";
 				echo $rows['dateedition'];
@@ -89,13 +95,13 @@ $results=$idcom->query("SELECT  document.id_document,
 				echo "<br/>";
 				echo "<br/>";
 				//bouton d'envoi vers fiches-notices
-				echo "<form action='notice_simple.php' method='POST'>";
+				echo "<form action='../notices_php/notice_simple.php' method='POST'>";
 				echo "<input type='hidden' name='id' value='$rows[id_document]'>";
 				echo "<input type='submit' value='notice simple'/>";
 				echo "</form>";
 				echo "<br/>";
 				//bouton envoie notice idbd
-				echo "<form action='notice_isbd.php' method='POST'>";
+				echo "<form action='../notices_php/notice_isbd.php' method='POST'>";
 				echo "<input type='hidden' name='id' value='$rows[id_document]'>";
 				echo "<input type='submit' value='notice ISBD'/>";
 				echo "</form>";

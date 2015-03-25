@@ -7,6 +7,9 @@
 <?php
 require '../../connexion.php';
 
+//bouton retour en arrière
+echo "<input type='button' value='Retour aux résulats' onclick='history.go(-1)'  />";
+
 //prise en compte des caractères spéciaux
 $idcom->query("SET NAMES UTF8");
 
@@ -107,7 +110,7 @@ $rows=$results->fetch_array(MYSQLI_ASSOC);
 
 				
 				echo "<br/>";
-				echo ('<img src="../../base_de_données/imagescouvertures/'.$rows['lienimage'].'"  />'); 
+				echo ('<img src="../../base_de_données/images_couvertures/'.$rows['lienimage'].'"  />'); 
 				echo "<br/>";
 				
 				echo "<br/>";

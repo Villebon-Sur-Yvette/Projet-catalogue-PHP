@@ -59,7 +59,8 @@ if ($taille_recherche_ordonnee!=0){
 								document.dateedition, 
 								support.intitule as support, 
 								type.intitule as type, 
-								group_concat(distinct theme.intitule) as theme
+								group_concat(distinct theme.intitule) as theme,
+								document.lienimage
 								
 								FROM hippolyte.document  
 								left join auteur_document on auteur_document.id_document=document.id_document
@@ -136,6 +137,7 @@ if ($taille_recherche_ordonnee!=0){
 				{
 
 				while ( $rows=$results->fetch_array(MYSQLI_ASSOC) ) {
+					echo ('<img src="../../base_de_données/images_couvertures/'.$rows['lienimage'].'" width="100"  />');
 					echo $rows['titre'];
 					echo " ";
 					echo $rows['soustitre'];
