@@ -1,78 +1,11 @@
 /************************************** CSS SITE WEB face pro DE LA BIBLIOTHEQUE ***********************/
 
 
-header{
-    height:200px;
-    background-image: url(../images/books.jpg);
-    background-repeat:no-repeat;
-
-}
-
 /*Aspect général de la page*/
 body {
     font-family: Lato, calibri, helvetica, sans-serif;
 }
 
-/*barre de navigation*/
-nav{
-    margin:0px;    
-    background-color:black;  
-}
-#menu {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-align: center;
-}
-#menu li {
-    display: inline-block;
-    position: relative;
-    border-radius: 0;
-}
-#menu ul li {
-    display: inherit;
-    border-radius: 0;
-    background-color: black;
-}
-#menu ul li:hover {
-    border-radius: 0;
-}
-#menu ul li:last-child {
-    border-radius: 0;
-}
-#menu a {
-    text-decoration: none;
-    display: block;
-    color: white;
-    padding: 10px;
-    margin: 10px;
-}
-#menu ul a {
-    padding: 8px 0;
-}
-#menu ul {
-    position: absolute;
-    max-height: 0;
-    left: 0;
-    right: 0;
-    overflow: hidden;
-    -moz-transition: .8s all .3s;
-    -wekbit-transition: .8s all .3s;
-    transition: .8s all .3s;    
-}
-#menu li:hover ul {
-    max-height: 15em;
-}
-#menu li:hover, #menu li li:hover {
-    background: #9e1515;
-}
-#menu li:hover li a {
-    color: white;
-    text-transform: inherit;
-}
-#menu li:hover a, #menu li li:hover a {
-    color: #white;
-}
 
 /*Contenu de la page*/
 /*Recherche et ajout de notices*/
@@ -97,34 +30,16 @@ td h2 {
 
 
 /*Positionnement et aspect des éléments*/
-/*Encart de gauche : recherche*/
-.encart_recherche {
-    float: left; 
-    background-color: black;
-    display: inline-block;
-}
-/*Aspect du texte*/
-#recherche {
-    text-decoration: none;
-    color: white;
-    font-weight: normal;
-    padding: 0px 10px;
-}
-/*Position de la case de recherche...A voir avec la création de boutons en css*/
-#caserecherche {
-    margin: 5%;
-}
 
 /*Menu de l'aide à droite*/
 .menu_aide {
     display: inline-block;
     float: right;
     width: 25%;
-    background-color: #9e1515;
 }
 .menu_aide a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 /*Aspect du titre*/
 .menu_aide h1 {
@@ -136,18 +51,17 @@ td h2 {
     list-style: none;
     text-decoration: none;
     border-top: 1px solid #326363;
-    background: #9e1515;
     padding: 2%;
 }
 
 #sommaire li {
     list-style: none;
-    color: white;
+    color: black;
 }
 
 #sommaire a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 /*Aspect au passage de la souris*/
