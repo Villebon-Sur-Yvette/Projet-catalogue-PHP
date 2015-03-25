@@ -5,7 +5,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>Formulaire recherche avancée</title>
 		<meta name="author" content="Marie Guyot"/>
-        <link href="../../css/formulaire_recherche_avancee.css" rel="stylesheet" />
+        <link href="../../css/recherche_avancee.css" rel="stylesheet" />
         <link href="../../css/invariants.css" rel="stylesheet" />
 
 	</head>

@@ -11,6 +11,6 @@
 <input type ="reset" value="Effacer"/>
 </form>
 </div>
-<h4 id="recherche"><a href="../recherche_php/formulaire_rech_avancee.php"> Recherche avancée<a></h4>
+<h4 id="recherche"><a href="../recherche_php/formulaire_recherche_avancee.php"> Recherche avancée<a></h4>
 </aside>
 </div>

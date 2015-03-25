@@ -113,12 +113,12 @@ if ($taille_recherche_ordonnee!=0){
 				break;
 		}
 		
-		$sql_select_avancee .= 	" ".$recherche_ordonnee[$k]['choix']." LIKE ".$recherche_ordonnee[$k]['recherche']."group by document.id_document";
+		$sql_select_avancee .= 	" ".$recherche_ordonnee[$k]['choix']." LIKE ".$recherche_ordonnee[$k]['recherche'];
 		if ($k!=$taille_recherche_ordonnee){
 			$sql_select_avancee .= " ".$recherche_ordonnee[$k]['operateur'];
 		}
 	}	
-	$sql_select_avancee .= " ORDER BY titre ASC";
+	$sql_select_avancee .= "group by document.id_document ORDER BY titre ASC";
 
 	// Set de l'utf8 pour les caractères spéciaux	
 	$idcom->query("SET NAMES UTF8");
@@ -135,7 +135,11 @@ if ($taille_recherche_ordonnee!=0){
 				} 
 			else 
 				{
-
+				
+				// Nombre de résultants
+					$nb_rows = mysqli_num_rows($results);
+					echo $nb_rows." résultat(s)<br/><br/>";
+					
 				while ( $rows=$results->fetch_array(MYSQLI_ASSOC) ) {
 					echo ('<img src="../../base_de_données/images_couvertures/'.$rows['lienimage'].'" width="100"  />');
 					echo $rows['titre'];
@@ -154,13 +158,13 @@ if ($taille_recherche_ordonnee!=0){
 					echo "<br/>";
 					echo "<br/>";
 					//bouton d'envoi vers fiches-notices
-					echo "<form action='notice_simple.php' method='POST'>";
+					echo "<form action='../notices_php/notice_simple.php' method='POST'>";
 					echo "<input type='hidden' name='id' value='$rows[id_document]'>";
 					echo "<input type='submit' value='en savoir +'/>";
 					echo "</form>";
 					echo "<br/>";
 					//bouton envoie notice isbd
-					echo "<form action='notice_isbd.php' method='POST'>";
+					echo "<form action='../notices_php/notice_isbd.php' method='POST'>";
 					echo "<input type='hidden' name='id' value='$rows[id_document]'>";
 					echo "<input type='submit' value='notice ISBD'/>";
 					echo "</form>";

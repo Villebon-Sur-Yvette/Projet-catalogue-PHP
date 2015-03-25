@@ -25,7 +25,7 @@
 <ul class="niveau2">
 <li><a href="../recherche_php/recherche_simple.php">Recherche simple</a>
 </li>
-<li><a href="../recherche_php/formulaire_rech_avancee.php">Recherche avancée</a></li>
+<li><a href="../recherche_php/formulaire_recherche_avancee.php">Recherche avancée</a></li>
 </ul>
 </li>
 <li><a href="../formulaires_pro_php/formulaire_authentification.php">ACCES RESERVE</a>
