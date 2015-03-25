@@ -23,7 +23,7 @@ $recherche_simple=trim($recherche_simple);
 $idcom->query("SET NAMES UTF8");
 
 //envoi de la requête SQL
-if ($recherche_simple==0){
+if (!empty($recherche_simple)){
 	
 $results=$idcom->query("SELECT  document.id_document,
 								group_concat(distinct concat(auteur.nom, ', ', auteur.prenom) separator ' et ' ) as auteur, 
