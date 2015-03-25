@@ -32,7 +32,7 @@
 <input type ="reset" value="Effacer"/>
 </form>
 </div>
-<h4><a href="formulaire_rech_avancee.php"> Recherche avancée<a></h4>
+<h4><a href="formulaire_recherche_avancee.php"> Recherche avancée<a></h4>
 </aside>
  
 
