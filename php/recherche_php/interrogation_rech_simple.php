@@ -23,7 +23,7 @@ $recherche_simple=trim($recherche_simple);
 $idcom->query("SET NAMES UTF8");
 
 //envoi de la requête SQL
-if ($recherche_simple=0){
+if ($recherche_simple==0){
 	
 $results=$idcom->query("SELECT  document.id_document,
 								group_concat(distinct concat(auteur.nom, ', ', auteur.prenom) separator ' et ' ) as auteur, 
@@ -74,6 +74,10 @@ $results=$idcom->query("SELECT  document.id_document,
 		}
 		else
 			{
+			// Nombre de résultants
+					$nb_rows = mysqli_num_rows($results);
+					echo $nb_rows." résultat(s)<br/><br/>";
+					
 			 while($rows=$results->fetch_array(MYSQLI_ASSOC)) 
 			{
 				echo ('<img src="../../base_de_données/images_couvertures/'.$rows['lienimage'].'" width="100"  />');
