@@ -52,7 +52,7 @@ $taille_recherche_ordonnee = count($recherche_ordonnee);
 if ($taille_recherche_ordonnee!=0){
 
 	$sql_select_avancee = "SELECT document.id_document,
-								group_concat(distinct concat(auteur.nom, auteur.prenom) ) as auteur,  
+								group_concat(distinct concat(auteur.nom, ', ', auteur.prenom) separator '; ' ) as auteur,  
 								document.titre, 
 								document.soustitre, 
 								document.editeur, 
@@ -141,13 +141,22 @@ if ($taille_recherche_ordonnee!=0){
 					echo $nb_rows." résultat(s)<br/><br/>";
 					
 				while ( $rows=$results->fetch_array(MYSQLI_ASSOC) ) {
+								
 					echo ('<img src="../../base_de_données/images_couvertures/'.$rows['lienimage'].'" width="100"  />');
-					echo $rows['titre'];
-					echo " ";
-					echo $rows['soustitre'];
-					echo("<br/>");
-					echo $rows['auteur'];
 					echo "<br/>";
+					echo $rows['titre'];
+					
+					
+					if ($rows['soustitre']) {
+					echo " : ";	
+					echo $rows['soustitre'];
+					}
+					
+					echo(";<br/>");
+					if ($rows['auteur']) {
+					echo $rows['auteur'];
+					echo ";<br/>";
+					}
 					echo $rows['editeur'];
 					echo " - ";
 					echo $rows['dateedition'];
@@ -160,9 +169,9 @@ if ($taille_recherche_ordonnee!=0){
 					//bouton d'envoi vers fiches-notices
 					echo "<form action='../notices_php/notice_simple.php' method='POST'>";
 					echo "<input type='hidden' name='id' value='$rows[id_document]'>";
-					echo "<input type='submit' value='en savoir +'/>";
+					echo "<input type='submit' value='notice simple'/>";
 					echo "</form>";
-					echo "<br/>";
+					
 					//bouton envoie notice isbd
 					echo "<form action='../notices_php/notice_isbd.php' method='POST'>";
 					echo "<input type='hidden' name='id' value='$rows[id_document]'>";

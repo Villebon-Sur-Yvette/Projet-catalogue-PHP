@@ -83,10 +83,14 @@ $results=$idcom->query("SELECT  document.id_document,
 				echo ('<img src="../../base_de_données/images_couvertures/'.$rows['lienimage'].'" width="100"  />');
 				echo "<br/>";
 				echo $rows['titre'];
-				echo " ";
-				echo $rows['soustitre'];
-				echo("<br/>");
 				
+				
+				if ($rows['soustitre']) {
+				echo " : ";	
+				echo $rows['soustitre'];
+				}
+				
+				echo(";<br/>");
 				if ($rows['auteur']) {
 				echo $rows['auteur'];
 				echo ";<br/>";
@@ -105,7 +109,7 @@ $results=$idcom->query("SELECT  document.id_document,
 				echo "<input type='hidden' name='id' value='$rows[id_document]'>";
 				echo "<input type='submit' value='notice simple'/>";
 				echo "</form>";
-				echo "<br/>";
+				
 				//bouton envoie notice idbd
 				echo "<form action='../notices_php/notice_isbd.php' method='POST'>";
 				echo "<input type='hidden' name='id' value='$rows[id_document]'>";
