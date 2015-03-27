@@ -1,14 +1,33 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-	<meta http-equiv="Content-type" content="text/html/php"  charset="UTF-8" /> 
+
+		<meta http-equiv="Content-type" content="text/html/php" meta charset="UTF-8" />
+		<title>Notice ISBD</title>
+		<link href="../../css/invariants.css" rel="stylesheet" />
+		<!--  autre fichier css??? <link href="../../css/" rel="stylesheet" /> -->
+
 </head>
 
 <body>
+<div class="conteneur">
+
+<!-- header -->
+<?php include("../invariants/header.php") ?>
+
+<!-- menu 2 : avec retour page accueil -->
+<?php include("../invariants/menu2.php") ?>
+
+<!-- Encart gauche avec la recherche -->
+<?php include("../invariants/recherche.php") ?>
+
+
+<section> <!-- tout la notice est dans la section-->
 <?php
 require '../../connexion.php';
 
-//bouton retour en arrière
-echo "<input type='button' value='Retour aux résulats' onclick='history.go(-1)'  />";
+//bouton retour en arrière    => inutile finalement avec les invariants??? 
+//echo "<input type='button' value='Retour' onclick='history.go(-1)'  />";
 
 //prise en compte des caractères spéciaux
 $idcom->query("SET NAMES UTF8");
@@ -43,6 +62,7 @@ $results=$idcom->query("SELECT document.id_document,
 						left join langueoriginale on document.id_langueoriginale=langueoriginale.id_langueoriginale
 						WHERE document.id_document = '$_POST[id]'LIMIT 1");
 
+//affichage des résulats selon un modèle simple						
 $rows=$results->fetch_array(MYSQLI_ASSOC);
 
 				echo "<br/>";
@@ -108,11 +128,12 @@ $rows=$results->fetch_array(MYSQLI_ASSOC);
 				echo ".<br/>";
 				
 
-				
+				//affichage de l'image
 				echo "<br/>";
 				echo ('<img src="../../base_de_données/images_couvertures/'.$rows['lienimage'].'"  />'); 
 				echo "<br/>";
 				
+				//bouton vers la notice idbd
 				echo "<br/>";
 				echo "<form action='notice_isbd.php' method='POST'>";
 				echo "<input type='hidden' name='id' value='$rows[id_document]'>";
@@ -122,5 +143,11 @@ $rows=$results->fetch_array(MYSQLI_ASSOC);
 				
 $idcom->close();
 ?>
+</section>
+
+<!-- footer -->
+<?php include("../invariants/footer.php") ?>
+
+</div>
 </body>
 </html>
