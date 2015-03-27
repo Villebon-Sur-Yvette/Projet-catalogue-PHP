@@ -22,9 +22,10 @@ $recherche_simple=trim($recherche_simple);
 //prise en compte des caractères spéciaux
 $idcom->query("SET NAMES UTF8");
 
-//envoi de la requête SQL
+// Génération d'un message si le champ n'est pas rempli
 if (!empty($recherche_simple)){
-	
+
+//envoi de la requête SQL	
 $results=$idcom->query("SELECT  document.id_document,
 								group_concat(distinct concat(auteur.nom, ', ', auteur.prenom) separator ' et ' ) as auteur, 
 								document.titre, 
@@ -77,40 +78,49 @@ $results=$idcom->query("SELECT  document.id_document,
 			// Nombre de résultants
 					$nb_rows = mysqli_num_rows($results);
 					echo $nb_rows." résultat(s)<br/><br/>";
-					
+			
+			//affichage des résultats
 			 while($rows=$results->fetch_array(MYSQLI_ASSOC)) 
 			{
+				//affichage de la couverture du livre
 				echo ('<img src="../../base_de_données/images_couvertures/'.$rows['lienimage'].'" width="100"  />');
 				echo "<br/>";
+				//affichage du titre
 				echo $rows['titre'];
 				
-				
+				//affichage du sous-titre si besoin
 				if ($rows['soustitre']) {
 				echo " : ";	
 				echo $rows['soustitre'];
 				}
 				
+				//affichage de nom et prénom de l'auteur
 				echo(";<br/>");
 				if ($rows['auteur']) {
 				echo $rows['auteur'];
 				echo ";<br/>";
 				}
+				
+				//affichage de l'éditeur, date d'édition
 				echo $rows['editeur'];
 				echo " - ";
 				echo $rows['dateedition'];
 				echo "<br/>";
+				
+				//affichage du support et du type de document
 				echo $rows['support'];
 				echo " - ";
 				echo $rows['type'];
 				echo "<br/>";
 				echo "<br/>";
-				//bouton d'envoi vers fiches-notices
+				
+				//bouton d'envoi vers notice simple 
 				echo "<form action='../notices_php/notice_simple.php' method='POST'>";
 				echo "<input type='hidden' name='id' value='$rows[id_document]'>";
 				echo "<input type='submit' value='notice simple'/>";
 				echo "</form>";
 				
-				//bouton envoie notice idbd
+				//bouton d'envoi notice isbd
 				echo "<form action='../notices_php/notice_isbd.php' method='POST'>";
 				echo "<input type='hidden' name='id' value='$rows[id_document]'>";
 				echo "<input type='submit' value='notice ISBD'/>";
