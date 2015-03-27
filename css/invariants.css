@@ -40,6 +40,7 @@ header div#titrepp {
     display: inline-block;
     float: top;
     background-color: rgba(0, 102, 102, 0.5);
+    background: linear-gradient(to right, rgb(0,102,102), transparent );
 }
 
 h1 {
@@ -101,7 +102,7 @@ li:hover > ul
     display: block;    /*permet d'afficher les listes de différentes niveau en survolant les items des listes des niveaux supérieurs*/
     background-color: rgb(0,102,102);
     position: absolute;  /*pour fixer les puces de la liste principale lorsqu'on affiche les listes secondaires*/
-    overflow: scroll;
+    overflow: visible; /*les listes sont entièrement visible*/
     max-height: 200px;
     max-width: auto;
     padding-left: 0px; /* supprime le padding-left par défaut de l'élément ul*/
@@ -132,10 +133,27 @@ li li:hover ul li a {
 /******************************************************ENCART GAUCHE : RECHERCHE SIMPLE*****************************************************/
 .encart_recherche {
     float: left;
-    background-color: black;
+    background-color: rgb(0,102,102);
+    background: linear-gradient(to bottom, rgb(0,102,102), white); /*pour dégrader*/
     display: inline-block;
     text-align: center;
     width: 200px;
+    height: 600px;
+}
+
+.encart_recherche input[type="text"] {
+    width: 90%;
+    background-color: #82BFBA;
+}
+
+.encart_recherche input[type="submit"] {
+    width: 90px;
+    box-shadow: 1px 1px 1px #008080;
+}
+
+.encart_recherche input[type="reset"] {
+    width: 90px;
+    box-shadow: 1px 1px 1px #008080;
 }
 
 /*Aspect du texte*/
@@ -150,15 +168,16 @@ li li:hover ul li a {
 .encart_actualite {
     display: inline-block;
     float: right;
-    width: 40%;
+    width: 30%;
 }
 /*Ensemble du texte*/
 .actualite{
-    padding:2%;
+    padding:5%;
+    text-align: justify;
 }
 /*Une atualité*/
 .actu{
-    border-top:3px solid #9e1515;
+    border-top:3px solid #008080;
     margin-bottom:50px;
 }
 

@@ -18,12 +18,13 @@
 <!-- menu : présentation, aide, catalogue, accès réservé -->
 <?php include("../invariants/menu2.php") ?>
 
-<!-- Encart gauche avec la recherche : supprimé, mise en place d'un lien vers recherche simple -->
+<!-- illustration -->
   <aside>
   	<figure><img src="../../css/images_css/tour_livres.jpg"/>
   	</figure>
   </aside>
-    <section id="avancee">
+
+  <section id="avancee">
 	<h2>Recherche avancée</h2>
 
 	<!--différents encarts pour une recherche croisée-->

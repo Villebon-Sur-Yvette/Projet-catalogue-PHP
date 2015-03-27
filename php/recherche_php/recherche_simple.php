@@ -21,6 +21,7 @@
 
 <section class="rechercheeasy"> <!-- reprise du code utilisé pour l'encart de recherche simple -->
 
+
 <aside>
 <h2>Recherche simple</h3>
 <!--formulaire recherche simple avec 2 boutons "envoyer" et "effacer"-->
@@ -34,7 +35,12 @@
 </div>
 <h4><a href="formulaire_recherche_avancee.php"> Recherche avancée<a></h4>
 </aside>
- 
+
+<!-- illustration -->
+<aside class="illustration">
+  	<figure><img src="../../css/images_css/livre_recherche_simple.jpg"/>
+  	</figure>
+</aside>
 
 </section>
 

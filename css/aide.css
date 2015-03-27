@@ -1,50 +1,6 @@
 /*******************************CSS de la page aide_utilisateur*****************************/
 
 
-/*Aspect du texte*/
-#recherche {
-    text-decoration: none;
-    color: white;
-    font-family: Lato, calibri, helvetica, sans-serif;
-    font-weight: normal;
-    padding: 0px 10px;
-}
-
-
-/***** Sommaire de l'aide *****/
-#sommaire {
-	list-style: none;
-    text-align: left;
-	text-decoration: none;
-	border: 1px solid #9e1515;
-	border-radius: 2%;
-	background: #326363;
-	padding: 2%;
-}
-
-#sommaire li {
-
-	list-style: none;
-	color: white;
-}
-
-#sommaire a {
-	text-decoration: none;
-	color: white;
-}
-
-/*Aspect au passage de la souris*/
-#sommaire > a:hover {
-	background: #9e1515;
-}
-
-/*Positionnement des éléments sur la page*/
-.menu_aide {
-	display: inline-block;
-	position: fixed;
-	float: right;
-	width: 25%;
-}
 /*Contenu de l'aide*/
 .help {
 	display: inline-block;
@@ -57,13 +13,21 @@
 .help li {
     background-color:inherit;
 }
+
+.help li:hover {
+    background-color:white;
+}
+
 /*Aspect général de l'aide*/
 /*Titre*/
-h3 {
-	/*border-top: 3px solid #9e1515;*/
-    margin-bottom: 50px;
-    width: 30%;
+h2, h3 {
+    color: rgb(0,102,102);
 }
+
+h4 {
+    color:DarkSlateGray;
+}
+
 /*Retour en haut de la page*/
 #retourhautpage {
 	text-decoration: none;
@@ -73,7 +37,7 @@ h3 {
 /* Bouton "retour en haut de la page" */
 #boutonaccueil {
 	text-decoration: underline;
-	background-color: #26A497;
+	background-color: rgb(0,102,102);
 	color: #FFFFFF;
 	text-align: center;
 	padding-top: 20px;

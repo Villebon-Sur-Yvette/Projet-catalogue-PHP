@@ -1,10 +1,14 @@
 .rechercheeasy {
 	margin-left: 230px;
-	position: center;
 	margin-bottom: 10px;
 	margin-top:10px;
+	
 }
 
+aside.illustration {
+    border:1px solid blue;
+    display:inline-block;
+}
 .rechercheeasy a {
  	color:black;
 }

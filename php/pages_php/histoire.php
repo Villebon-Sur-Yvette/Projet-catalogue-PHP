@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <title>Histoire de la bibliothèque</title>
         <link href="../../css/invariants.css" rel="stylesheet" />
-        <link href="../../css/histoire.css" rel="stylesheet" />
+        <link href="../../css/histoire_biblio.css" rel="stylesheet" />
     </head>
     <body>
         <div class="conteneur">

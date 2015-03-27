@@ -1,10 +1,14 @@
 section.informationspratiques
 {
-    margin-left:200px;
-    margin-right:400px;
+    margin-left:220px;
+    margin-right: 20%;
     text-align:justify;
 }
 
 section.informationspratiques li{
     background-color:transparent;
+}
+
+section.informationspratiques h2{
+	color: rgb(0,102,102);
 }
