@@ -6,17 +6,166 @@ body {
     font-family: Lato, calibri, helvetica, sans-serif;
 }
 
+/******************************************************ENTETE*****************************************************/
+header{
+    height: auto;
+    background-image: url(images_css/bibliotheque-municipale.jpg);
+    background-repeat: no-repeat;
+}
+
+header a{
+    text-decoration:none; /*pour supprimer le style par défaut du lien utilisé en titre principal*/
+}
+
+header a:visited{
+    color:white; /*pour supprimer le style par défaut du lien utilisé en titre pp */
+}
+
+header div.logo {
+    padding: 10px;
+    float: left;
+}
+
+header div#titrepp {
+    padding: 10px;
+    display: inline-block;
+    float: top;
+    background-color: rgba(158, 21, 21, 0.7);
+}
+
+h1 {
+    color: white;
+    max-width: 400px;
+    
+}
+
+
+/******************************************************BARRE NAVIGATION*****************************************************/
+nav{
+    margin: 0px;
+    background-color: black;
+    color: white;
+}
+
+#menu {
+    width: auto;
+    padding: 0;
+    margin: 0;
+    margin-left: 15%;
+    max-height: auto;
+    text-align: left; /* positionne le texte */
+    
+}
+
+#menu li {
+    display: inline-block;
+    list-style: none;
+    padding: 0px; /* supprimer les 10 px de padding permet de rétablir l'alignement du menu*/
+    margin: 0px;
+}
+
+#menu li a {
+    display: inline-block;
+    margin: 10px 30px; /* marges supérieures et inférieures puis espace entre les liens (marges sur les côtés gauches et droits) */
+    text-decoration: none;
+    font-weight: normal;
+    color: white;
+    background-color:transparent;
+}
+
+#menu li ul li {
+    display: inherit; /*permet de restituer l'ordonnancement initial vertical des listes*/
+}
+
+ul ul {
+    display: none; /*permet de cacher les listes-enfants de listes*/
+}
+
+li:hover
+{
+    background-color: #9e1515;
+}
+
+li:hover > ul {
+    display: block;    /*permet d'afficher les listes de différentes niveau en survolant les items des listes des niveaux supérieurs*/
+    background-color: #9e1515;
+    position: absolute;  /*pour fixer les puces de la liste principale lorsqu'on affiche les listes secondaires*/
+    max-height: 200px;
+    max-width: auto;
+    padding-left: 0px; /* supprime le padding-left par défaut de l'élément ul*/
+}
+
+
+li:hover ul li {
+    background-color:black;
+}
+
+li:hover ul li:hover {
+    background-color: #9e1515;
+}
+
+a:visited {
+    color: white;
+}
+
+li li:hover ul li a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: normal;
+    color: white;
+}
+
+/******************************************************ENCART GAUCHE : RECHERCHE SIMPLE*****************************************************/
+.encart_recherche {
+    float: left;
+    background-color: black;
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+}
+/******************************************************FOOTER *****************************************************/
+
+footer{
+    height:auto;
+    width:auto;
+    clear:both;
+    background-color:black;
+}
+
+footer > div {
+    text-align:center;
+}
+h6{
+    text-decoration:none;
+    color:white;
+    display:inline-block;
+    text-align:center; /* pour centrer le text */
+    vertical-align:top;
+    margin:2%;
+}
+
+h6 a{
+    text-decoration:none;
+    color:white;
+}
+/*Aspect du texte*/
+#recherche {
+    text-decoration: none;
+    color: white;
+    font-family: Lato, calibri, helvetica, sans-serif;
+    font-weight: normal;
+    padding: 0px 10px;
+}
 
 /*Contenu de la page*/
 /*Recherche et ajout de notices*/
 .actions_pro {
     display: inline-block;
-    margin: 0 5%;
+    margin: 5%;
 }
 
-/*aspect du texxte :"recherche" et "ajout" */
+/*aspect du texte :"recherche" et "ajout" */
 td {
-    width: 20%;
     height: 20%;
     background-color: black;
 }
@@ -28,48 +177,3 @@ td h2 {
     margin-left: 5%;
 }
 
-
-/*Positionnement et aspect des éléments*/
-
-/*Menu de l'aide à droite*/
-.menu_aide {
-    display: inline-block;
-    float: right;
-    width: 25%;
-}
-.menu_aide a {
-    text-decoration: none;
-    color: black;
-}
-/*Aspect du titre*/
-.menu_aide h1 {
-    padding-left: 5%;
-}
-    
-/*Sommaire*/
-#sommaire {
-    list-style: none;
-    text-decoration: none;
-    border-top: 1px solid #326363;
-    padding: 2%;
-}
-
-#sommaire li {
-    list-style: none;
-    color: black;
-}
-
-#sommaire a {
-    text-decoration: none;
-    color: black;
-}
-
-/*Aspect au passage de la souris*/
-#sommaire a:hover {
-    background-color: rgba(255, 255, 255, 0.66);
-}
-
-/*Contenu de la page-Positionnement*/
-.actions_pro {
-    display: inline-block;
-}

@@ -22,36 +22,6 @@ session_start();
         <!-- menu : présentation, aide, catalogue, accès réservé -->
                <?php include("../invariants/menu_pro.php") ?>
 
-            <!--Aide et menu de l'aide-->
-            <div class="menu_aide">
-                <h1><a href="aide_pro.php">AIDE</a></h1>
-                <!-- Sommaire de l'aide professionnelle -->
-            
-        <ol id="sommaire">
-            <li><a href="aide_pro.php#interfacepro">L'interface professionnelle</a>
-                <ul>
-                    <li><a href="aide_pro.php#whyinterfacepro">Pourquoi une interface professionnelle?</a></li>
-                    <li><a href="aide_pro.php#geninterfacepro">Généralités sur l'interface professionnelle</a></li>
-                </ul>
-            </li>
-            <li><a href="aide_pro.php#googlepro">Le moteur de recherche avancé</a>
-                <ul>
-                    <li><a href="aide_pro.php#showgooglepro">Présentation du moteur de recherche</a></li>
-                    <li><a href="aide_pro.php#diffgoogle">Quelles différences avec le moteur de recherche de l'interface publique?</a></li>
-                    <li><a href="aide_pro.php#advicegoogle">Conseils pour l'utilisation du moteur de recherche</a></li>
-                </ul>
-            </li>
-            <li><a href="aide_pro.html#noticepro">Le formulaire de création et de modification des notices</a>
-                <ul>
-                    <li><a href="aide_pro.php#noticeplus">Comment ajouter une notice ?</a></li>
-                    <li><a href="aide_pro.php#noticechange">Comment modifier une notice ?</a></li>
-                    <li><a href="aide_pro.php#noticemoins">Comment supprimer une notice ?</a></li>
-                </ul>
-            </li>
-        </ol>
-    </div>
-            </div>
-
             <!-- Encart gauche avec la recherche -->
             <div class="encart_recherche"> <!-- pourquoi mettre une class ici ? Il n'y aura pas plusieurs encart_recherche dans la même page ? -->
                 <aside>

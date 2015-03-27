@@ -14,33 +14,6 @@
 <body>
 	<!-- Comme pour l'aide utilisateur je laisse la personne qui fait la CSS mettre les <div> là où il a envie de les mettre -->
 
-	<!-- Sommaire de l'aide professionnelle -->
-	<div class="menu_aide">
-		<h2>Sommaire</h2>
-		<ol id="sommaire">
-			<li><a href="#interfacepro">L'interface professionnelle</a>
-				<ul>
-					<li><a href="#whyinterfacepro">Pourquoi une interface professionnelle?</a></li>
-					<li><a href="#geninterfacepro">Généralités sur l'interface professionnelle</a></li>
-				</ul>
-			</li>
-			<li><a href="#googlepro">Le moteur de recherche avancé</a>
-				<ul>
-					<li><a href="#showgooglepro">Présentation du moteur de recherche</a></li>
-					<li><a href="#diffgoogle">Quelles différences avec le moteur de recherche de l'interface publique?</a></li>
-					<li><a href="#advicegoogle">Conseils pour l'utilisation du moteur de recherche</a></li>
-				</ul>
-			</li>
-			<li><a href="#noticepro">Le formulaire de création et de modification des notices</a>
-				<ul>
-					<li><a href="#noticeplus">Comment ajouter une notice ?</a></li>
-					<li><a href="#noticechange">Comment modifier une notice ?</a></li>
-					<li><a href="#noticemoins">Comment supprimer une notice ?</a></li>
-				</ul>
-			</li>
-		</ol>
-	</div>
-
 	<!-- Texte de l'aide professionnelle -->
 	<a id="accueilgo"></a>
 	<div class="help">

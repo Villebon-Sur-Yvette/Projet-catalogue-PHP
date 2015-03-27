@@ -9,11 +9,16 @@
 <li><a href="">...</a>
 </li>
 </ul></li>
-<li><a href="">CATALOGUE<ul class="niveau2">
+<li><a href="">CATALOGUE</a><ul class="niveau2">
 <li><a href="../recherche.php/formulaire_rech_simple.php">Recherche simple</a>
 </li>
 <li><a href="../recherche.php/formulaire_rech_avancee.php">Recherche avancée</a></li>
 </ul>
 </a></li>
+<li><a href="aide_pro.php">AIDE</a>
+<ul class="niveau2">
+<li><a href="../pages_php/aide_pro.php#interfacepro">L'interface professionnelle</a></li>
+<li><a href="../pages_php/aide_pro.php#googlepro">Le moteur de recherche avancé</a></li>
+<li><a href="../pages_php/aide_pro.php#noticepro">Le formulaire de création et de modification des notices</a></li>	
 </ul>
 </nav>
