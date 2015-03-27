@@ -22,41 +22,6 @@
 <!-- Encart gauche avec la recherche -->
  <?php include("../invariants/recherche.php") ?>
  
-    <div class="menu_aide">
-        <h2>Sommaire</h2>
-        <!-- Sommaire "Wikipédia" de l'aide à l'utilisateur -->
-        <ol id="sommaire">
-            <li><a href="#apropos">A propos du site</a>
-                <ul>
-                    <li><a href="#sitebut">Un site dans quel but</a></li>
-                    <li><a href="#proposesite">Que propose ce site</a></li>
-                </ul>
-            </li>
-            <li><a href="#infopra">Informations pratiques</a>
-                <li><a href="#google">Utilisation du moteur de recherche</a>
-                    <ul>
-                        <li><a href="#rechsimple">Le module de recherche simple</a></li>
-                        <li><a href="#rechavancee">La recherche avancée</a></li>
-                        <li><a href="#fructu">Conseils pour une recherche fructueuse</a></li>
-                    </ul>
-                </li>
-                <li><a href="#notice">Comment bien utiliser une notice ?</a>
-                    <ul>
-                        <li><a href="#infoessens">Les informations essentielles</a></li>
-                        <li><a href="#searchbook">Comment retrouver mon ouvrage à partir d'une notice?</a></li>
-                        <li><a href="#avconseil">Conseils avancés pour les notices</a></li>
-                    </ul>
-                </li>   
-                <li><a href="#accesreserve">Accès réservé</a>
-                    <ul>
-                        <li><a href="#concerned">Qui est concerné?</a></li>
-                        <li><a href="#reserved">Pourquoi cette partie réservée?</a></li>
-                    </ul>
-                </li>   
-                <li><a href="#accueilgo">Retour en haut de la page</a></li>
-            </ol>
-        </div>
-
         <!-- Texte de l'aide à l'utilisateur -->
         <a id="accueilgo"></a>
         <div class="help">
