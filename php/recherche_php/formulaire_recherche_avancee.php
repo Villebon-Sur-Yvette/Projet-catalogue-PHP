@@ -1,35 +1,51 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-	<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<title>Formulaire recherche avancée</title>
-		<meta name="author" content="Marie Guyot"/>
+    <head>
+
+        <!-- Mise en place du charset -->
+        <meta charset="UTF-8" />
+
+        <!-- Icone du site-->
+        <link href="../../css/images_css/blason.png" type="image/png" rel="icon" />
+
+        <!-- Métadonnées -->
+        <meta name="author" content="Anne-Cécile Schreiner, Clément Cros, Constance Le Roux, Domitille Guerrier de Dumast, Marie Guyot" />
+        <meta name="keywords" lang="fr" content="catalogue bibliothèque Villebon-sur-Yvette " />
+        <meta name="Description" content="Site internet de la bibliothèque municipale de Villebon-sur-Yvette " />
+        
+        <!-- Titre de la page -->
+        <title>Recherche avancée de la bibliothèque municipale de Villebon-sur-Yvette</title>
+
+        <!-- Liens CSS -->
         <link href="../../css/recherche_avancee.css" rel="stylesheet" />
         <link href="../../css/invariants.css" rel="stylesheet" />
 
-	</head>
+    </head>
+
 	<body>
         <!-- div qui contient l'ensemble du site web -->
         <div class="conteneur">
-<!-- header -->
-<?php include("../invariants/header.php") ?>
 
-<!-- menu : présentation, aide, catalogue, accès réservé -->
-<?php include("../invariants/menu2.php") ?>
+		<!-- header -->
+		<?php include("../invariants/header.php") ?>
 
-<!-- illustration -->
-  <aside>
-  	<figure><img src="../../css/images_css/tour_livres.jpg"/>
-  	</figure>
-  </aside>
+		<!-- menu : présentation, aide, catalogue, accès réservé -->
+		<?php include("../invariants/menu2.php") ?>
 
-  <section id="avancee">
-	<h2>Recherche avancée</h2>
+		<!-- illustration -->
+  		<aside>
+  			<figure>
+  				<img src="../../css/images_css/tour_livres.jpg"/>
+  			</figure>
+  		</aside>
 
-	<!--différents encarts pour une recherche croisée-->
-	<form action="interrogation_rech_avancee.php"  method="POST"> 
-	<!--liste déroulante 1 -->
+  	<section id="avancee">
+		<h2>Recherche avancée</h2>
+
+		<!--différents encarts pour une recherche croisée-->
+		<form action="interrogation_rech_avancee.php"  method="POST"> 
+		<!--liste déroulante 1 -->
 		<select name="select_choix_1">
 			<option value="titre" selected>Titre</option>
 			<option value="soustitre">Sous-titre</option>
@@ -93,18 +109,21 @@
 		
 		<!--champ de recherche 3-->
 		<input type="text" name="recherche_3"/>
+
 		</br>
 	    </br>
 		
 		<input type ="submit" value="Chercher"/> 
 		<input type ="reset"/>
 	</form>
+
 	<h4><a href="recherche_simple.php">Faire une recherche simple</a></h4> 
   
   </section>
   
-<!-- footer -->
-<?php include("../invariants/footer.php") ?>
+	<!-- footer -->
+	<?php include("../invariants/footer.php") ?>
+	
     </div>
 	</body>
 </html>

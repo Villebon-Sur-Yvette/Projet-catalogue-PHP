@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html lang="fr">
+
     <head>
+
+        <!-- Mise en place du charset -->
         <meta charset="UTF-8" />
-        <title>Histoire de la bibliothèque</title>
+
+        <!-- Icone du site-->
+        <link href="../../css/images_css/blason.png" type="image/png" rel="icon" />
+
+        <!-- Métadonnées -->
+        <meta name="author" content="Anne-Cécile Schreiner, Clément Cros, Constance Le Roux, Domitille Guerrier de Dumast, Marie Guyot" />
+        <meta name="keywords" lang="fr" content="catalogue bibliothèque Villebon-sur-Yvette " />
+        <meta name="Description" content="Site internet de la bibliothèque municipale de Villebon-sur-Yvette " />
+        
+        <!-- Titre de la page -->
+        <title>Histoire de la bibliothèque de Villebon-sur-Yvette</title>
+
+        <!-- Liens CSS -->
         <link href="../../css/invariants.css" rel="stylesheet" />
         <link href="../../css/histoire_biblio.css" rel="stylesheet" />
+   
     </head>
+
     <body>
         <div class="conteneur">
             <!-- header -->
@@ -18,6 +35,7 @@
             <!-- Encart gauche avec la recherche -->
             <?php include("../invariants/recherche.php") ?>
 
+            <!-- Le texte de l'histoire de la bibliothèque va être intégré à cette page. Il est en cours de correction. -->
             <section class="informationspratiques">
                 <article id="histoire">
                     <h2>Une bibliothèque digne des plus grandes</h2>

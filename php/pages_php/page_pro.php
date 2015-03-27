@@ -1,20 +1,33 @@
+<!-- Ouverture de la session PHP pour ouvrir l'interface sécurisée -->
 <?php
 session_start();
 ?>
+
+<!-- Début de la page HTML -->
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="fr">
+
     <head>
-        <title> Bibliothèque municipale de Villebon-sur-Yvette </title>
+
+        <!-- Mise en place du charset -->
         <meta charset="UTF-8" />
+
         <!-- Icone du site-->
-        <link href="../../css/images_css/blason.png" type="image/png" rel="icon"/>
-        <!-- <meta name="author" content="Anne-Cécile et Constance" /> -->
-        <!-- <meta name="keywords" lang="fr" content="catalogue bibliothèque" /> -->
-        <!-- <meta name="Description"
-            content="Site internet de la bibliothèque municipale de " /> -->
+        <link href="../../css/images_css/blason.png" type="image/png" rel="icon" />
+
+        <!-- Métadonnées -->
+        <meta name="author" content="Anne-Cécile Schreiner, Clément Cros, Constance Le Roux, Domitille Guerrier de Dumast, Marie Guyot" />
+        <meta name="keywords" lang="fr" content="catalogue bibliothèque Villebon-sur-Yvette " />
+        <meta name="Description" content="Site internet de la bibliothèque municipale de Villebon-sur-Yvette " />
+        
+        <!-- Titre de la page -->
+        <title>Interface professionnelle de la bibliothèque municipale de Villebon-sur-Yvette</title>
+
+        <!-- Liens CSS -->
         <link href="../../css/style_pro.css" rel="stylesheet" />
+
     </head>
-    
+
     <body>
         <!-- header pro -->
                  <?php include("../invariants/header_pro.php") ?>
@@ -39,6 +52,7 @@ session_start();
                 </aside>
             </div>
 
+            <!-- Contenu central avec les deux images "dynamiques" -->
             <div class="actions_pro">
                 <table>
                     <tbody>

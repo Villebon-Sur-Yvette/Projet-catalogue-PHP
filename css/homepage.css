@@ -1,4 +1,7 @@
 
 #slideshow {
-	margin: 5%;
+	margin-left: 17%;
+	margin-top: 6%;
+	position: relative;
+	z-index: 1;
 }

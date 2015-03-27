@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html lang="fr">
+
     <head>
+
+        <!-- Mise en place du charset -->
         <meta charset="UTF-8" />
-        <title>Informations pratiques</title>
+
+        <!-- Icone du site-->
+        <link href="../../css/images_css/blason.png" type="image/png" rel="icon" />
+
+        <!-- Métadonnées -->
+        <meta name="author" content="Anne-Cécile Schreiner, Clément Cros, Constance Le Roux, Domitille Guerrier de Dumast, Marie Guyot" />
+        <meta name="keywords" lang="fr" content="catalogue bibliothèque Villebon-sur-Yvette " />
+        <meta name="Description" content="Site internet de la bibliothèque municipale de Villebon-sur-Yvette " />
+        
+        <!-- Titre de la page -->
+        <title>Informations pratiques sur la bibliothèque</title>
+
+        <!-- Liens CSS -->
         <link href="../../css/invariants.css" rel="stylesheet" />
         <link href="../../css/info_pratiques.css" rel="stylesheet" />
+  
     </head>
+
     <body>
         <div class="conteneur">
 
@@ -19,6 +36,8 @@
         <?php include("../invariants/recherche.php") ?>
 
             <section class="informationspratiques">
+
+                <!-- Informations pratiques concernant la bibliothèque -->
                 <article id="horaires">
                     <h2>INFORMATIONS PRATIQUES</h2>
                     <h2>Horaires d'ouverture au public</h2>
@@ -38,6 +57,8 @@
                         <li>Non Villebonnais : 28,40 €.</li>
                     </ul>
                 </article>
+
+                <!-- Conditions de prêt de la bibliothèque -->
                 <article class="pret">
                     <h2>Prêt de DVD et de CD</h2>
                     <p>Un abonnement annuel est nécessaire pour emprunter 10 CD et 4 DVD. Cet
@@ -54,6 +75,8 @@
                     <p>Lors du retour, merci de ne pas déposer les documents (DVD et CD) dans la
                         boîte à livres. </p>
                 </article>
+
+                <!-- Présentation des activités de la bibliothèque -->
                 <article id="durantannee">
                     <h2>Tout au long de l'année</h2>
                     <p>Expositions et animations temporaires.</p>

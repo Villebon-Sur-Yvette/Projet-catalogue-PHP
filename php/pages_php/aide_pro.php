@@ -1,20 +1,31 @@
-<html>
-<head>
-	<title>Aide de l'interface professionnelle</title>
+<!DOCTYPE html>
+<html lang="fr">
 
-	<!-- Comme toujours je laisse nos merveilleux graphistes faire leurs miracles !-->
-	<link rel="stylesheet" type="text/css" href="../../css/aide.css">
+    <head>
 
-	<meta http-equiv="Content-type" content="text/html, charset= utf-8"/>
+        <!-- Mise en place du charset -->
+        <meta charset="UTF-8" />
 
-	<!-- Pour ce qui est des métadonnées il faut voir en commun ce que l'on veut mettre. -->
-	<meta name="description"/>
-	<meta type="robots/keywords"/>
-</head>
-<body>
-	<!-- Comme pour l'aide utilisateur je laisse la personne qui fait la CSS mettre les <div> là où il a envie de les mettre -->
+        <!-- Icone du site-->
+        <link href="../../css/images_css/blason.png" type="image/png" rel="icon" />
 
+        <!-- Métadonnées -->
+        <meta name="author" content="Anne-Cécile Schreiner, Clément Cros, Constance Le Roux, Domitille Guerrier de Dumast, Marie Guyot" />
+        <meta name="keywords" lang="fr" content="catalogue bibliothèque Villebon-sur-Yvette " />
+        <meta name="Description" content="Site internet de la bibliothèque municipale de Villebon-sur-Yvette " />
+        
+        <!-- Titre de la page -->
+        <title>Aide pour l'interface professionnelle</title>
+
+        <!-- Liens CSS -->
+        <link rel="stylesheet" type="text/css" href="../../css/aide.css">
+        
+    </head>
+
+	<body>
+	
 	<!-- Texte de l'aide professionnelle -->
+	<!-- Le texte de l'aide professionnelle est à relire pour corriger les fautes. -->
 	<a id="accueilgo"></a>
 	<div class="help">
 		<h2>Aide à l'utilisation de l'interface professionnelle</h2>
@@ -203,7 +214,7 @@
 		<p>
 			Nous espérons que tous ces conseils vous ont été utiles.
 		</p>
-	<!-- Bouton retour en haut de la page. Je ne sais pas si tu veux que le bouton soit compris dans la div. -->
+			<!-- Bouton retour en haut de la page -->
             <div id="boutonaccueil"><a href="#accueilgo">Retour en haut de la page</a></div>
             <br/>
 </div>

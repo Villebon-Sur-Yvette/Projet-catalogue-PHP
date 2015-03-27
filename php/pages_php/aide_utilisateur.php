@@ -1,31 +1,46 @@
-div<!DOCTYPE html>
-<html>
-<head>
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+
+        <!-- Mise en place du charset -->
         <meta charset="UTF-8" />
-        <title>Informations pratiques</title>
+
+        <!-- Icone du site-->
+        <link href="../../css/images_css/blason.png" type="image/png" rel="icon" />
+
+        <!-- Métadonnées -->
+        <meta name="author" content="Anne-Cécile Schreiner, Clément Cros, Constance Le Roux, Domitille Guerrier de Dumast, Marie Guyot" />
+        <meta name="keywords" lang="fr" content="catalogue bibliothèque Villebon-sur-Yvette " />
+        <meta name="Description" content="Site internet de la bibliothèque municipale de Villebon-sur-Yvette " />
+        
+        <!-- Titre de la page -->
+        <title>Aide pour l'utilisateur de la bibliothèque de Villebon-sur-Yvette</title>
+
+        <!-- Liens CSS -->
         <link href="../../css/aide.css" rel="stylesheet" />
         <link href="../../css/invariants.css" rel="stylesheet" />
-</head>
+    
+    </head>
 
-<body>
+    <body>
     <div class="conteneur">
-<!-- bandeau sup : logo, titre et image de la ville -->
-<header>
+
+    <!-- bandeau sup : logo, titre et image de la ville -->
+    <header>
     <div class="logo"><figure><img src="../../css/images_css/blason.png" /></figure></div>
     <div id="titrepp"><h1>Bibliothèque municipale</h1><h1>de Villebon-sur-Yvette</h1></div>
-</header>
+    </header>
 
-
-<!-- menu : présentation, aide, catalogue, accès réservé -->
- <?php include("../invariants/menu2.php") ?>
+    <!-- menu : présentation, aide, catalogue, accès réservé -->
+    <?php include("../invariants/menu2.php") ?>
  
-<!-- Encart gauche avec la recherche -->
- <?php include("../invariants/recherche.php") ?>
+    <!-- Encart gauche avec la recherche -->
+    <?php include("../invariants/recherche.php") ?>
  
         <!-- Texte de l'aide à l'utilisateur -->
         <a id="accueilgo"></a>
         <div class="help">
-            <!-- Peut-on remettre le titre comme il était et faire du small-caps dans la CSS ? -->
             <h2>Conseils à l'utilisateur de ce site</h2>
             <p>
                 Cette rubrique a pour but d'aider l'utilisateur à exploiter au mieux toutes les ressources de ce site. Dans ce but, nous allons ici nous attarder sur l'ensemble des fonctionnalités du site et les expliquer en détail une à une. Si vous rencontrez un problème particulier vous pouvez cliquer sur le sommaire ci-dessus pour aller directement à la rubrique qui vous intéresse. 

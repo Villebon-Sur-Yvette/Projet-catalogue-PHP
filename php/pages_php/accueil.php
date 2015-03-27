@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-    <!-- métadonnées -->
     <head>
+
+        <!-- Mise en place du charset -->
         <meta charset="UTF-8" />
+
         <!-- Icone du site-->
         <link href="../../css/images_css/blason.png" type="image/png" rel="icon" />
-        <!-- <meta name="author" content="Anne-Cécile et Constance" /> -->
-        <!-- <meta name="keywords" lang="fr" content="catalogue bibliothèque" /> -->
-        <!-- <meta name="Description"
-            content="Site internet de la bibliothèque municipale de " /> -->
+
+        <!-- Métadonnées -->
+        <meta name="author" content="Anne-Cécile Schreiner, Clément Cros, Constance Le Roux, Domitille Guerrier de Dumast, Marie Guyot" />
+        <meta name="keywords" lang="fr" content="catalogue bibliothèque Villebon-sur-Yvette " />
+        <meta name="Description" content="Site internet de la bibliothèque municipale de Villebon-sur-Yvette " />
+        
+        <!-- Titre de la page -->
         <title>Bibliothèque municipale de Villebon-sur-Yvette</title>
+
+        <!-- Liens CSS -->
         <link href="../../css/invariants.css" rel="stylesheet" />
         <link href="../../css/homepage.css" rel="stylesheet" />
 
         <!-- Javascript et CSS nécessaires pour le maintien du slideshow -->
-
         <script type="text/javascript" src="../../javascript/jquery-1.11.2.min.js"></script>
         <script type="text/javascript" src="../../javascript/coin-slider.min.js"></script>
         <link rel="stylesheet" type="text/css" href="../../css/coin-slider-styles.css" />
@@ -59,7 +65,7 @@
                 </section>
             </div>
 
-            <!-- contenu de la page active -->
+            <!-- Slideshow de la page d'accueil -->
             <div id="contenu">
                 <div id="slideshow">
                     <div id="coin-slider">
@@ -90,15 +96,15 @@
             <!-- footer -->
             <?php include("../invariants/footer.php") ?>
             
-
         </div>
 
             <!-- Script nécessaire au slideshow -->
 
             <script type="text/javascript">
                 $(document).ready(function(){
-                $('#coin-slider').coinslider({ width: 700, height: 400, delay: 4000, navigation: true, links: false, hoverPause: false });
+                $('#coin-slider').coinslider({ width: 700, height: 400, delay: 4000, navigation: false, links: false, hoverPause: false });
                 });
         </script>
+        
     </body>
 </html>
