@@ -24,6 +24,7 @@ header{
 
 header a{
     text-decoration:none; /*pour supprimer le style par défaut du lien utilisé en titre principal*/
+    color:white;
 }
 
 header a:visited{
@@ -163,6 +164,10 @@ li li:hover ul li a {
     font-family: Lato, calibri, helvetica, sans-serif;
     font-weight: normal;
     padding: 0px 10px;
+}
+
+#recherche a {
+    color:white;
 }
 /******************************************************ENCART DROITE : ACTUALITES *****************************************************/
 .encart_actualite {

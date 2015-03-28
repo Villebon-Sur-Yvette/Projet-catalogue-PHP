@@ -26,13 +26,10 @@
     <body>
     <div class="conteneur">
 
-    <!-- bandeau sup : logo, titre et image de la ville -->
-    <header>
-    <div class="logo"><figure><img src="../../css/images_css/blason.png" /></figure></div>
-    <div id="titrepp"><h1>Bibliothèque municipale</h1><h1>de Villebon-sur-Yvette</h1></div>
-    </header>
+    <!-- header -->
+            <?php include("../invariants/header.php") ?>
 
-    <!-- menu : présentation, aide, catalogue, accès réservé -->
+    <!-- menu 2 : avec retour page accueil -->
     <?php include("../invariants/menu2.php") ?>
  
     <!-- Encart gauche avec la recherche -->
