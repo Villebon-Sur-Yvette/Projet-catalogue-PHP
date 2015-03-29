@@ -25,7 +25,6 @@
 	<body>
 	
 	<!-- Texte de l'aide professionnelle -->
-	<!-- Le texte de l'aide professionnelle est à relire pour corriger les fautes. -->
 	<a id="accueilgo"></a>
 	<div class="help">
 		<h2>Aide à l'utilisation de l'interface professionnelle</h2>
@@ -57,7 +56,7 @@
 		<h5>Généralités sur l'interface professionnelle</h5>
 		<p>
 			Cette interface comporte plusieurs outils pour aider les personnels de la bibliothèque dans leur travail quotidien:
-			<ul>
+			<ol>
 				<li>
 					Un moteur de recherche qui comporte des critères de recherche plus professionnels que ceux présents dans le
 					moteur de recherche de l'interface publique.
@@ -68,7 +67,7 @@
 				<li>
 					Une aide pour utiliser ces outils.
 				</li>
-			</ul>
+			</ol>
 		</p>
 		<br/>
 		<a id="googlepro"></a>
@@ -104,19 +103,25 @@
 			du site de la bibliothèque se situent en grande partie dans la présence de nouveaux critères de recherche dans ce moteur
 			de recherche. En effet, ce moteur de recherche comporte des nouveaux critères de recherche pour la plupart issus du monde
 			professionnel de la bilbiothèque.
-			<ul>
+			<ol>
 				<li>
 					Le code ISBN qui permet de localiser un ouvrage à partir des bases de données professionelles ou dans le cadre 
 					de recherches pour nouvelles acquisitions
 				</li>
 				<li>
-					La côte de l'ouvrage qui permet de retrouver rapidement un ouvrage présent dans la bibliothèque de Villebon-sur-Yvette
+					La côte de l'ouvrage qui permet de retrouver rapidement un ouvrage présent dans la bibliothèque de Villebon-sur-Yvette.
+					Ce paramètre existe aussi pour le public. Nous soulignons ici un usage différent d'un même paramètre.
 				</li>
 				<li>
 					Le code DEWEY qui colle à la caractérisation des ouvrages par la Bibliothèque nationale de France et qui permet de rechercher
 					par thèmes, auteurs, etc... selon un mode plus performant et professionnel.
 				</li>
-			</ul>
+			</ol>
+		</p>
+		<p>
+			Tous ces critères permettent de faire des recherches à partir de données professionnelles (que le personnel peut par exemple
+			extraire du SUDOC ou encore au moment des nouvelles acquisitions). Cela permet de faire une recherche précise avec des détails
+			somme toute parcellaires ou trouvables en dehors du site de la bibliothèque. 
 		</p>
 		<p>
 			L'ensemble de ces critères permet des recherches plus rapides et plus efficaces en manipulant des données issus du domaine
@@ -187,7 +192,7 @@
 		<h5>Comment modifier une notice ?</h5>
 		<p>
 			Pour modifier une notice, il faut accéder au formulaire de modification des notices présent dans l'interface
-			professionnelle du site de la bibliothèque.
+			professionnelle (dans la barre de menu) du site de la bibliothèque.
 			Nous rappelons que ce formulaire n'est accessible qu'à un petit nombre d'utilisateurs de l'interface professionnelle
 			(à savoir le super-utilisateur et quelques ayants-droits).
 		</p>
@@ -201,7 +206,7 @@
 		<h5>Comment supprimer une notice ?</h5>
 		<p>
 			Pour supprimer une notice, il faut accéder au formulaire de suppression des notices présent dans l'interface
-			professionnelle du site de la bibliothèque.
+			professionnelle (dans la barre de menu) du site de la bibliothèque.
 			Nous rappellons que ce formulaire n'est accessible qu'au super-utilisateur ce qui limite ainsi les erreurs et les
 			fausses manipulations. On maximise ainsi la sécurité de la base de données.
 		</p>
