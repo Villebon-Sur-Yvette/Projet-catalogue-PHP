@@ -5,8 +5,7 @@
 		<meta http-equiv="Content-type" content="text/html/php" meta charset="UTF-8" />
 		<title>Notice ISBD</title>
 		<link href="../../css/invariants.css" rel="stylesheet" />
-		<!--  autre fichier css??? <link href="../../css/" rel="stylesheet" /> -->
-
+		<link href="../../css/css_noticesimple.css" rel="stylesheet" />
 </head>
 
 <body>

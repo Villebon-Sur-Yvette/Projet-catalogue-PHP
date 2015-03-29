@@ -4,12 +4,25 @@
 	<meta http-equiv="Content-type" content="text/html/php"  charset="UTF-8" /> 
 	<title>interrogation_recherche_simple</title>
 
-	<link href=".css" rel="stylesheet"/> <!--il faut encore faire la css bien sûr-->
-	<!-- Par contre, est-il utile d'ajouter des métadonnées?? Je ne sais pas, je veux ton avis! 
-	On peut peut-être mettre en mot clef les différentes recherches possibles par ce formulaire, exemple : auteur/éditeur/titre-->
+	<link href"=../../css/invariants.css" rel="stylesheet"/> 
+	<link href"=../../css/css_interrogation_rech_simple.css" rel="stylesheet"/> 
+
 <head>
 
 <body>
+<div class="conteneur">
+
+<!-- header -->
+<?php include("../invariants/header.php") ?>
+
+<!-- menu 2 : avec retour page accueil -->
+<?php include("../invariants/menu2.php") ?>
+
+<!-- Encart gauche avec la recherche -->
+<?php include("../invariants/recherche.php") ?>
+
+<section> 
+
 <?php
 require '../../connexion.php';
 
@@ -71,7 +84,7 @@ $results=$idcom->query("SELECT  document.id_document,
   
 		if ($results->num_rows==0)
 		{
-				echo "Aucune réponse"; 
+				echo "<h2>Aucune réponse<h2>"; 
 		}
 		else
 			{
@@ -134,11 +147,17 @@ $results=$idcom->query("SELECT  document.id_document,
   }
 else {
 	
-	echo "Veuillez remplir le champ !";
+	echo "<h2>Veuillez remplir le champ !<h2>";
 	
 }	
 
 $idcom->close();
 ?>
+</section>
+
+<!-- footer -->
+<?php include("../invariants/footer.php") ?>
+
+</div>
 </body>
 </html>
