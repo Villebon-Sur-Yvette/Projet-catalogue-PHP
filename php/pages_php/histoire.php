@@ -38,31 +38,31 @@
             <!-- Le texte de l'histoire de la bibliothèque va être intégré à cette page. Il est en cours de correction. -->
             <section class="informationspratiques">
                 <article id="histoire">
-                    <h2>Histoire de la bibliothèque de Villebon-sur-Yvette</h2>
-                    <p>
-                        La bibliothèque de Villebon-sur-Yvette date des années 1960 c'est-à-dire au moment de l'essor démographique
-                        de la commune de Villebon-sur-Yvette. En effet entre 1946 et 2000 la commune passe de 1456 à 9912 habitants 
-                        (soit une hausse de 681%). Par ailleurs en 1962, la ville de Villebon-sur-Yvette est considéré comme une cité
-                        residentielle. 
-                    </p>
-                    <p>
-                        De part cette forte augmentation de la population, les années 1960-1970 sont des années de construction et de développement
-                        de Villebon-sur-Yvette. C'est durant cette période que sont construit les services publics : agence de La Poste, première
-                        MJC, maison de retraite, et bien entendu la bibliothèque qui deviendre médiathèque en 1999. Dans les années 1980, pour 
-                        faciliter l'accès aux livres pour les plus jeunes, une ludothèque sera créé à proximité de la crèche municipale. Cette 
-                        ludothèque fait officiellement partie de la bibliothèque de Villebon-sur-Yvette. 
-                    </p>
-                    <p>
-                        D'abord logé dans une annexe municipale, la bibliothèque a son propre batîment depuis 1989, aujourd'hui encore
-                        elle se situe au même endroit dans ce batîment qui se veut moderne et le plus pratique possible pour accueillir
-                        tous les lecteurs de la bibliothèque 
-                    </p>
-                    <p>
-                        Dès la mise en place du site Web de la commune de Villebon-sur-Yvette, la médiathèque a eu une place de premier
-                        ordre. Aujourd'hui sous l'impulsion de sa directrice Catherine Foly, la médiathèque propose son propre site pour
-                        gagner encore en visibilité et en praticité. C'est la raison d'être de ce nouveau site.
-                    </p>
-                    <img src="../../css/images_css/photo_biblio.jpg" name="photo bibliothèque" />
+                    <h2>Une bibliothèque digne des plus grandes</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquet
+                        risus nec aliquam iaculis. Cras fringilla hendrerit justo, in hendrerit ex
+                        fermentum in. Nunc tristique semper augue, sed porttitor diam aliquet quis.
+                        Sed faucibus est feugiat lectus commodo, nec accumsan turpis porttitor.
+                        Aliquam elementum nibh sed turpis ultrices, eu vehicula orci luctus.
+                        Maecenas ut convallis purus, malesuada aliquam arcu. Nunc pharetra leo at
+                        nulla lobortis dapibus. Quisque pretium tellus ut euismod condimentum.
+                        Phasellus eget auctor turpis, a tempor neque. Mauris pellentesque sem a urna
+                        commodo, at tristique augue tempus. Aenean auctor aliquet velit, eu
+                        consectetur erat laoreet nec. Curabitur nec bibendum lectus. Maecenas
+                        facilisis, ligula ac vulputate ultrices, odio diam dictum tortor, pulvinar
+                        ullamcorper lacus diam non orci. Aenean sagittis nisi ut enim vulputate, non
+                        mollis metus pharetra. In egestas ligula eget nisi dictum rhoncus. </p>
+                    <p>Quisque aliquam, nibh vitae semper dapibus, nulla sem blandit odio, a finibus
+                        diam metus vel sem. Aenean efficitur efficitur vulputate. Duis bibendum est
+                        sit amet tristique semper. Curabitur pretium felis lorem, ut tempor eros
+                        fermentum sed. Nunc auctor ac nibh a iaculis. Etiam convallis elit vel
+                        dictum tristique. In lectus magna, tincidunt eget diam nec, accumsan blandit
+                        metus. Fusce cursus congue magna ac hendrerit. </p>
+                    <p>Nullam vel orci a felis lacinia efficitur. Nam fermentum ornare pharetra.
+                        Suspendisse faucibus gravida elit interdum tristique. Etiam in pharetra
+                        lorem, in tempus lectus. Sed at nisl in mauris iaculis commodo dictum ac
+                        lacus. Morbi interdum felis nec est malesuada sagittis. Fusce vel sodales
+                        odio. </p>
                 </article>
             </section>
 
