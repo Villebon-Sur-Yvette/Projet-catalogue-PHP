@@ -24,6 +24,10 @@
 <section> 
 
 <?php
+// On teste si le fomulaire a été appelé 
+if (isset($_POST['submit'])) {
+
+//Connexion à la base de données
 require '../../connexion.php';
 
 //récupération d'une variable
@@ -149,7 +153,13 @@ else {
 	
 	echo "<h2>Veuillez remplir le champ !<h2>";
 	
+	}
+
 }	
+	//changer le chemin
+else {
+	header("Location: recherche_simple.php");
+}			
 
 $idcom->close();
 ?>

@@ -46,7 +46,7 @@
 		<form action="interrogation_rech_simple.php" method="POST"> <!--revoir le chemin accès-->
 			<input type ="text" name="recherche_simple"/>
 			<br/>
-			<input type ="submit" value="Chercher"/>
+			<input type ="submit" name="submit" value="Chercher"/>
 			<input type ="reset" value="Effacer"/>
 		</form>
 	</div>
