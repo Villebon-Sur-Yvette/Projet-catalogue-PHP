@@ -113,7 +113,7 @@
 		</br>
 	    </br>
 		
-		<input type ="submit" value="Chercher"/> 
+		<input type ="submit" name="submit" value="Chercher"/> 
 		<input type ="reset"/>
 	</form>
 

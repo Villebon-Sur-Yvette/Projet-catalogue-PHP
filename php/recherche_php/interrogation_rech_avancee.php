@@ -24,6 +24,10 @@
 <section> 
 
 <?php
+// On teste si le fomulaire a été appelé 
+if (isset($_POST['submit'])) {
+	
+//Appel de la base de données
 require '../../connexion.php';
 
 // Constante
@@ -214,7 +218,14 @@ if ($taille_recherche_ordonnee!=0){
 else {
 	
 	echo "<h2>Veuillez remplir au moins un champ !<h2>";
+	}	
+	
 }	
+	//changer le chemin
+else {
+	header("Location: formulaire_recherche_avancee.php");
+}		
+	
 ?>
 </section>
 
