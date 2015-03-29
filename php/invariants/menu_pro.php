@@ -12,7 +12,7 @@
 <li><a href="">CATALOGUE</a><ul class="niveau2">
 <li><a href="../recherche.php/formulaire_rech_simple.php">Recherche simple</a>
 </li>
-<li><a href="../recherche.php/formulaire_rech_avancee.php">Recherche avancée</a></li>
+<li><a href="../recherche.php/formulaire_recherche_avancee_pro.php">Recherche avancée</a></li>
 </ul>
 </a></li>
 <li><a href="aide_pro.php">AIDE</a>

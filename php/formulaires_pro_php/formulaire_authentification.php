@@ -26,22 +26,32 @@
 		<!-- Formulaire d'authentification pour accèder à l'interface professionnelle -->
 		<form action='authentification.php' method='POST'>
 		
+		<h2>Accès restreint</h2>
+
 		<fieldset>
 			<div id="authent">
 		Adresse mail : 
 			<input type='email' name='email_usager'/>
-		</br>
-		</br>
+		<br/>
+		<br/>
 		Mot de passe : 
 			<input type='password' name='pw_usager'/>
 		<br/>
-		</br>
+		<br/>
 			<input type='submit' value='S&#39;identifier'/>
-		</br>
+		<br/>
 		</div>
 		</fieldset>
 		
 		</form>
+
+		<p>
+			Cette page permet aux personnels de la bibliothèque de Villebon-sur-Yvette d'accéder à la partie privé de ce site.
+			L'identification est obligatoire. 
+			<br/>
+			Si vous n'êtes pas concerné, merci de bien vouloir quitter cette page.
+		</p>
+
 		<img src="../../css/images_css/authentification.PNG" alt="pile de livres"/>
 
 	</body>
