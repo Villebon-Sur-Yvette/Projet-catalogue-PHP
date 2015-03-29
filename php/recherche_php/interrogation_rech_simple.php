@@ -156,7 +156,7 @@ else {
 	}
 
 }	
-	//changer le chemin
+	//chemin vers formulaire recherche_simple
 else {
 	header("Location: recherche_simple.php");
 }			

@@ -27,7 +27,7 @@
 // On teste si le fomulaire a été appelé 
 if (isset($_POST['submit'])) {
 	
-//Appel de la base de données
+//Connexion à la base de données
 require '../../connexion.php';
 
 // Constante
@@ -221,7 +221,7 @@ else {
 	}	
 	
 }	
-	//changer le chemin
+	//chemin vers le formulaire de recherche avancée
 else {
 	header("Location: formulaire_recherche_avancee.php");
 }		
