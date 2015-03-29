@@ -5,7 +5,7 @@
 		<meta http-equiv="Content-type" content="text/html/php"  charset="UTF-8" /> 
 		<title>Notice ISBD</title>
 		<link href="../../css/invariants.css" rel="stylesheet" />
-		<!--  autre fichier css??? <link href="../../css/" rel="stylesheet" /> -->
+		<link href="../../css/css_noticeISBD.css" rel="stylesheet" />
 
 </head>
 
@@ -21,7 +21,8 @@
 <!-- Encart gauche avec la recherche -->
 <?php include("../invariants/recherche.php") ?>
 
-<section> <!--  j'ai mis tout le php de la notice dans une section--> 
+<section> <!--  j'ai mis tout le php de la notice dans une section-->
+ 
 <?php
 require '../../connexion.php';
 

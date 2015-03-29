@@ -4,12 +4,25 @@
 	<meta http-equiv="Content-type" content="text/html/php"  charset="UTF-8" /> 
 	<title>interrogation_recherche_simple</title>
 
-	<link href=".css" rel="stylesheet"/> <!--il faut encore faire la css bien sûr-->
-	<!-- Par contre, est-il utile d'ajouter des métadonnées?? Je ne sais pas, je veux ton avis! 
-	On peut peut-être mettre en mot clef les différentes recherches possibles par ce formulaire, exemple : auteur/éditeur/titre-->
+	<link href="../../css/invariants.css" rel="stylesheet"/>
+	<link href="../../css/css_interrogation_rech_avancee.css" rel="stylesheet"/> 
+
 <head>
 
 <body>
+<div class="conteneur">
+
+<!-- header -->
+<?php include("../invariants/header.php") ?>
+
+<!-- menu 2 : avec retour page accueil -->
+<?php include("../invariants/menu2.php") ?>
+
+<!-- Encart gauche avec la recherche -->
+<?php include("../invariants/recherche.php") ?>
+
+<section> 
+
 <?php
 require '../../connexion.php';
 
@@ -132,14 +145,14 @@ if ($taille_recherche_ordonnee!=0){
 	  
 			if ($results->num_rows==0)
 				{ 
-					echo "Aucune réponse"; 
+					echo "<h2>Aucune réponse<h2>"; 
 				} 
 			else 
 				{
 				
 				// Nombre de résultants
 					$nb_rows = mysqli_num_rows($results);
-					echo $nb_rows." résultat(s)<br/><br/>";
+					echo $nb_rows." résultat(s)</br> </br>";
 				
 				//affichage des résultats
 				while ( $rows=$results->fetch_array(MYSQLI_ASSOC) ) {
@@ -200,9 +213,14 @@ if ($taille_recherche_ordonnee!=0){
 }
 else {
 	
-	echo "Veuillez remplir au moins un champ !";
-	
+	echo "<h2>Veuillez remplir au moins un champ !<h2>";
 }	
 ?>
+</section>
+
+<!-- footer -->
+<?php include("../invariants/footer.php") ?>
+
+</div>
 </body>
 </html>
