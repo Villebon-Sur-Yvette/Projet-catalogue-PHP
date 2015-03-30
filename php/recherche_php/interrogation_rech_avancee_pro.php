@@ -1,13 +1,18 @@
-<html>
-<head>
-	
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
 	<meta http-equiv="Content-type" content="text/html/php"  charset="UTF-8" /> 
 	<title>interrogation_recherche_simple</title>
 
 	<link href="../../css/invariants.css" rel="stylesheet"/>
 	<link href="../../css/css_interrogation_rech_avancee.css" rel="stylesheet"/> 
 
-<head>
+	<!-- Icone du site-->
+    <link href="../../css/images_css/blason.png" type="image/png" rel="icon" />
+
+    <!-- Métadonnées -->
+    <meta name="author" content="Anne-Cécile Schreiner, Clément Cros, Constance Le Roux, Domitille Guerrier de Dumast, Marie Guyot" />
+	</head>
 
 <body>
 <div class="conteneur">
