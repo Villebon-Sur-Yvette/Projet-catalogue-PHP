@@ -4,8 +4,8 @@
 	<meta http-equiv="Content-type" content="text/html/php"  charset="UTF-8" /> 
 	<title>interrogation_recherche_simple</title>
 
-	<link href"=../../css/invariants.css" rel="stylesheet"/> 
-	<link href"=../../css/css_interrogation_rech_simple.css" rel="stylesheet"/> 
+	<link href="../../css/invariants.css" rel="stylesheet"/> 
+	<link href="../../css/css_interrogation_rech_simple.css" rel="stylesheet"/> 
 
 	<!-- Icone du site-->
     <link href="../../css/images_css/blason.png" type="image/png" rel="icon" />
