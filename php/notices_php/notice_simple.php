@@ -47,7 +47,8 @@ $results=$idcom->query("SELECT document.id_document,
 								document.cote,
 								document.isbn,
 								concat(traducteur.prenom, ' ', traducteur.nom) as traducteur,
-								langueoriginale.intitule as langueoriginale
+								langueoriginale.intitule as langueoriginale,
+								langue.intitule as langue
 								
 						FROM hippolyte.document
 						left join auteur_document on auteur_document.id_document=document.id_document
@@ -59,6 +60,7 @@ $results=$idcom->query("SELECT document.id_document,
 						left join genre on document.id_genre=genre.id_genre
 						left join traducteur on document.id_traducteur=traducteur.id_traducteur
 						left join langueoriginale on document.id_langueoriginale=langueoriginale.id_langueoriginale
+						left join langue on document.id_langue=langue.id_langue
 						WHERE document.id_document = '$_POST[id]'LIMIT 1");
 
 //affichage des résulats selon un modèle simple						
@@ -99,6 +101,10 @@ $rows=$results->fetch_array(MYSQLI_ASSOC);
 				echo $rows['editeur'];
 				echo ", ";
 				echo $rows['dateedition'];
+				echo ".";
+				echo "<br/>";
+				echo "Langue : ";
+				echo $rows['langue'];
 				echo ".";
 				echo "<br/>";
 				echo "Type de document : ";

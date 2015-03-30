@@ -3,8 +3,8 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Lun 23 Mars 2015 à 13:19
--- Version du serveur :  5.6.17
+-- Généré le :  Lun 30 Mars 2015 à 16:25
+-- Version du serveur :  5.6.17-log
 -- Version de PHP :  5.5.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -38,7 +38,6 @@ CREATE TABLE IF NOT EXISTS `auteur` (
 --
 
 INSERT INTO `auteur` (`id_auteur`, `nom`, `prenom`) VALUES
-(1, 'test', 'test'),
 (2, 'Racine', 'Jean'),
 (3, 'Tolkien', 'J.R.R.'),
 (4, 'Badiou', 'Alain'),
@@ -93,11 +92,8 @@ CREATE TABLE IF NOT EXISTS `auteur_document` (
 --
 
 INSERT INTO `auteur_document` (`id_auteur`, `id_document`) VALUES
-(1, 3),
-(2, 3),
 (2, 5),
 (3, 6),
-(3, 8),
 (3, 8),
 (3, 9),
 (4, 11),
@@ -133,7 +129,6 @@ INSERT INTO `auteur_document` (`id_auteur`, `id_document`) VALUES
 (23, 45),
 (24, 45),
 (25, 47),
-(25, 47),
 (25, 46),
 (26, 48),
 (27, 49),
@@ -150,6 +145,8 @@ INSERT INTO `auteur_document` (`id_auteur`, `id_document`) VALUES
 (35, 59),
 (36, 60),
 (3, 29),
+(18, 42),
+(19, 43),
 (18, 42),
 (19, 43);
 
@@ -214,56 +211,54 @@ CREATE TABLE IF NOT EXISTS `document` (
 --
 
 INSERT INTO `document` (`id_document`, `titre`, `soustitre`, `editeur`, `lieuedition`, `dateedition`, `isbn`, `description`, `Cote`, `id_langueoriginale`, `id_traducteur`, `id_langue`, `id_type`, `id_support`, `id_genre`, `lienimage`) VALUES
-(3, 'test', '', 'Flammarion', 'Paris', 1999, '123456789', '987654321', '', NULL, NULL, NULL, NULL, NULL, NULL, ''),
-(4, 'test1', NULL, 'Flammarion', 'Paris', 2000, '123456789', '987654321', '', NULL, NULL, NULL, NULL, NULL, NULL, ''),
 (5, 'Phèdre', NULL, 'Flammarion', 'Paris', 2007, '978-2-08-120720-2', ' 1 vol. (222 p.) ; 18 cm ', '842.4 RAC', NULL, NULL, 1, 1, 1, 2, 'couv5.jpg'),
 (6, 'Le Seigneur des anneaux', 'I-La Communauté de l''anneau', 'Pocket', 'Paris', 2005, '2-266-15411-7', '1 vol.(697 p.) : ill.cartes ; 18 x 11 cm ', '823.914 TOL', 2, 2, 1, 1, 1, 1, 'couv6.jpg'),
 (8, 'Le Seigneur des anneaux', 'II-Les Deux Tours', 'Pocket', 'Paris', 2005, '2-266-15413-3', '569 p. : ill. ; 18 x 11 cm ', '823.914 TOL', 2, 2, 1, 1, 1, 1, 'couv8.jpg'),
 (9, 'Le Seigneur des anneaux ', 'III-Le Retour du roi', 'Pocket', 'Paris', 2005, '2-266-12097-2', '1 vol. (569 p.) : cartes en n. et b. ; 18 cm ', '823.914 TOL', 2, 2, 1, 1, 1, 1, 'couv9.jpg'),
-(10, 'Le Petit Larousse illustré', 'en couleurs : 87000 articles, 5000 illustrations, 321 cartes, chronologie universelle', 'Larousse', 'Paris', 2010, '978-2-03-584088-2', '1 vol. (XLIV-1811 p.) : illustrations en couleur ; 24 cm ', '034', NULL, NULL, 1, 4, 1, 5, 'couv10.jpg'),
+(10, 'Le Petit Larousse illustré', 'en couleurs : 87000 articles, 5000 illustrations, 321 cartes, chronologie universelle', 'Larousse', 'Paris', 2010, '978-2-03-584088-2', '1 vol. (XLIV-1811 p.) : illustrations en couleur ; 24 cm ', '034 LAR', NULL, NULL, 1, 4, 1, 5, 'couv10.jpg'),
 (11, 'Manifeste pour la philosophie', NULL, 'Ed. du Seuil', 'Paris', 1989, '2-02-010559-4', '91 p. ; 19 cm\r\n', '101 BAD', NULL, NULL, 1, 1, 1, 6, 'couv11.jpg'),
 (12, 'Le Nombre et la sirène', 'un déchiffrage du "Coup de dés" de Mallarmé', 'Fayard', 'Paris', 2011, '978-2-213-66591-7', '1 vol. (248 p.) : couv. ill. en coul. ; 22 cm', '841 BAD ', NULL, NULL, 1, 1, 1, 6, 'couv12.jpg'),
 (13, 'Après la finitude', 'essai sur la nécessité de la contingence', 'Ed. du Seuil', 'Paris', 2005, '2-02-084742-6', '1 vol. (177 p.) ; 21 cm\r\n', '111 MEI', NULL, NULL, 1, 1, 1, 6, 'couv13.jpg'),
 (14, 'Fra Angelico, dissemblance et figuration', NULL, 'Flammarion', 'Paris', 1990, '2-08-012614-8', '263 p. : ill. en noir et en coul. ; 29 cm', '709.03 DID', NULL, NULL, 1, 1, 1, 6, 'couv14.jpg'),
-(16, 'Les Tuniques bleus', 'Les Bleus en cavale', 'Dupuis', 'Paris', 1998, '2-8001-2649-3', '46 p. : ill. en coul., couv. ill. en coul. ; 30 cm', '741.5 LAM', NULL, NULL, 1, 2, 4, NULL, 'couv16.jpg'),
-(17, 'Les Tuniques bleus', 'Des bleus et du blues', 'Dupuis', 'Marcinelle', 2000, '2-8001-2944-1', '46 p. : ill. en coul. ; 30 cm ', '741.5 LAM', NULL, NULL, 1, 2, 4, NULL, 'couv17.jpg'),
+(16, 'Les Tuniques bleues', 'Les Bleus en cavale', 'Dupuis', 'Paris', 1998, '2-8001-2649-3', '46 p. : ill. en coul., couv. ill. en coul. ; 30 cm', '741.5 LAM', NULL, NULL, 1, 2, 4, 9, 'couv16.jpg'),
+(17, 'Les Tuniques bleues', 'Des bleus et du blues', 'Dupuis', 'Marcinelle', 2000, '2-8001-2944-1', '46 p. : ill. en coul. ; 30 cm ', '741.5 LAM', NULL, NULL, 1, 2, 4, 9, 'couv17.jpg'),
 (18, 'La Gloire de mon père', NULL, 'Ed. du Fallois', 'Paris', 2004, '2-87706-507-3', '219 p. ; 18 cm', '843.914 PAG', NULL, NULL, 1, 1, 1, 8, 'couv18.jpg'),
 (19, 'Le Château de ma mère', NULL, 'Ed. du Fallois', 'Paris ', 2004, '2-87706-051-9', '221 p. : couv. ill. en coul. ; 17 cm ', '843.914 PAG', NULL, NULL, 1, 1, 1, 8, 'couv19.jpg'),
 (20, 'Le Temps des secrets', NULL, 'Ed. du Fallois', 'Paris', 2004, '2-87706-509-X', '253 p. ; 18 cm', '843.914 PAG ', NULL, NULL, 1, 1, 1, 8, 'couv20.jpg'),
 (21, 'Un Bon Petit Diable', NULL, 'Gallimard Jeunesse', 'Paris', 2010, '978-2-07-062615-1', '1 vol. (218 p.) : ill. en n. et b. ; 18 cm', '843.7 SEG ', NULL, NULL, 1, 2, 1, 1, 'couv21.jpg'),
 (22, 'Les Malheurs de Sophie', NULL, 'Hachette Jeunesse', 'Paris', 2010, '978-2-01-322543-4', '1 vol. (253 p.) : ill. en n. et b. ; 18 cm', '843.7 SEG', NULL, NULL, 1, 2, 1, 1, 'couv22.jpg'),
-(25, 'Les Malheurs de Sophie', 'd''après la Comtesse de Ségur', 'Koba film', ' s.o. ', 2011, 's. o. ', '1 DVD toutes zones (1 h 30 mn) : 16/9 compatible 4/3, coul. , PAL son. ', 'DVD BRI', NULL, NULL, 1, 2, 3, NULL, 'couv25.jpg'),
-(28, 'The Tree of life', NULL, 'Europacorp', ' s.o.', 2011, '', '1 DVD zone 2 ( 2h 13 mn ) : 16/9 compatible 4/3, coul. , PAL son. ', 'DVD TER', NULL, NULL, 1, 1, 3, NULL, 'couv28.jpg'),
+(25, 'Les Malheurs de Sophie', 'd''après la Comtesse de Ségur', 'Koba film', ' s.o. ', 2011, 's. o. ', '1 DVD toutes zones (1 h 30 mn) : 16/9 compatible 4/3, coul. , PAL son. ', 'DVD BRI', NULL, NULL, 1, 2, 3, 11, 'couv25.jpg'),
+(28, 'The Tree of life', NULL, 'Europacorp', ' s.o.', 2011, '', '1 DVD zone 2 ( 2h 13 mn ) : 16/9 compatible 4/3, coul. , PAL son. ', 'DVD TER', NULL, NULL, 1, 1, 3, 11, 'couv28.jpg'),
 (29, 'Le Hobbit', 'Un aller et un retour', 'C. Bourgeois', 'Paris', 2012, '978-2-267-02389-', '1 vol. (462 p.) : ill. en noir et en coul. ; 24 cm', '823.912 TOL', 2, 3, 1, 1, 1, 1, 'couv29.jpg'),
 (30, 'Passé imparfait', NULL, 'Soulatine', 'Paris', 2014, '978-2-35584-245-0', '1 vol. (647 p.) ; 20 cm', '823.92 FEL', 2, 4, 1, 1, 1, 1, 'couv30.jpg'),
 (31, 'Past Imperfect', NULL, 'Saint Martin''s press', 'London', 2009, '9781429929172', '1 vol. (647 p.) ; 20 cm', '823.92 FEL', NULL, NULL, 2, 1, 1, 1, 'couv31.jpg'),
-(32, 'Out of Africa', NULL, 'Columbia Tristar home video', 'Boulogne-Billancourt', 2001, '', '1 DVD zone 2 (2 h 34 mn) : couleur PAL sonore', 'DVD POL', NULL, NULL, 1, 1, 3, NULL, 'couv32.jpg'),
+(32, 'Out of Africa', NULL, 'Columbia Tristar home video', 'Boulogne-Billancourt', 2001, '', '1 DVD zone 2 (2 h 34 mn) : couleur PAL sonore', 'DVD POL', NULL, NULL, 1, 1, 3, 11, 'couv32.jpg'),
 (33, 'L''Etranger', NULL, 'Gallimard', 'Paris', 2012, '978-2-7548-0768-5', '1 vol. (138 p.) : ill. en n. et b. ; 34 cm', '741.5  CAM', NULL, NULL, 1, 1, 1, 1, 'couv33.jpg'),
-(34, 'Moto: visions graphiques', NULL, 'E. Proust', 'Paris', 2011, '978-2-84810-273-3', '1 vol. (120 p.) : ill. en noir et en coul., couv. ill. ; 29 cm', '388.347 MIR', NULL, NULL, 7, 1, 4, NULL, 'couv34.jpg'),
-(35, 'Gitans : le pèlerinage des Saintes-Maries-de-la-Mer', NULL, 'EP', 'Paris', 2009, '978-2-84810-233-7', '1 vol. (35-[43] p.) : ill., couv. ill. ; 32 cm', '305.8914 MIR', NULL, NULL, 1, 1, 4, NULL, 'couv35.jpg'),
-(36, 'Tsiganes', '1940-1945, le camp de concentration de Montreuil-Bellay', 'EP', 'Paris', 2008, '978-2-84810-184-2', '1 vol. (96 p.) : ill., couv. ill. ; 32 cm\r\n', '305.8914 MIR ', NULL, NULL, 1, 1, 4, NULL, 'couv36.jpg'),
+(34, 'Moto: visions graphiques', NULL, 'E. Proust', 'Paris', 2011, '978-2-84810-273-3', '1 vol. (120 p.) : ill. en noir et en coul., couv. ill. ; 29 cm', '388.347 MIR', NULL, NULL, 7, 1, 4, 10, 'couv34.jpg'),
+(35, 'Gitans : le pèlerinage des Saintes-Maries-de-la-Mer', NULL, 'EP', 'Paris', 2009, '978-2-84810-233-7', '1 vol. (35-[43] p.) : ill., couv. ill. ; 32 cm', '305.8914 MIR', NULL, NULL, 1, 1, 4, 10, 'couv35.jpg'),
+(36, 'Tsiganes', '1940-1945, le camp de concentration de Montreuil-Bellay', 'EP', 'Paris', 2008, '978-2-84810-184-2', '1 vol. (96 p.) : ill., couv. ill. ; 32 cm\r\n', '305.8914 MIR ', NULL, NULL, 1, 1, 4, 10, 'couv36.jpg'),
 (37, 'Le Clan des Otori I', 'Le silence du rossignol ', 'Gallimard', 'Paris', 2003, '2-07-030258', '1 vol. (371 p.) : carte en n. et b. ; 18 cm ', '823.914 HEA', 2, 5, 1, 1, 1, 1, 'couv37.jpg'),
 (38, 'Le Clan des Otori II', 'Les Neiges de l''exil', 'Gallimard', 'Paris', 2004, '2-07-030031-5', '1 vol. (384 p.) : cartes en n. et b. ; 18 cm', '823.914 HEA', 2, 5, 1, 1, 1, 1, 'couv38.jpg'),
 (39, 'Le Clan des Otori III', 'La Clarté de la lune', 'Gallimard', 'Paris', 2004, '2-07-053805-2', '1 vol. (381 p.) ; 24 cm ', '823.914 HEA', 2, 5, 1, 1, 1, 1, 'couv39.jpg'),
 (40, 'Le Clan des Otori IV', 'Le Vol des Otoris', 'Gallimard', 'Paris', 2008, '978-2-07-034340-9', '1 vol. (748 p.) ; 18 cm ', '823.914 HEA', 2, 5, 1, 1, 1, 1, 'couv40.jpg'),
 (41, 'Le Clan des Otori V', 'Le Fil du destin', 'Gallimard', 'Paris', 2009, '978-2-07-035989-9', '1 vol. (693 p.) : carte en n. et b. ; 18 cm', '823.914 HEA', 2, 5, 1, 1, 1, 1, 'couv41.jpg'),
-(42, 'Owl City', 'Ocean Eyes', 'UMG recordings', '[France]', 2009, 'EAN 602527281308', '1 disque compact (42 min 49 s)', 'CD OWL', NULL, NULL, 2, 1, 2, NULL, 'couv42.jpg'),
-(43, 'Le Château ambulant', NULL, 'Buena Vista home entertainment', 's. o. ', 2004, '', '1 DVD zone 2 (1 h 54 mn) : 16/9 compatible 4/3, coul., PAL son.', 'DVD MIY', 7, NULL, 1, 2, 3, NULL, 'couv43.jpg'),
-(44, 'The civilization blaster', 'zetsuen no tempest', 'Kurokawa', 'Paris', 2011, '42531064', '18 cm', 'Manga SHI', 6, NULL, 1, 2, 4, NULL, 'couv44.jpg'),
+(42, 'Owl City', 'Ocean Eyes', 'UMG recordings', '[France]', 2009, 'EAN 602527281308', '1 disque compact (42 min 49 s)', 'CD OWL', NULL, NULL, 2, 1, 2, 13, 'couv42.jpg'),
+(43, 'Le Château ambulant', NULL, 'Buena Vista home entertainment', 's. o. ', 2004, '', '1 DVD zone 2 (1 h 54 mn) : 16/9 compatible 4/3, coul., PAL son.', 'DVD MIY', 7, NULL, 1, 2, 3, 14, 'couv43.jpg'),
+(44, 'The civilization blaster', 'zetsuen no tempest', 'Kurokawa', 'Paris', 2011, '42531064', '18 cm', 'Manga SHI', 7, 9, 1, 2, 4, 12, 'couv44.jpg'),
 (45, 'Tugdual', 'I-les Coeurs noirs', 'XO', 'Paris', 2014, '978-2-84563-691-0', '1 vol. (416 p.) ; 24 x 16 cm', '808.838 PLI', NULL, NULL, 1, 2, 1, 1, 'couv45.jpg'),
 (46, 'Le Trône de fer', 'Le Trône de fer', 'J''ai lu', 'Paris', 2005, '978-2-7564-0215-4', '476 p. ; 18 cm', '813.54 MAR', 2, 6, 1, 1, 1, 1, 'couv46.jpg'),
 (47, 'Le Trône de fer', 'Le Donjon rouge', 'J''ai lu', 'Paris', 2001, '978-2290313183', '17,5 x 10,9 x 2,8 cm', '813.54 MAR', 2, 6, 1, 1, 1, 1, 'couv47.jpg'),
 (48, 'Le Vide et le plein', 'Carnet du Japon 1964-1970', 'Hoëbeke', 'Paris', 2004, '2-84230-176-5', '185 p. ; 23 cm', '915.2  BOU', NULL, NULL, 1, 1, 1, 8, 'couv48.jpg'),
 (49, 'Alice au pays des merveilles', NULL, 'Librairie Général française', 'Paris', 2009, '978-2-253-08244-6', '1 vol. (316 p.) ; 18 cm', '823.8 CAR', 2, 7, 1, 2, 1, 1, 'couv49.jpg'),
 (50, 'Les Liaisons dangereuses', NULL, 'Pocket', 'Paris', 2012, '978-2-266-20079-0', '1 vol. (494 p.) ; 18 cm ', '843.5  LAC', NULL, NULL, 1, 1, 1, 1, 'couv50.jpg'),
-(51, 'La Tempête', NULL, ' Gallimard', '[Paris]', 1997, '2-07-040315-7 br', '387 p. : couv. ill. en coul. ; 18 cm ', '822.3 SHA', 2, 8, 1, 1, 1, 2, 'couv51.jpg'),
-(52, 'Le Tour de Gaule d''Asterix', NULL, 'Hachette', 'Paris', 2007, '978-2-01-210168-5', '1 vol. (56 p.) : ill. en coul. ; 35 cm', '741.5 GOS', NULL, NULL, 1, 2, 4, NULL, 'couv52.jpg'),
+(51, 'La Tempête', NULL, ' Gallimard', 'Paris', 1997, '2-07-040315-7 br', '387 p. : couv. ill. en coul. ; 18 cm ', '822.3 SHA', 2, 8, 1, 1, 1, 2, 'couv51.jpg'),
+(52, 'Le Tour de Gaule d''Asterix', NULL, 'Hachette', 'Paris', 2007, '978-2-01-210168-5', '1 vol. (56 p.) : ill. en coul. ; 35 cm', '741.5 GOS', NULL, NULL, 1, 2, 4, 9, 'couv52.jpg'),
 (53, 'Guerre et Paix', NULL, ' Librairie générale Française', 'Paris', 1986, '2-253-01726-4 28.00', '775 p. ; 17 cm', '891.73 TOL', 6, 5, 1, 1, 1, 1, 'couv53.jpg'),
 (54, 'Les Cosaques', NULL, 'Gallimard', 'Paris', 1996, '2-07-036850-5', '1 vol. ; in-12', '891.73 TOL', 6, 5, 1, 1, 1, 1, 'couv54.jpg'),
 (55, 'Suite française', NULL, 'Denoël', 'Paris', 2004, '2-207-25645-6', '1 vol. (434 p.) ; 23 cm', '843.912 NEM', NULL, NULL, 1, 1, 1, 1, 'couv55.jpg'),
 (56, 'Alcools', NULL, 'Gallimard', 'Paris', 2013, '978-2-07-045019-0', '1 vol. (243 p.) : ill. en n. et b. ; 18 cm', '841.912 APO', NULL, NULL, 1, 1, 1, 3, 'couv56.jpg'),
 (57, 'Sonnets', NULL, 'Ed. Mille et une nuits', 'Paris', 1999, '2-84205-426-1', '174 p. ; 15 cm.', '821.3 SHA', 2, 8, 1, 1, 1, 3, 'couv57.jpg'),
-(58, 'L''Etoilement', ' conversation avec Hantaï ', 'Ed. de Minuit', 'Paris', 1998, '2-7073-1630-x', '123 p. ; 19 cm ', '709.04  DID', NULL, NULL, 1, 1, 1, 6, 'couv58.jpg'),
+(58, 'L''Etoilement', ' conversation avec Hantaï ', 'Ed. de Minuit', 'Paris', 1998, '2-7073-1630-x', '123 p. ; 19 cm ', '709.04  DID', NULL, NULL, 1, 1, 1, 6, 'couv58.jpeg'),
 (59, 'La Route des Flandres', NULL, 'Ed. de Minuit', 'Paris', 1982, '2-7073-0629-0 30.00 Fr', '315 p. ; 18 cm', '843.914  SIM', NULL, NULL, 1, 1, 1, 1, 'couv59.jpg'),
 (60, 'J''apprends le yoga', NULL, 'Flammarion', 'Paris', 2004, '978-2-07-065923-4', '1 vol. (324 p.) ; 22 cm ', '204 VAN', NULL, NULL, 1, 1, 1, 4, 'couv60.jpg');
 
@@ -277,7 +272,7 @@ CREATE TABLE IF NOT EXISTS `genre` (
   `id_genre` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `intitule` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id_genre`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=15 ;
 
 --
 -- Contenu de la table `genre`
@@ -290,7 +285,13 @@ INSERT INTO `genre` (`id_genre`, `intitule`) VALUES
 (4, 'Monographie'),
 (5, 'Dictionnaire et encyclopédie'),
 (6, 'Essais'),
-(8, 'Récit');
+(8, 'Récit'),
+(9, 'BD humouristique'),
+(10, 'BD historique'),
+(11, 'film'),
+(12, 'manga'),
+(13, 'musique'),
+(14, 'Dessins animés');
 
 -- --------------------------------------------------------
 
@@ -398,7 +399,7 @@ INSERT INTO `theme` (`id_theme`, `intitule`) VALUES
 (9, 'biographie'),
 (10, 'histoire vraie'),
 (11, 'tragédie'),
-(12, 'roman d''aventure'),
+(12, 'aventure'),
 (13, 'géographie'),
 (14, 'science'),
 (15, 'science politique'),
@@ -517,7 +518,9 @@ INSERT INTO `theme_document` (`id_theme`, `id_document`) VALUES
 (28, 59),
 (18, 59),
 (31, 60),
-(6, 60);
+(6, 60),
+(6, 44),
+(12, 44);
 
 -- --------------------------------------------------------
 
@@ -530,7 +533,7 @@ CREATE TABLE IF NOT EXISTS `traducteur` (
   `nom` varchar(45) NOT NULL,
   `prenom` varchar(45) NOT NULL,
   PRIMARY KEY (`id_traducteur`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
 
 --
 -- Contenu de la table `traducteur`
@@ -544,7 +547,8 @@ INSERT INTO `traducteur` (`id_traducteur`, `nom`, `prenom`) VALUES
 (5, 'Giraudon', 'Philippe'),
 (6, 'Sola', 'Jean'),
 (7, 'Tenniel', 'John'),
-(8, 'Bonnefoy', 'Yves');
+(8, 'Bonnefoy', 'Yves'),
+(9, 'Zouzoulkovsky', 'Vincent');
 
 -- --------------------------------------------------------
 
