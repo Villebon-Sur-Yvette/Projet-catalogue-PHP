@@ -62,7 +62,7 @@
                         ordre. Aujourd'hui sous l'impulsion de sa directrice Catherine Foly, la médiathèque propose son propre site pour
                         gagner encore en visibilité et en praticité. C'est la raison d'être de ce nouveau site.
                     </p>
-                    <img src="../../css/images_css/photo_biblio.jpg" name="photo bibliothèque" />
+                    <img src="../../css/images_css/photo_biblio.jpg" name="photo bibliothèque" id="photobiblio" />
                 </article>
             </section>
 

@@ -7,3 +7,10 @@ section {
 section h2 {
 	color:rgb(0,102,102);
 }
+
+/* Positionnement de l'image */
+#photobiblio {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 20px;
+}
