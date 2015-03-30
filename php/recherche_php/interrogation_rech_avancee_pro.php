@@ -83,7 +83,9 @@ if ($taille_recherche_ordonnee!=0){
 								support.intitule as support, 
 								type.intitule as type, 
 								group_concat(distinct theme.intitule) as theme,
-								document.lienimage
+								document.lienimage,
+								document.isbn,
+								document.langue
 								
 								FROM hippolyte.document  
 								left join auteur_document on auteur_document.id_document=document.id_document
@@ -93,6 +95,7 @@ if ($taille_recherche_ordonnee!=0){
 								left join support on document.id_support=support.id_support 		
 								left join type on document.id_type=type.id_type
 								left join genre on document.id_genre=genre.id_genre
+								left join langue on document.id_langue=langue.id_langue
 								WHERE";
 	for ($k = 1; $k <= $taille_recherche_ordonnee; $k++) {
 		
@@ -134,6 +137,14 @@ if ($taille_recherche_ordonnee!=0){
 				$recherche_ordonnee[$k]['recherche'] = "'%".$recherche_ordonnee[$k]['recherche']."%'"; 
 				$recherche_ordonnee[$k]['choix'] = "support.intitule";
 				break;
+			case "langue":
+				$recherche_ordonnee[$k]['recherche'] = "'%".$recherche_ordonnee[$k]['recherche']."%'"; 
+				$recherche_ordonnee[$k]['choix'] = "langue.intitule";
+				break;
+			case "isbn":
+				$recherche_ordonnee[$k]['recherche'] = "'%".$recherche_ordonnee[$k]['recherche']."%'"; 
+				$recherche_ordonnee[$k]['choix'] = "isbn";
+				break;		
 		}
 		
 		$sql_select_avancee .= 	" ".$recherche_ordonnee[$k]['choix']." LIKE ".$recherche_ordonnee[$k]['recherche'];
@@ -190,7 +201,7 @@ if ($taille_recherche_ordonnee!=0){
 					echo " - ";
 					echo $rows['dateedition'];
 					echo "<br/>";
-					
+
 					//affichage du support et du type de document
 					echo $rows['support'];
 					echo " - ";
