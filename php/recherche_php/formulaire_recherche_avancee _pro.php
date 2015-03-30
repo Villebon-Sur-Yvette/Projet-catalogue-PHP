@@ -57,7 +57,7 @@
 			<option value="support">Support</option>
 			<option value="cote">Cote</option>
 			<option value="isbn">ISBN</option>
-			<option value="dewey">DEWEY</option>
+			<option value="langue">Langue</option>
 		</select>
 		
 		<!--champ de recherche 1-->
@@ -82,7 +82,7 @@
 			<option value="support">Support</option>
 			<option value="cote">Cote</option>
 			<option value="isbn">ISBN</option>
-			<option value="dewey">DEWEY</option>
+			<option value="langue">Langue</option>
 		</select>
 		
 		<!--champ de recherche 2-->
@@ -109,7 +109,7 @@
 			<option value="support">Support</option>
 			<option value="cote">Cote</option>
 			<option value="isbn">ISBN</option>
-			<option value="dewey">DEWEY</option>
+			<option value="langue">Langue</option>
 		</select>
 
 		
