@@ -1,11 +1,11 @@
-/*******************************CSS de la page aide_utilisateur*****************************/
+/*********************************************************CSS de la page aide***************************************************************/
 
 
-/*Contenu de l'aide*/
+/***************************************************Contenu de l'aide sur l'interface PUBLIQUE*******************/
 .help {
 	display: inline-block;
 	float: left;
-    text-align: justify; /*justifie le texte */
+    text-align: justify; 
     margin-left: 20px;
     width: 60%;
 }
@@ -18,23 +18,54 @@
     background-color:white;
 }
 
-/*Aspect général de l'aide*/
-/*Titre*/
-h2, h3 {
+/*********************************ASPECT GENERAL DE L'AIDE UBLIQUE***************************/
+/*******************Titre************/
+.help h2, h3 {
     color: rgb(0,102,102);
 }
 
-h4 {
+.help h4 {
     color:DarkSlateGray;
 }
 
-/*Retour en haut de la page*/
+/**************************************************Contenu de l'aide sur l'interface PROFESSIONNELLE *************************************************/
+.help_pro {
+	display: inline-block;
+	float: left;
+    text-align: justify; 
+    margin-left: 20px;
+    width: 60%;
+}
+
+.help_pro li {
+    background-color:inherit;
+}
+
+.help_pro li:hover {
+    background-color:white;
+}
+
+/***********************************************ASPECT GENERAL DE L'AIDE PROFESSIONNELLE**********************************************/
+/*********Titre***********/
+.help_pro h2, h3 {
+    color: rgb(158, 21, 21);
+}
+
+.help_pro h4 {
+    color: rgb(158, 21, 21);
+}
+
+.help_pro h5 {
+    color: Crimson;
+    font-size: medium;
+}
+/*******Retour en haut de la page*******/
 #retourhautpage {
 	text-decoration: none;
 	background-image: url(../images/piledelivres.JPEG);
 }
 
-/* Bouton "retour en haut de la page" */
+/********** Bouton "retour en haut de la page" ***********/
 #boutonaccueil {
 	text-decoration: underline;
 	background-color: rgb(0,102,102);
@@ -45,4 +76,25 @@ h4 {
 	margin-right: auto;
 	width: 200px;
 	height: 50px;
+}
+
+#boutonaccueil a {
+	color:white;
+}
+
+/********** Bouton "retour en haut de la page" PROFESSIONNEL***********/
+#boutonaccueil_pro {
+	text-decoration: underline;
+	background-color: rgb(158, 21, 21);
+	color: #FFFFFF;
+	text-align: center;
+	padding-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+	height: 50px;
+}
+
+#boutonaccueil_pro a {
+	color:white;
 }

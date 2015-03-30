@@ -18,19 +18,32 @@
         <title>Aide pour l'interface professionnelle</title>
 
         <!-- Liens CSS -->
-        <link rel="stylesheet" type="text/css" href="../../css/aide.css">
+        <link href="../../css/style_pro.css" rel="stylesheet" />
+        <link href="../../css/aide.css" rel="stylesheet"/>
         
     </head>
 
 	<body>
-	
-	<!-- Texte de l'aide professionnelle -->
-	<a id="accueilgo"></a>
-	<div class="help">
+	<div class="conteneur">
+		 <!-- header pro -->
+                 <?php include("../invariants/header_pro.php") ?>
+
+                <!-- menu : présentation, aide, catalogue, accès réservé -->
+                 <?php include("../invariants/menu_pro.php") ?>
+
+                <!-- Encart gauche avec la recherche -->
+                <?php include("../invariants/recherche.php") ?>
+
+		<!-- Contenu : Texte de l'aide professionnelle -->
+		<!-- Le texte de l'aide professionnelle est à relire pour corriger les fautes. -->
+		<a id="accueilgo"></a>
+
+		<div class="help_pro">
 		<h2>Aide à l'utilisation de l'interface professionnelle</h2>
 		<br/>
 		<a id="interfacepro"></a>
 		<br/>
+		
 		<h3>L'interface professionnelle</h3>
 		<p>
 			Bienvenue dans l'aide dédiée aux utilisateurs de l'interface professionnelle. Cette aide est faite pour permettre
@@ -56,7 +69,7 @@
 		<h5>Généralités sur l'interface professionnelle</h5>
 		<p>
 			Cette interface comporte plusieurs outils pour aider les personnels de la bibliothèque dans leur travail quotidien:
-			<ol>
+			<ul>
 				<li>
 					Un moteur de recherche qui comporte des critères de recherche plus professionnels que ceux présents dans le
 					moteur de recherche de l'interface publique.
@@ -67,7 +80,7 @@
 				<li>
 					Une aide pour utiliser ces outils.
 				</li>
-			</ol>
+			</ul>
 		</p>
 		<br/>
 		<a id="googlepro"></a>
@@ -103,25 +116,19 @@
 			du site de la bibliothèque se situent en grande partie dans la présence de nouveaux critères de recherche dans ce moteur
 			de recherche. En effet, ce moteur de recherche comporte des nouveaux critères de recherche pour la plupart issus du monde
 			professionnel de la bilbiothèque.
-			<ol>
+			<ul>
 				<li>
 					Le code ISBN qui permet de localiser un ouvrage à partir des bases de données professionelles ou dans le cadre 
 					de recherches pour nouvelles acquisitions
 				</li>
 				<li>
-					La côte de l'ouvrage qui permet de retrouver rapidement un ouvrage présent dans la bibliothèque de Villebon-sur-Yvette.
-					Ce paramètre existe aussi pour le public. Nous soulignons ici un usage différent d'un même paramètre.
+					La côte de l'ouvrage qui permet de retrouver rapidement un ouvrage présent dans la bibliothèque de Villebon-sur-Yvette
 				</li>
 				<li>
 					Le code DEWEY qui colle à la caractérisation des ouvrages par la Bibliothèque nationale de France et qui permet de rechercher
 					par thèmes, auteurs, etc... selon un mode plus performant et professionnel.
 				</li>
-			</ol>
-		</p>
-		<p>
-			Tous ces critères permettent de faire des recherches à partir de données professionnelles (que le personnel peut par exemple
-			extraire du SUDOC ou encore au moment des nouvelles acquisitions). Cela permet de faire une recherche précise avec des détails
-			somme toute parcellaires ou trouvables en dehors du site de la bibliothèque. 
+			</ul>
 		</p>
 		<p>
 			L'ensemble de ces critères permet des recherches plus rapides et plus efficaces en manipulant des données issus du domaine
@@ -192,7 +199,7 @@
 		<h5>Comment modifier une notice ?</h5>
 		<p>
 			Pour modifier une notice, il faut accéder au formulaire de modification des notices présent dans l'interface
-			professionnelle (dans la barre de menu) du site de la bibliothèque.
+			professionnelle du site de la bibliothèque.
 			Nous rappelons que ce formulaire n'est accessible qu'à un petit nombre d'utilisateurs de l'interface professionnelle
 			(à savoir le super-utilisateur et quelques ayants-droits).
 		</p>
@@ -206,7 +213,7 @@
 		<h5>Comment supprimer une notice ?</h5>
 		<p>
 			Pour supprimer une notice, il faut accéder au formulaire de suppression des notices présent dans l'interface
-			professionnelle (dans la barre de menu) du site de la bibliothèque.
+			professionnelle du site de la bibliothèque.
 			Nous rappellons que ce formulaire n'est accessible qu'au super-utilisateur ce qui limite ainsi les erreurs et les
 			fausses manipulations. On maximise ainsi la sécurité de la base de données.
 		</p>
@@ -220,8 +227,9 @@
 			Nous espérons que tous ces conseils vous ont été utiles.
 		</p>
 			<!-- Bouton retour en haut de la page -->
-            <div id="boutonaccueil"><a href="#accueilgo">Retour en haut de la page</a></div>
+            <div id="boutonaccueil_pro"><a href="#accueilgo">Retour en haut de la page</a></div>
             <br/>
+    </div>
 </div>
 </body>
 <footer>

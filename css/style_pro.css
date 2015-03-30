@@ -1,20 +1,22 @@
-/************************************** CSS SITE WEB face pro DE LA BIBLIOTHEQUE ***********************/
+/************************************** CSS SITE WEB FACE PROFESSIONNELLE DE LA BIBLIOTHEQUE ***********************/
 
 
 /*Aspect général de la page*/
 body {
+    margin:0;
     font-family: Lato, calibri, helvetica, sans-serif;
 }
 
 /******************************************************ENTETE*****************************************************/
 header{
     height: auto;
-    background-image: url(images_css/bibliotheque-municipale.jpg);
-    background-repeat: no-repeat;
+    background-image: url(images_css/a-book-a-week-image.jpg);
+    background-repeat: top;
 }
 
 header a{
     text-decoration:none; /*pour supprimer le style par défaut du lien utilisé en titre principal*/
+    color:white;
 }
 
 header a:visited{
@@ -31,6 +33,7 @@ header div#titrepp {
     display: inline-block;
     float: top;
     background-color: rgba(158, 21, 21, 0.7);
+    background: linear-gradient(to right, rgb(158, 21, 21), transparent );
 }
 
 h1 {
@@ -118,10 +121,12 @@ li li:hover ul li a {
 /******************************************************ENCART GAUCHE : RECHERCHE SIMPLE*****************************************************/
 .encart_recherche {
     float: left;
-    background-color: black;
+    background-color: rgb(158, 21, 21);
+    background: linear-gradient(to bottom, rgb(158, 21, 21), white); /*pour dégrader*/
     display: inline-block;
     text-align: center;
     width: 200px;
+    height: 600px;
 }
 /******************************************************FOOTER *****************************************************/
 
@@ -148,7 +153,7 @@ h6 a{
     text-decoration:none;
     color:white;
 }
-/*Aspect du texte*/
+/****************************************************Aspect du texte****************************************************************************/
 #recherche {
     text-decoration: none;
     color: white;
