@@ -1,8 +1,16 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 	<head>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="...">
-		<title>Notice PHP</title>
+		<title>Module des notices</title>
+
+		<!-- Mise en place du charset -->
+        <meta charset="UTF-8" />
+
+        <!-- Icone du site-->
+        <link href="../../css/images_css/blason.png" type="image/png" rel="icon" />
+
+        <!-- Métadonnées -->
+        <meta name="author" content="Anne-Cécile Schreiner, Clément Cros, Constance Le Roux, Domitille Guerrier de Dumast, Marie Guyot" />
 	</head>
 	<body>
 		<?php
