@@ -13,8 +13,21 @@ span {
 h2 {
 	color:#008080;
 }
-
+input[type="text"] {
+    width: 90%;
+	}
+	
 input[type="submit"] {
-	width: 200px;
+	width: 90px;
 	box-shadow: 1px 1px 1px #008080;
 }
+
+input[type="reset"] {
+    box-shadow: 1px 1px 1px #008080;
+    width: 90px;
+}
+
+#lien_pro {
+	color:#9e1515;
+}
+	
