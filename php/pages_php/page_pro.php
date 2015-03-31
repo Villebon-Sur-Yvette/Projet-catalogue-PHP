@@ -46,7 +46,7 @@ session_start();
                     <tbody>
                         <tr>
                             <td>
-                                <a href="../recherche_php/formulaire_recherche_avancee_pro">
+                                <a href="../recherche_php/formulaire_recherche_avancee _pro.php">
                                    <h2 id="rechercher">Rechercher</h2>
                                    <img src="../../css/images_css/recherche.jpg">                           
                                 </a>                                
