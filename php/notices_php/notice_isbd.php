@@ -29,7 +29,7 @@
 <?php
 require '../../connexion.php';
 
-//bouton retour en arrière    => inutile finalement avec les invariants??? 
+//bouton retour en arrière    
 //echo "<input type='button' value='Retour' onclick='history.go(-1)'  />";
 
 //prise en compte des caractères spéciaux

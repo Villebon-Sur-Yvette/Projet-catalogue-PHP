@@ -35,7 +35,6 @@
                 <?php include("../invariants/recherche.php") ?>
 
 		<!-- Contenu : Texte de l'aide professionnelle -->
-		<!-- Le texte de l'aide professionnelle est à relire pour corriger les fautes. -->
 		<a id="accueilgo"></a>
 
 		<div class="help_pro">
@@ -233,6 +232,5 @@
 </div>
 </body>
 <footer>
-	<!-- Ici vient se mettre le pied de page insitutionnel commun à toutes les pages du site. -->
 </footer>
 </html>

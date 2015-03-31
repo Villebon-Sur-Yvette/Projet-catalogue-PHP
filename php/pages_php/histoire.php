@@ -35,7 +35,6 @@
             <!-- Encart gauche avec la recherche -->
             <?php include("../invariants/recherche.php") ?>
 
-            <!-- Le texte de l'histoire de la bibliothèque va être intégré à cette page. Il est en cours de correction. -->
             <section class="informationspratiques">
                 <article id="histoire">
                     <h2>Histoire de la bibliothèque de Villebon-sur-Yvette</h2>
