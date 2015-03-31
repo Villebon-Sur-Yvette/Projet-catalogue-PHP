@@ -15,7 +15,7 @@
         <meta name="Description" content="Site internet de la bibliothèque municipale de Villebon-sur-Yvette " />
         
         <!-- Titre de la page -->
-        <title>Formulaire suppression des notices</title>
+        <title>Formulaire modification des notices</title>
 
         <!-- Liens CSS -->
         <link href="../../css/recherche_avancee.css" rel="stylesheet" />

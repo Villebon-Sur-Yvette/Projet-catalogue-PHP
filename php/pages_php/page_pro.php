@@ -52,7 +52,7 @@ session_start();
                                 </a>                                
                             </td>
                             <td>
-                                <a href="../formulaires_pro_php/formulaire_notice.php">
+                                <a href="../formulaires_pro_php/formulaire_créa_notice.php">
                                     <img src="../../css/images_css/notice.jpg"/>
                                     <h2 id="ajouter">Ajouter une notice</h2>
                                 </a>

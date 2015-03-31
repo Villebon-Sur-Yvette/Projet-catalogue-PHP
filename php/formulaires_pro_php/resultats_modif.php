@@ -2,7 +2,7 @@
 <html lang="fr">
 	<head>
 	<meta http-equiv="Content-type" content="text/html/php"  charset="UTF-8" /> 
-	<title>Interrogation recherche professionnelle</title>
+	<title>Liste résultats modification</title>
 
 	<link href="../../css/invariants.css" rel="stylesheet"/>
 	<link href="../../css/css_interrogation_rech_avancee.css" rel="stylesheet"/> 
@@ -85,7 +85,7 @@ if ($taille_recherche_ordonnee!=0){
 								group_concat(distinct theme.intitule) as theme,
 								document.lienimage,
 								document.isbn,
-								document.langue
+								document.langue,
 								
 								FROM hippolyte.document  
 								left join auteur_document on auteur_document.id_document=document.id_document
@@ -209,16 +209,10 @@ if ($taille_recherche_ordonnee!=0){
 					echo "<br/>";
 					echo "<br/>";
 					
-					//bouton d'envoi vers fiche simple
-					echo "<form action='../notices_php/notice_simple.php' method='POST'>";
-					echo "<input type='hidden' name='id' value='$rows[id_document]'>";
-					echo "<input type='submit' value='notice simple'/>";
-					echo "</form>";
-					
-					//bouton d'envoi notice isbd
+					//bouton d'envoi notice 
 					echo "<form action='../notices_php/notice_isbd.php' method='POST'>";
 					echo "<input type='hidden' name='id' value='$rows[id_document]'>";
-					echo "<input type='submit' value='notice ISBD'/>";
+					echo "<input type='submit' value='notice'/>";
 					echo "</form>";
 					echo "<br/>";
 					
