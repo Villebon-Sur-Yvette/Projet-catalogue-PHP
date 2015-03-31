@@ -3,7 +3,7 @@
 <head>
 
 		<meta http-equiv="Content-type" content="text/html/php"  charset="UTF-8" /> 
-		<title>Notice ISBD</title>
+		<title>Notice modification</title>
 		<link href="../../css/invariants.css" rel="stylesheet" />
 		<link href="../../css/css_noticeISBD.css" rel="stylesheet" />
 
@@ -112,9 +112,9 @@ $rows=$results->fetch_array(MYSQLI_ASSOC);
 				
 				//bouton vers la notice simple
 				echo "<br/>";
-				echo "<form action='notice_simple.php' method='POST'>";
+				echo "<form action='modif.php' method='POST'>";
 				echo "<input type='hidden' name='id' value='$rows[id_document]'>";
-				echo "<input type='submit' value='notice simple'/>";
+				echo "<input type='submit' value='Modifier'/>";
 				echo "</form>";
 				echo "<br/>";
 				
