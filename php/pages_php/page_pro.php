@@ -46,13 +46,13 @@ session_start();
                     <tbody>
                         <tr>
                             <td>
-                                <a href="../recherche_php/formulaire_recherche_avancee_pro.php">
+                                <a href="../recherche_php/formulaire_recherche_avancee_pro">
                                    <h2 id="rechercher">Rechercher</h2>
                                    <img src="../../css/images_css/recherche.jpg">                           
                                 </a>                                
                             </td>
                             <td>
-                                <a href="../formulaires_pro_php/formulaire_créa_notice.php">
+                                <a href="../formulaires_pro_php/formulaire_crea_notice.php">
                                     <img src="../../css/images_css/notice.jpg"/>
                                     <h2 id="ajouter">Ajouter une notice</h2>
                                 </a>
