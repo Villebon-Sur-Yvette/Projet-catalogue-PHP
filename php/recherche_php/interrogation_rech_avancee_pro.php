@@ -210,15 +210,15 @@ if ($taille_recherche_ordonnee!=0){
 					echo "<br/>";
 					
 					//bouton d'envoi vers fiche simple
-					echo "<form action='../notices_php/notice_simple.php' method='POST'>";
+					echo "<form action='../notices_php/notice_simple_pro.php' method='POST'>";
 					echo "<input type='hidden' name='id' value='$rows[id_document]'>";
-					echo "<input type='submit' value='notice simple'/>";
+					echo "<input type='submit' value='notice simple pro'/>";
 					echo "</form>";
 					
 					//bouton d'envoi notice isbd
-					echo "<form action='../notices_php/notice_isbd.php' method='POST'>";
+					echo "<form action='../notices_php/notice_isbd_pro.php' method='POST'>";
 					echo "<input type='hidden' name='id' value='$rows[id_document]'>";
-					echo "<input type='submit' value='notice ISBD'/>";
+					echo "<input type='submit' value='notice ISBD pro'/>";
 					echo "</form>";
 					echo "<br/>";
 					

@@ -5,7 +5,7 @@
 
 <li><a href="../pages_php/page_pro.php">RETOUR ACCES RESERVE </a></li>
 
-<li><a href="../recherche_php/formulaire_recherche_avancee _pro.php">RECHERCHE PROFESSIONELLE</a> </li>
+<li><a href="../recherche_php/formulaire_recherche_avancee_pro.php">RECHERCHE PROFESSIONELLE</a> </li>
 
 <li><a href="aide_pro.php">AIDE</a>
 <ul class="niveau2">
