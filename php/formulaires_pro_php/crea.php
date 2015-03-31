@@ -8,11 +8,27 @@
 
         <!-- Icone du site-->
         <link href="../../css/images_css/blason.png" type="image/png" rel="icon" />
+		
+		<!--Mise en page-->
+		<link href="../../css/style_pro.css" rel="stylesheet"/>
+		<link href="../../css/css_interrogation_rech_avancee.css" rel="stylesheet"/> 
 
         <!-- Métadonnées -->
         <meta name="author" content="Anne-Cécile Schreiner, Clément Cros, Constance Le Roux, Domitille Guerrier de Dumast, Marie Guyot" />
 	</head>
 	<body>
+		<div class="conteneur">
+
+		<!-- header -->
+		<?php include("../invariants/header_pro.php") ?>
+
+		<!-- menu 2 : avec retour page accueil -->
+		<?php include("../invariants/menu_pro.php") ?>
+
+		<!-- Encart gauche avec la recherche -->
+		<?php include("../invariants/recherche.php") ?>
+
+		<section> 
 		<?php
 			require '../../connexion.php';
 
@@ -104,7 +120,7 @@
 				if ($results_document==1 and $results_auteur==1 and $results_theme==1) 
 				{
 					echo "L'insertion a été effectuée avec succès !<br/>";
-					echo "<a href='../pages_php/page_pro.php'/>Retour page pro</a>";  
+					echo "<a id='lien_pro' href='../pages_php/page_pro.php'/>Retour page pro</a>";  
 				}
 				else {
 					echo "L'opération a échoué...";
@@ -114,6 +130,11 @@
 			//Deconnexion
 			$idcom->close();
 		?>
-		
+		</section>
+
+		<!-- footer -->
+		<?php include("../invariants/footer.php") ?>
+
+		</div>
 	</body>
 </html>
