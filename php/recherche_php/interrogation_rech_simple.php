@@ -4,8 +4,8 @@
 	<meta http-equiv="Content-type" content="text/html/php"  charset="UTF-8" /> 
 	<title>interrogation_recherche_simple</title>
 
-	<link href="../../css/invariants.css" rel="stylesheet"/> 
-	<link href="../../css/css_interrogation_rech_simple.css" rel="stylesheet"/> 
+	<link href="../../css/invariants.css" rel="stylesheet"/>
+	<link href="../../css/css_interrogation_rech_avancee.css" rel="stylesheet"/> 
 
 	<!-- Icone du site-->
     <link href="../../css/images_css/blason.png" type="image/png" rel="icon" />
@@ -86,8 +86,8 @@ $results=$idcom->query("SELECT  document.id_document,
 						OR document.Cote LIKE '%$recherche_simple%'
 						OR type.intitule LIKE '%$recherche_simple%'
 						OR langue.intitule LIKE '%$recherche_simple%'
-						group by document.id_document");
-
+						group by document.id_document
+						ORDER BY titre ASC");
 
 //Traitement du cas de zéro réponse
   
