@@ -6,6 +6,9 @@
 		<!-- Liens CSS -->
         <link href="../../css/style_pro.css" rel="stylesheet" />
         <link href="../../css/css_formulairecreanotice.css" rel="stylesheet" />
+		
+		<!-- Icone du site-->
+		<link href="../../css/images_css/blason.png" type="image/png" rel="icon" />
 
 	</head>
 
