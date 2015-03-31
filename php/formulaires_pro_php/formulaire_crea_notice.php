@@ -2,6 +2,12 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Formulaire de création de notice</title>
+		
+		<!-- Icone du site-->
+		<link href="../../css/images_css/blason.png" type="image/png" rel="icon" />
+		
+		<!-- Métadonnées -->
+		<meta name="author" content="Anne-Cécile Schreiner, Clément Cros, Constance Le Roux, Domitille Guerrier de Dumast, Marie Guyot" />
 	</head>
 	<body>
 		<h2>Créer une nouvelle notice</h2>
