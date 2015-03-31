@@ -6,6 +6,8 @@
 		<title>Notice ISBD</title>
 		<link href="../../css/style_pro.css" rel="stylesheet" />
 		<link href="../../css/css_noticesimple.css" rel="stylesheet" />
+		<!-- Icone du site-->
+		<link href="../../css/images_css/blason.png" type="image/png" rel="icon" />
 </head>
 
 <body>
