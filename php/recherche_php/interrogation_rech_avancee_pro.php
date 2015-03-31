@@ -4,7 +4,7 @@
 	<meta http-equiv="Content-type" content="text/html/php"  charset="UTF-8" /> 
 	<title>Interrogation recherche professionnelle</title>
 
-	<link href="../../css/invariants.css" rel="stylesheet"/>
+	<link href="../../css/style_pro.css" rel="stylesheet"/>
 	<link href="../../css/css_interrogation_rech_avancee.css" rel="stylesheet"/> 
 
 	<!-- Icone du site-->

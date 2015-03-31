@@ -19,7 +19,7 @@
 
         <!-- Liens CSS -->
         <link href="../../css/recherche_avancee.css" rel="stylesheet" />
-        <link href="../../css/invariants.css" rel="stylesheet" />
+        <link href="../../css/style_pro.css" rel="stylesheet" />
 
     </head>
 

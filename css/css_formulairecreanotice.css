@@ -1,0 +1,21 @@
+.contenu {
+	margin-left:220px;
+	margin-right: 30px;
+}
+
+.contenu h2 {
+	color:Darkred;
+}
+
+
+.contenu input[type="text"] {
+	width: 180px;
+	background-color:Thistle;
+	border-radius:2px;
+	font-size: medium;
+}
+
+.contenu input[type="submit"] {
+	width: 180px;
+	box-shadow: 1px 1px 1px Darkred;
+}

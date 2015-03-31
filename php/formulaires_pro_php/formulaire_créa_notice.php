@@ -2,8 +2,29 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Formulaire de création de notice</title>
+
+		<!-- Liens CSS -->
+        <link href="../../css/style_pro.css" rel="stylesheet" />
+        <link href="../../css/css_formulairecreanotice.css" rel="stylesheet" />
+
 	</head>
+
 	<body>
+		  <div class="conteneur">
+
+		<!-- header pro -->
+                <?php include("../invariants/header_pro.php") ?>
+
+        <!-- menu : présentation, aide, catalogue, accès réservé -->
+                <?php include("../invariants/menu_pro.php") ?>
+
+        <!-- Encart gauche avec la recherche -->
+                <?php include("../invariants/recherche.php") ?>
+
+
+         <!-- tout le contenu de la notice est dans cette partie -->
+         <div class="contenu">
+
 		<h2>Créer une nouvelle notice</h2>
 		<p>
 			Ce formulaire permet d'intégrer un nouvel ouvrage au catalogue de la bibliothèque.
@@ -46,9 +67,9 @@
 		<br/>
 		</fieldset>
 		<fieldset>
-		Langue
+		<h4>Langue </h4>
 		<br>
-			Langue : 
+			Langue :
 			<select name="langue">
 				<option value="francais">Français</option>
 				<option value="anglais">Anglais</option>
@@ -62,7 +83,8 @@
 				<option value="grec">Grec</option>			
 			</select>
 		<br/>
-			Langue d'origine : 
+		<br/>
+			Langue d'origine :
 			<select name="langueorig">
 				<option value="francais">Français</option>
 				<option value="anglais">Anglais</option>
@@ -85,7 +107,7 @@
 		<br/> -->
 		</fieldset>
 		<fieldset>
-			Thème 
+			<h4>Thème </h4>
 			<input type="radio" name="theme" value="philo"/> <label for="philo">Philosophie</label>
 			<input type="radio" name="theme" value="histoire"/> <label for="histoire">Histoire</label>
 			<input type="radio" name="theme" value="economie"/> <label for="economie">Economie</label>
@@ -120,6 +142,12 @@
 		</fieldset>
 		<br/>
 			<input type="submit" value="Créer"/>
-		</form>	
+		</form>
+		</div> 
+
+		<!-- footer -->
+            <?php include("../invariants/footer.php") ?>
+
+		</div>	
 	</body>
 </html>
